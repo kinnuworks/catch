@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Catch</title>
+  <style>
+    :root { color-scheme: light dark; --muted: #78716c; }
+    body { width: 340px; margin: 0; font: 13px/1.45 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+    header { padding: 12px 14px; background: #fef3c7; color: #1c1917; font-weight: 700; display: flex; gap: 8px; align-items: center; }
+    section { padding: 10px 14px; border-bottom: 1px solid #e7e5e4; }
+    h2 { font-size: 12px; text-transform: uppercase; letter-spacing: .05em; color: var(--muted); margin: 0 0 6px; }
+    select { width: 100%; font: inherit; padding: 4px; }
+    .status { color: var(--muted); margin-top: 6px; }
+    .plan { padding: 8px 0; border-top: 1px solid #f5f5f4; }
+    .plan:first-child { border-top: 0; }
+    .plan strong { display: block; }
+    .plan ol { margin: 4px 0 0; padding-left: 18px; }
+    .empty { color: var(--muted); }
+    @media (prefers-color-scheme: dark) { header { background: #292524; color: #fafaf9; } section { border-color: #44403c; } }
+  </style>
+</head>
+<body>
+  <header>🪝 Catch</header>
+  <section>
+    <h2>Who reads the terms</h2>
+    <select id="reader">
+      <option value="rules">Rules only (instant, no download)</option>
+      <option value="gemma-3-1b">Gemma 3 1B on this laptop (0.8 GB once)</option>
+      <option value="gemma-4-e2b">Gemma 4 E2B on this laptop (3.1 GB once)</option>
+    </select>
+    <div class="status" id="status"></div>
+  </section>
+  <section>
+    <h2>Your exit plans</h2>
+    <div id="plans"><p class="empty">Plans appear here after you press a sign-up button.</p></div>
+  </section>
+  <script type="module" src="./popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,1235 @@
+[
+ {
+  "key": "1Password#1",
+  "service": "1Password",
+  "url": "https://1password.com/legal/terms-of-service",
+  "text": "At the end of each Billing Cycle, your Subscription will automatically renew under the same conditions unless you cancel it or AgileBits Inc. cancels it.",
+  "ruleKinds": [
+   "auto_renew"
+  ]
+ },
+ {
+  "key": "1Password#2",
+  "service": "1Password",
+  "url": "https://1password.com/legal/terms-of-service",
+  "text": "All amounts paid are non-refundable.",
+  "ruleKinds": [
+   "no_refund"
+  ]
+ },
+ {
+  "key": "1Password#3",
+  "service": "1Password",
+  "url": "https://1password.com/legal/terms-of-service",
+  "text": "On the last day of the Free Trial period, unless you cancelled your Subscription, you will be automatically charged the applicable Subscription fees for the type of Subscription you have selected.",
+  "ruleKinds": [
+   "trial_converts"
+  ]
+ },
+ {
+  "key": "1Password#4",
+  "service": "1Password",
+  "url": "https://1password.com/legal/terms-of-service",
+  "text": "While all amounts paid are non-refundable, certain refund requests for Subscriptions may be considered by AgileBits Inc. on a case-by-case basis and granted at the sole discretion of AgileBits Inc..",
+  "ruleKinds": [
+   "no_refund"
+  ]
+ },
+ {
+  "key": "1Password#5",
+  "service": "1Password",
+  "url": "https://1password.com/legal/terms-of-service",
+  "text": "If a revision is material we will make reasonable efforts to provide at least 30 days' notice prior to any new terms taking effect.",
+  "ruleKinds": [
+   "cancel_notice"
+  ]
+ },
+ {
+  "key": "1Password#6",
+  "service": "1Password",
+  "url": "https://1password.com/legal/terms-of-service",
+  "text": "Except as otherwise set forth herein or in an Order Form, (i) fees are quoted and payable in United States dollars, (ii) fees are based on subscription Services purchased, and (iii) payment obligations are non-cancelable and fees paid are non-refundable, except as permitted in Section 6.1, Section 7.2, Section 9.3, or Section 11.2.",
+  "ruleKinds": [
+   "no_refund"
+  ]
+ },
+ {
+  "key": "1Password#7",
+  "service": "1Password",
+  "url": "https://1password.com/legal/terms-of-service",
+  "text": "and (b) upon Customer’s written confirmation and request, within thirty (30) calendar days after such expiration or termination, 1Password will confirm in writing to the Customer that it has permanently erased, destroyed or returned to the Customer its Confidential Information, as well as any copies thereof on any media or in any form.",
+  "ruleKinds": [
+   "cancel_notice"
+  ]
+ },
+ {
+  "key": "1Password#8",
+  "service": "1Password",
+  "url": "https://1password.com/legal/terms-of-service",
+  "text": "Except if the Parties have agreed and stated otherwise in an Order Form, this Agreement and the Order Form shall automatically renew.",
+  "ruleKinds": [
+   "auto_renew"
+  ]
+ },
+ {
+  "key": "Apple_Media_Services#1",
+  "service": "Apple Media Services",
+  "url": "https://www.apple.com/legal/internet-services/itunes/us/terms.html",
+  "text": "For Subscriptions that require your commitment to a specified number of billing periods, any such refund will relate only to the period of access already paid for but not yet provided, and no refund is due in respect of any future monthly periods for which payment has not yet been collected.",
+  "ruleKinds": [
+   "no_refund"
+  ]
+ },
+ {
+  "key": "Apple_Media_Services#2",
+  "service": "Apple Media Services",
+  "url": "https://www.apple.com/legal/internet-services/itunes/us/terms.html",
+  "text": "Subscriptions automatically renew until cancelled in the Manage Subscriptions section of your account settings.",
+  "ruleKinds": [
+   "auto_renew"
+  ]
+ },
+ {
+  "key": "Babbel#1",
+  "service": "Babbel",
+  "url": "https://about.babbel.com/en/terms/",
+  "text": "Different, conflicting or supplementary terms will only become part of an Order if and to the extent that Babbel has consented to such terms in writing.",
+  "ruleKinds": [
+   "cancel_notice"
+  ]
+ },
+ {
+  "key": "Babbel#2",
+  "service": "Babbel",
+  "url": "https://about.babbel.com/en/terms/",
+  "text": "7.15 If (a) you cancel a booked Virtual Classroom session less than twenty-four (24) hours before its scheduled starting time, or (b) you do not attend a Virtual Classroom session in whole or in part, Babbel reserves the right to charge a monetary fee to your User Account (\"Cancellation Fee\") or you may forfeit any Credits used for the Virtual Classroom session in question.",
+  "ruleKinds": [
+   "exit_fee"
+  ]
+ },
+ {
+  "key": "Babbel#3",
+  "service": "Babbel",
+  "url": "https://about.babbel.com/en/terms/",
+  "text": "The applicable Cancellation Fee is specified in the \"Cancellation Policy\" which may be updated by Babbel from time to time and can be accessed in its current form here.",
+  "ruleKinds": [
+   "exit_fee"
+  ]
+ },
+ {
+  "key": "Babbel#4",
+  "service": "Babbel",
+  "url": "https://about.babbel.com/en/terms/",
+  "text": "Credits are non-refundable, non-transferable, and no interest will accrue on them.",
+  "ruleKinds": [
+   "no_refund"
+  ]
+ },
+ {
+  "key": "Babbel#5",
+  "service": "Babbel",
+  "url": "https://about.babbel.com/en/terms/",
+  "text": "12.3 Unless otherwise agreed, any Order for Paid Services shall remain in effect for an initial term as specified in the Order (“Initial Service Term”).",
+  "ruleKinds": [
+   "lock_in"
+  ]
+ },
+ {
+  "key": "Babbel#6",
+  "service": "Babbel",
+  "url": "https://about.babbel.com/en/terms/",
+  "text": "During the Renewal Service Term any Order may be terminated by Babbel or by you at any time with a one-month notice period.",
+  "ruleKinds": [
+   "cancel_notice"
+  ]
+ },
+ {
+  "key": "Babbel#7",
+  "service": "Babbel",
+  "url": "https://about.babbel.com/en/terms/",
+  "text": "20.2 Babbel shall not be liable for any costs or expenses that you may incur from third parties engaged by you (e.g. banks and payment service providers) or for any non-refundable taxes as part of the withdrawal process.",
+  "ruleKinds": [
+   "no_refund"
+  ]
+ },
+ {
+  "key": "Babbel#8",
+  "service": "Babbel",
+  "url": "https://about.babbel.com/en/terms/",
+  "text": "Unless otherwise agreed, any Order for Paid Services shall remain in effect for an initial term as specified in the Order (“Initial Service Term”).",
+  "ruleKinds": [
+   "lock_in"
+  ]
+ },
+ {
+  "key": "Bumble#1",
+  "service": "Bumble",
+  "url": "https://bumble.com/en/terms",
+  "text": "Please be aware that if you subscribe to services for a term (the “Initial Term”), then the terms of your subscription will be automatically renewed for additional periods of the same duration as the Initial Term at Bumble’s then-current fee for such services, unless you cancel your subscription in accordance with Section 6 below.",
+  "ruleKinds": [
+   "auto_renew",
+   "lock_in"
+  ]
+ },
+ {
+  "key": "Bumble#2",
+  "service": "Bumble",
+  "url": "https://bumble.com/en/terms",
+  "text": "Subscriptions and Auto-Renewal: Bumble may offer some services as automatically-renewing subscriptions, e.g., a one-week subscription, one-month subscription, or three-month subscription (“Premium Services”).IF YOU PURCHASE AN AUTOMATICALLY RENEWING SUBSCRIPTION, YOUR SUBSCRIPTION WILL RENEW AT THE END OF THE PERIOD, UNLESS YOU CANCEL, AT BUMBLE’S THEN-CURRENT PRICE FOR SUCH SUBSCRIPTIONS.To avoid charges for a new subscription period, you must cancel, as described below, before the end of the then-current subscription period.",
+  "ruleKinds": [
+   "auto_renew"
+  ]
+ },
+ {
+  "key": "Bumble#3",
+  "service": "Bumble",
+  "url": "https://bumble.com/en/terms",
+  "text": "If you sign up for a free trial and do not cancel, your trial may convert into a paid subscription and your Payment Method will be charged at the then-current price for such subscription.",
+  "ruleKinds": [
+   "trial_converts"
+  ]
+ },
+ {
+  "key": "Bumble#4",
+  "service": "Bumble",
+  "url": "https://bumble.com/en/terms",
+  "text": "Once your free trial converts to a paid subscription, your paid subscription will continue to automatically renew at the end of each period, and your Payment Method will be charged, until you cancel.",
+  "ruleKinds": [
+   "auto_renew",
+   "trial_converts"
+  ]
+ },
+ {
+  "key": "Bumble#5",
+  "service": "Bumble",
+  "url": "https://bumble.com/en/terms",
+  "text": "If you have signed up for a free trial on Bumble through the Apple Store or Google Play Store previously, you will not be eligible for another free trial and you will then be automatically signed up to a subscription and charged as described in this paragraph.",
+  "ruleKinds": [
+   "trial_converts"
+  ]
+ },
+ {
+  "key": "Bumble#6",
+  "service": "Bumble",
+  "url": "https://bumble.com/en/terms",
+  "text": "Generally, all charges for purchases are nonrefundable, and there are no refunds or credits for partially used periods.",
+  "ruleKinds": [
+   "no_refund"
+  ]
+ },
+ {
+  "key": "Bumble#7",
+  "service": "Bumble",
+  "url": "https://bumble.com/en/terms",
+  "text": "For example, if you delete your account, any subscription you have purchased will be cancelled immediately, you will permanently lose access to any remaining subscription benefits from that subscription and you will not be eligible for a refund.",
+  "ruleKinds": [
+   "no_refund"
+  ]
+ },
+ {
+  "key": "Bumble#8",
+  "service": "Bumble",
+  "url": "https://bumble.com/en/terms",
+  "text": "There are no refunds for subscription renewals.",
+  "ruleKinds": [
+   "no_refund"
+  ]
+ },
+ {
+  "key": "Calm#1",
+  "service": "Calm",
+  "url": "https://www.calm.com/terms",
+  "text": "If you purchase a recurring subscription to use Calm Premium (“Recurring Subscriptions”), the subscription will be continuous for the subscription period you select and will automatically renew for another subscription period until canceled.",
+  "ruleKinds": [
+   "auto_renew"
+  ]
+ },
+ {
+  "key": "Calm#2",
+  "service": "Calm",
+  "url": "https://www.calm.com/terms",
+  "text": "If you cancel, you are not entitled to a refund for the fees you already paid, but, subject to these Terms, you will continue to receive access to Calm Premium until the end of your current subscription period.",
+  "ruleKinds": [
+   "no_refund"
+  ]
+ },
+ {
+  "key": "Coursera#1",
+  "service": "Coursera",
+  "url": "https://www.coursera.org/about/terms",
+  "text": "All subscriptions will continue for the duration selected at the time of your purchase and then automatically renew for periods of equal length unless and until you cancel the subscription according to the process described below or the subscription is suspended or discontinued by Coursera.",
+  "ruleKinds": [
+   "auto_renew"
+  ]
+ },
+ {
+  "key": "Coursera#2",
+  "service": "Coursera",
+  "url": "https://www.coursera.org/about/terms",
+  "text": "No refunds will be issued in the case of any corrective action for such violations.",
+  "ruleKinds": [
+   "no_refund"
+  ]
+ },
+ {
+  "key": "Dropbox#1",
+  "service": "Dropbox",
+  "url": "https://www.dropbox.com/terms",
+  "text": "If we discontinue the Services in this way before the end of any fixed or minimum term you have paid us for, we’ll refund the portion of the fees you have pre-paid but haven't received Services for.",
+  "ruleKinds": [
+   "lock_in"
+  ]
+ },
+ {
+  "key": "ExpressVPN#1",
+  "service": "ExpressVPN",
+  "url": "https://www.expressvpn.com/tos",
+  "text": "When supported by your payment method, plans renew automatically by default at the completion of the billing term, until canceled.",
+  "ruleKinds": [
+   "auto_renew"
+  ]
+ },
+ {
+  "key": "ExpressVPN#2",
+  "service": "ExpressVPN",
+  "url": "https://www.expressvpn.com/tos",
+  "text": "By default, auto-renewal is turned on when you use a payment method that supports auto-renewal (such as a credit card or PayPal), and turned off when you use a payment method that does not support auto-renewal (such as Bitcoin).",
+  "ruleKinds": [
+   "auto_renew"
+  ]
+ },
+ {
+  "key": "ExpressVPN#3",
+  "service": "ExpressVPN",
+  "url": "https://www.expressvpn.com/tos",
+  "text": "When auto-renewal is off, you may continue to use the Services until the end of your current billing term, at which point your Services will be suspended until a manual renewal payment is made.",
+  "ruleKinds": [
+   "auto_renew"
+  ]
+ },
+ {
+  "key": "GitHub#1",
+  "service": "GitHub",
+  "url": "https://docs.github.com/en/site-policy/github-terms/github-terms-of-service",
+  "text": "Billing Schedule; No Refunds",
+  "ruleKinds": [
+   "no_refund"
+  ]
+ },
+ {
+  "key": "GitHub#2",
+  "service": "GitHub",
+  "url": "https://docs.github.com/en/site-policy/github-terms/github-terms-of-service",
+  "text": "Payment Based on Plan For monthly or yearly payment plans, the Service is billed in advance on a monthly or yearly basis respectively and is non-refundable.",
+  "ruleKinds": [
+   "no_refund"
+  ]
+ },
+ {
+  "key": "GitHub#3",
+  "service": "GitHub",
+  "url": "https://docs.github.com/en/site-policy/github-terms/github-terms-of-service",
+  "text": "There will be no refunds or credits for partial months of service, downgrade refunds, or refunds for months unused with an open Account;",
+  "ruleKinds": [
+   "no_refund"
+  ]
+ },
+ {
+  "key": "GitHub#4",
+  "service": "GitHub",
+  "url": "https://docs.github.com/en/site-policy/github-terms/github-terms-of-service",
+  "text": "Amounts payable under this Agreement are non-refundable, except as otherwise provided in this Agreement.",
+  "ruleKinds": [
+   "no_refund"
+  ]
+ },
+ {
+  "key": "Headspace#1",
+  "service": "Headspace",
+  "url": "https://www.headspace.com/terms-and-conditions",
+  "text": "(b) Automatically Renewing Subscriptions.",
+  "ruleKinds": [
+   "auto_renew"
+  ]
+ },
+ {
+  "key": "Headspace#2",
+  "service": "Headspace",
+  "url": "https://www.headspace.com/terms-and-conditions",
+  "text": "The Subscription will continue unless and until you cancel your Subscription or Headspace terminates your Subscription or your account.",
+  "ruleKinds": [
+   "auto_renew"
+  ]
+ },
+ {
+  "key": "Headspace#3",
+  "service": "Headspace",
+  "url": "https://www.headspace.com/terms-and-conditions",
+  "text": "(c) No Refunds on Subscriptions.",
+  "ruleKinds": [
+   "no_refund"
+  ]
+ },
+ {
+  "key": "Headspace#4",
+  "service": "Headspace",
+  "url": "https://www.headspace.com/terms-and-conditions",
+  "text": "There are no refunds or other credits for Gift Subscription that are not redeemed.",
+  "ruleKinds": [
+   "no_refund"
+  ]
+ },
+ {
+  "key": "Headspace#5",
+  "service": "Headspace",
+  "url": "https://www.headspace.com/terms-and-conditions",
+  "text": "You are responsible for all applicable fees and charges incurred, including applicable taxes, unless otherwise stated in your Benefit Sponsor terms and conditions or otherwise agreed to in writing between the parties.",
+  "ruleKinds": [
+   "cancel_notice"
+  ]
+ },
+ {
+  "key": "Headspace#6",
+  "service": "Headspace",
+  "url": "https://www.headspace.com/terms-and-conditions",
+  "text": "(b) If you cancel, you are not entitled to a refund for the fees you already paid, but, subject to these Terms, you will continue to receive access to the Products until the end of your current subscription period.",
+  "ruleKinds": [
+   "no_refund"
+  ]
+ },
+ {
+  "key": "Microsoft#1",
+  "service": "Microsoft",
+  "url": "https://www.microsoft.com/en-us/servicesagreement",
+  "text": "When you purchase the Services on a subscription basis (e.g., monthly, every 3 months or annually), you agree that you are authorizing recurring payments, and payments will be made to Microsoft by the method and at the recurring intervals you have agreed to, until the subscription for that Service is terminated by you or by Microsoft.",
+  "ruleKinds": [
+   "auto_renew"
+  ]
+ },
+ {
+  "key": "Microsoft#2",
+  "service": "Microsoft",
+  "url": "https://www.microsoft.com/en-us/servicesagreement",
+  "text": "By authorizing recurring payments, you are authorizing Microsoft to store your payment instrument and process such payments as either electronic debits or fund transfers, or as electronic drafts from your designated account (for Automated Clearing House or similar payments), or as charges to your designated account (for credit card or similar payments) (collectively, \"Electronic Payments\").",
+  "ruleKinds": [
+   "auto_renew"
+  ]
+ },
+ {
+  "key": "Microsoft#3",
+  "service": "Microsoft",
+  "url": "https://www.microsoft.com/en-us/servicesagreement",
+  "text": "Unless otherwise provided by law or by a particular Service offer, all purchases are final and non-refundable.",
+  "ruleKinds": [
+   "no_refund"
+  ]
+ },
+ {
+  "key": "Microsoft#4",
+  "service": "Microsoft",
+  "url": "https://www.microsoft.com/en-us/servicesagreement",
+  "text": "No refunds will be given for any charges more than 90 days old.",
+  "ruleKinds": [
+   "no_refund"
+  ]
+ },
+ {
+  "key": "Microsoft#5",
+  "service": "Microsoft",
+  "url": "https://www.microsoft.com/en-us/servicesagreement",
+  "text": "If you are taking part in any trial-period offer, you may be required to cancel the trial Service(s) within the timeframe communicated to you when you accepted the offer in order to avoid being charged to continue the Service(s) at the end of the trial period.",
+  "ruleKinds": [
+   "trial_converts"
+  ]
+ },
+ {
+  "key": "Microsoft#6",
+  "service": "Microsoft",
+  "url": "https://www.microsoft.com/en-us/servicesagreement",
+  "text": "For certain trial-period offers, we may require auto-renewal to be turned on.",
+  "ruleKinds": [
+   "auto_renew"
+  ]
+ },
+ {
+  "key": "Microsoft#7",
+  "service": "Microsoft",
+  "url": "https://www.microsoft.com/en-us/servicesagreement",
+  "text": "Microsoft may turn off your recurring billing and stop recurring charges in select countries if you do not use your XBOX Services subscription for a period of time.",
+  "ruleKinds": [
+   "auto_renew"
+  ]
+ },
+ {
+  "key": "Microsoft#8",
+  "service": "Microsoft",
+  "url": "https://www.microsoft.com/en-us/servicesagreement",
+  "text": "Microsoft will provide notice to you before turning off recurring billing.",
+  "ruleKinds": [
+   "auto_renew"
+  ]
+ },
+ {
+  "key": "MyFitnessPal#1",
+  "service": "MyFitnessPal",
+  "url": "https://www.myfitnesspal.com/terms-of-service",
+  "text": "Your subscription auto-renews unless you choose to cancel prior to the end of the subscription period.",
+  "ruleKinds": [
+   "auto_renew"
+  ]
+ },
+ {
+  "key": "MyFitnessPal#2",
+  "service": "MyFitnessPal",
+  "url": "https://www.myfitnesspal.com/terms-of-service",
+  "text": "All purchases of Premium Services are final and non-refundable, except at our sole discretion.",
+  "ruleKinds": [
+   "no_refund"
+  ]
+ },
+ {
+  "key": "MyFitnessPal#3",
+  "service": "MyFitnessPal",
+  "url": "https://www.myfitnesspal.com/terms-of-service",
+  "text": "The Premium Services you are subscribed for will auto-renew unless you cancel your subscription prior to the end of the then-current subscription period.",
+  "ruleKinds": [
+   "auto_renew"
+  ]
+ },
+ {
+  "key": "MyFitnessPal#4",
+  "service": "MyFitnessPal",
+  "url": "https://www.myfitnesspal.com/terms-of-service",
+  "text": "Unless you cancel before the end of the Free Trial period, your access to the Premium Service will automatically continue, and you will be billed the applicable fees for that Premium Service using the Payment Method you provided.",
+  "ruleKinds": [
+   "trial_converts"
+  ]
+ },
+ {
+  "key": "MyFitnessPal#5",
+  "service": "MyFitnessPal",
+  "url": "https://www.myfitnesspal.com/terms-of-service",
+  "text": "If you have any feedback, questions or comments about the Services, please contact our Support Team as detailed here by email or by mail at: MyFitnessPal, Inc., 100 Congress Avenue, Suite 400, Austin, TX 78701, and include the subject as “Attn: –MyFitnessPal Terms of Service”.",
+  "ruleKinds": [
+   "cancel_notice"
+  ]
+ },
+ {
+  "key": "Netflix#1",
+  "service": "Netflix",
+  "url": "https://help.netflix.com/legal/termsofuse",
+  "text": "To the extent permitted by the applicable law, payments are non-refundable and we do not provide refunds or credits for any partial subscription periods or unused Netflix content.",
+  "ruleKinds": [
+   "no_refund"
+  ]
+ },
+ {
+  "key": "Netflix#2",
+  "service": "Netflix",
+  "url": "https://help.netflix.com/legal/termsofuse",
+  "text": "If you signed up for Netflix using your account with a third party as a Payment Method and wish to cancel your Netflix subscription, you may need to do so through such third party, for example by visiting your account with the applicable third party and turning off auto-renew, or unsubscribing from the Netflix service through that third party.",
+  "ruleKinds": [
+   "auto_renew"
+  ]
+ },
+ {
+  "key": "New_York_Times#1",
+  "service": "New York Times",
+  "url": "https://help.nytimes.com/hc/en-us/articles/115014893428-Terms-of-Service",
+  "text": "1.2 We may change, add or remove portions of these Terms of Service at any time by notifying you of the change in writing (including by email or by updating the date above after “Last Updated On”).",
+  "ruleKinds": [
+   "cancel_notice"
+  ]
+ },
+ {
+  "key": "Noom#1",
+  "service": "Noom",
+  "url": "https://www.noom.com/terms-and-conditions-of-use/",
+  "text": "IF YOU PURCHASE A SUBSCRIPTION TO THE SERVICE, YOUR SUBSCRIPTION WILL BE AUTOMATICALLY RENEWED AT THE END OF THE DISCLOSED BILLING PERIOD AT OUR THEN-CURRENT FEE FOR SUCH SERVICE UNLESS YOU DECIDE TO CANCEL YOUR SUBSCRIPTION OR THE AGREEMENT IS TERMINATED.",
+  "ruleKinds": [
+   "auto_renew"
+  ]
+ },
+ {
+  "key": "Noom#2",
+  "service": "Noom",
+  "url": "https://www.noom.com/terms-and-conditions-of-use/",
+  "text": "Fees and Purchase Terms; Automatically Renewing Subscriptions",
+  "ruleKinds": [
+   "auto_renew"
+  ]
+ },
+ {
+  "key": "Noom#3",
+  "service": "Noom",
+  "url": "https://www.noom.com/terms-and-conditions-of-use/",
+  "text": "AUTOMATICALLY RENEWING SUBSCRIPTIONS).",
+  "ruleKinds": [
+   "auto_renew"
+  ]
+ },
+ {
+  "key": "Noom#4",
+  "service": "Noom",
+  "url": "https://www.noom.com/terms-and-conditions-of-use/",
+  "text": "If your subscription begins with a free trial, your first payment will be charged to your chosen payment method immediately following the end of the free trial, unless canceled in accordance with the instructions for cancellation below.",
+  "ruleKinds": [
+   "trial_converts"
+  ]
+ },
+ {
+  "key": "Noom#5",
+  "service": "Noom",
+  "url": "https://www.noom.com/terms-and-conditions-of-use/",
+  "text": "6.4 Subscriptions Automatically Renew.",
+  "ruleKinds": [
+   "auto_renew"
+  ]
+ },
+ {
+  "key": "Noom#6",
+  "service": "Noom",
+  "url": "https://www.noom.com/terms-and-conditions-of-use/",
+  "text": "Your subscription will automatically renew at the end of the disclosed billing period, unless canceled in accordance with the instructions for cancellation below.",
+  "ruleKinds": [
+   "auto_renew"
+  ]
+ },
+ {
+  "key": "Noom#7",
+  "service": "Noom",
+  "url": "https://www.noom.com/terms-and-conditions-of-use/",
+  "text": "6.6 Canceling Auto-Renewal of Your Subscription.",
+  "ruleKinds": [
+   "auto_renew"
+  ]
+ },
+ {
+  "key": "Noom#8",
+  "service": "Noom",
+  "url": "https://www.noom.com/terms-and-conditions-of-use/",
+  "text": "If we do not receive payment from your Payment Method for whatever reason, (a) you agree to pay all amounts due on your account upon demand, and/or (b) you agree that we may either terminate or suspend your subscription and continue to attempt to charge your Payment Method for purchased Services until payment is received (and upon receipt of payment, your account will be activated and, for purposes of automatic renewal, your new subscription commitment period will begin as of the day payment was received).",
+  "ruleKinds": [
+   "lock_in"
+  ]
+ },
+ {
+  "key": "Patreon#1",
+  "service": "Patreon",
+  "url": "https://www.patreon.com/policy/legal",
+  "text": "As a creator, you may make offerings available on Patreon on a one-time basis and may make memberships available on Patreon on an automatically-renewing subscription basis.",
+  "ruleKinds": [
+   "auto_renew"
+  ]
+ },
+ {
+  "key": "Patreon#2",
+  "service": "Patreon",
+  "url": "https://www.patreon.com/policy/legal",
+  "text": "You pay on a one-time or automatically-renewing subscription basis as specified;",
+  "ruleKinds": [
+   "auto_renew"
+  ]
+ },
+ {
+  "key": "Patreon#3",
+  "service": "Patreon",
+  "url": "https://www.patreon.com/policy/legal",
+  "text": "In addition to one-time purchases, there are three types of paid, automatically renewing subscriptions offered on Patreon.",
+  "ruleKinds": [
+   "auto_renew"
+  ]
+ },
+ {
+  "key": "Patreon#4",
+  "service": "Patreon",
+  "url": "https://www.patreon.com/policy/legal",
+  "text": "Each type of paid subscription automatically renews monthly (for monthly and per-creation memberships) or annually (for annual memberships) until you cancel via your membership settings.",
+  "ruleKinds": [
+   "auto_renew"
+  ]
+ },
+ {
+  "key": "Patreon#5",
+  "service": "Patreon",
+  "url": "https://www.patreon.com/policy/legal",
+  "text": "If your subscription includes a free trial or initial gifted access, then, unless you cancel via your membership settings before your free trial or initial gifted access ends, you will be charged for the first time after the specified free trial or initial gift period ends and you’ll start an automatically renewing paid subscription on Patreon of the type you selected.",
+  "ruleKinds": [
+   "auto_renew",
+   "trial_converts"
+  ]
+ },
+ {
+  "key": "Patreon#6",
+  "service": "Patreon",
+  "url": "https://www.patreon.com/policy/legal",
+  "text": "Access will automatically end when the term expires unless the recipient enters into an automatically renewing subscription at the time of redemption.",
+  "ruleKinds": [
+   "auto_renew"
+  ]
+ },
+ {
+  "key": "Patreon#7",
+  "service": "Patreon",
+  "url": "https://www.patreon.com/policy/legal",
+  "text": "No refunds or exchanges (including for gifts not redeemed within the Redemption Period) are permitted.",
+  "ruleKinds": [
+   "no_refund"
+  ]
+ },
+ {
+  "key": "Patreon#8",
+  "service": "Patreon",
+  "url": "https://www.patreon.com/policy/legal",
+  "text": "Unless specifically stated otherwise, these price reductions apply only to a single one-time purchase, the first month of new, automatically-renewing monthly paid subscriptions, or the first year of new, automatically-renewing annual paid subscriptions, and to select tiers, as specified on the associated creator page.",
+  "ruleKinds": [
+   "auto_renew"
+  ]
+ },
+ {
+  "key": "Peloton#1",
+  "service": "Peloton",
+  "url": "https://www.onepeloton.com/terms-of-service",
+  "text": "Use the Peloton Service or Content, or any portion thereof, for any commercial purpose or for the benefit of any third party or in any manner not permitted by these Terms or permitted expressly in writing by Peloton;",
+  "ruleKinds": [
+   "cancel_notice"
+  ]
+ },
+ {
+  "key": "Peloton#2",
+  "service": "Peloton",
+  "url": "https://www.onepeloton.com/terms-of-service",
+  "text": "To begin this process, and before initiating any arbitration or legal proceeding against Peloton, you must send a Notice of Dispute (\"Notice\") by certified mail to the attention of Peloton's Legal Department at the Peloton address set out in Section 24 of these Terms.",
+  "ruleKinds": [
+   "cancel_notice"
+  ]
+ },
+ {
+  "key": "Peloton#3",
+  "service": "Peloton",
+  "url": "https://www.onepeloton.com/terms-of-service",
+  "text": "Notwithstanding the provisions of Section 25 \"Modification\", if Peloton changes any terms of this Section 20 after the date you first accepted these Terms or any subsequent changes to these Terms, you may reject the new changes to Section 20 by sending us written notice, personally signed by you, by certified mail to the attention of Peloton's Legal Department at the Peloton address set out in Section 24 of these Terms within 30 days of the date such change became effective, as indicated by the later of (1) the \"Last Updated\" date of the Terms you seek to reject or (2) the date of Peloton's email to you notifying you of such change.",
+  "ruleKinds": [
+   "cancel_notice"
+  ]
+ },
+ {
+  "key": "Shopify#1",
+  "service": "Shopify",
+  "url": "https://www.shopify.com/legal/terms",
+  "text": "Any domain you purchase through us will automatically renew unless you opt out.",
+  "ruleKinds": [
+   "auto_renew"
+  ]
+ },
+ {
+  "key": "Shopify#2",
+  "service": "Shopify",
+  "url": "https://www.shopify.com/legal/terms",
+  "text": "Upon purchasing a domain name through Shopify, domain registration will be preset to automatically renew each year so long as your Shopify Account remains active, unless you do not have a valid payment method associated with your Account.",
+  "ruleKinds": [
+   "auto_renew"
+  ]
+ },
+ {
+  "key": "Shopify#3",
+  "service": "Shopify",
+  "url": "https://www.shopify.com/legal/terms",
+  "text": "You acknowledge that it is your sole responsibility to deactivate the auto-renewal function should you choose to do so.",
+  "ruleKinds": [
+   "auto_renew"
+  ]
+ },
+ {
+  "key": "Shopify#4",
+  "service": "Shopify",
+  "url": "https://www.shopify.com/legal/terms",
+  "text": "Shopify will charge applicable Fees to any valid payment method that you authorize (\"Authorized Payment Method\"), and Shopify will continue to charge the Authorized Payment Method for applicable Fees until the Services are terminated, and any and all outstanding Fees have been paid in full.",
+  "ruleKinds": [
+   "exit_fee"
+  ]
+ },
+ {
+  "key": "Shopify#5",
+  "service": "Shopify",
+  "url": "https://www.shopify.com/legal/terms",
+  "text": "You will be charged on each Billing Date for all outstanding Fees that have not previously been charged.",
+  "ruleKinds": [
+   "exit_fee"
+  ]
+ },
+ {
+  "key": "Shopify#6",
+  "service": "Shopify",
+  "url": "https://www.shopify.com/legal/terms",
+  "text": "If the outstanding Fees remain unpaid for 60 days following the date of suspension, Shopify reserves the right to terminate your Account in accordance with Section 14.",
+  "ruleKinds": [
+   "exit_fee"
+  ]
+ },
+ {
+  "key": "Shopify#7",
+  "service": "Shopify",
+  "url": "https://www.shopify.com/legal/terms",
+  "text": "Once termination is confirmed, domains purchased through Shopify will no longer be automatically renewed.",
+  "ruleKinds": [
+   "auto_renew"
+  ]
+ },
+ {
+  "key": "Shopify#8",
+  "service": "Shopify",
+  "url": "https://www.shopify.com/legal/terms",
+  "text": "If you purchased a domain name through Shopify, upon cancellation your domain will no longer be automatically renewed.",
+  "ruleKinds": [
+   "auto_renew"
+  ]
+ },
+ {
+  "key": "Spotify#1",
+  "service": "Spotify",
+  "url": "https://www.spotify.com/us/legal/end-user-agreement/",
+  "text": "Unless otherwise indicated (for example, if you have signed up for a Prepaid Period), Paid Subscriptions continue indefinitely until cancelled.",
+  "ruleKinds": [
+   "auto_renew"
+  ]
+ },
+ {
+  "key": "Spotify#2",
+  "service": "Spotify",
+  "url": "https://www.spotify.com/us/legal/end-user-agreement/",
+  "text": "In addition to, and notwithstanding, any other rights we may have under these Terms, we reserve the right to terminate a Paid Subscription at any time, on no less than 14 days' notice to you.",
+  "ruleKinds": [
+   "cancel_notice"
+  ]
+ },
+ {
+  "key": "Spotify#3",
+  "service": "Spotify",
+  "url": "https://www.spotify.com/us/legal/end-user-agreement/",
+  "text": "If you or Spotify terminate these Terms, or if Spotify suspends your access to the Spotify Service, you agree that Spotify shall have no liability or responsibility to you, and (except as expressly provided in these Terms) Spotify will not refund any amounts that you have already paid.",
+  "ruleKinds": [
+   "no_refund"
+  ]
+ },
+ {
+  "key": "Spotify#4",
+  "service": "Spotify",
+  "url": "https://www.spotify.com/us/legal/end-user-agreement/",
+  "text": "Other than as stated in this section or as explicitly agreed upon in writing between you and Spotify, these Terms constitute all the terms and conditions agreed upon between you and Spotify and supersede any prior agreements in relation to the subject matter of these Terms, whether written or oral.",
+  "ruleKinds": [
+   "cancel_notice"
+  ]
+ },
+ {
+  "key": "Squarespace#1",
+  "service": "Squarespace",
+  "url": "https://www.squarespace.com/terms-of-service",
+  "text": "For certain paid services, such as domain name registrations and site subscriptions, we’ll automatically bill you in regular intervals (such as monthly or annually) unless you disable auto-renewal or cancel your subscription.",
+  "ruleKinds": [
+   "auto_renew"
+  ]
+ },
+ {
+  "key": "Squarespace#2",
+  "service": "Squarespace",
+  "url": "https://www.squarespace.com/terms-of-service",
+  "text": "Paid Services will remain in effect until canceled or terminated in accordance with this Agreement.",
+  "ruleKinds": [
+   "auto_renew"
+  ]
+ },
+ {
+  "key": "Squarespace#3",
+  "service": "Squarespace",
+  "url": "https://www.squarespace.com/terms-of-service",
+  "text": "We’ll let you know in advance if you’re purchasing a Paid Service that includes auto-renewal payments.",
+  "ruleKinds": [
+   "auto_renew"
+  ]
+ },
+ {
+  "key": "Squarespace#4",
+  "service": "Squarespace",
+  "url": "https://www.squarespace.com/terms-of-service",
+  "text": "You can disable auto-renewal at any time via the Services or your mobile app store provider.",
+  "ruleKinds": [
+   "auto_renew"
+  ]
+ },
+ {
+  "key": "Squarespace#5",
+  "service": "Squarespace",
+  "url": "https://www.squarespace.com/terms-of-service",
+  "text": "Third Party Services purchased via the Services may be subject to different refund or other policies that those Third Party Services determine, and such Third Party Services may be non-refundable.",
+  "ruleKinds": [
+   "no_refund"
+  ]
+ },
+ {
+  "key": "Strava#1",
+  "service": "Strava",
+  "url": "https://www.strava.com/legal/terms",
+  "text": "No refunds or credits will be provided by Strava, unless set out in these Terms.",
+  "ruleKinds": [
+   "no_refund"
+  ]
+ },
+ {
+  "key": "Strava#2",
+  "service": "Strava",
+  "url": "https://www.strava.com/legal/terms",
+  "text": "Auto-Renewal",
+  "ruleKinds": [
+   "auto_renew"
+  ]
+ },
+ {
+  "key": "Strava#3",
+  "service": "Strava",
+  "url": "https://www.strava.com/legal/terms",
+  "text": "Your subscription will renew automatically at the start of every billing period, based on the plan you chose, and will continue until your subscription is canceled.",
+  "ruleKinds": [
+   "auto_renew"
+  ]
+ },
+ {
+  "key": "Strava#4",
+  "service": "Strava",
+  "url": "https://www.strava.com/legal/terms",
+  "text": "Your subscription will auto-renew unless canceled at least 24 hours before the end of the current period.",
+  "ruleKinds": [
+   "auto_renew"
+  ]
+ },
+ {
+  "key": "Strava#5",
+  "service": "Strava",
+  "url": "https://www.strava.com/legal/terms",
+  "text": "If you begin your subscription with a free trial, you will be billed for your subscription fee at the end of the free trial, unless you cancel your subscription at least 24 hours before the free trial ends.",
+  "ruleKinds": [
+   "trial_converts"
+  ]
+ },
+ {
+  "key": "Surfshark#1",
+  "service": "Surfshark",
+  "url": "https://surfshark.com/terms-of-service",
+  "text": "To keep you secured, Surfshark Services renew automatically.",
+  "ruleKinds": [
+   "auto_renew"
+  ]
+ },
+ {
+  "key": "Surfshark#2",
+  "service": "Surfshark",
+  "url": "https://surfshark.com/terms-of-service",
+  "text": "Paid Surfshark Services renew automatically at the end of each service period and your chosen payment method is charged again, unless you decide to cancel your automatic payments before the automatic renewal.",
+  "ruleKinds": [
+   "auto_renew"
+  ]
+ },
+ {
+  "key": "Surfshark#3",
+  "service": "Surfshark",
+  "url": "https://surfshark.com/terms-of-service",
+  "text": "If you choose not to use our paid Services anymore, except for any services related to the Alternative ID, such as the purchase of the Alternative Number feature, and/or anonymous Dedicated IP which are non-refundable, we guarantee you a right to claim a refund within 30 days following your initial purchase of our Services.",
+  "ruleKinds": [
+   "no_refund"
+  ]
+ },
+ {
+  "key": "Surfshark#4",
+  "service": "Surfshark",
+  "url": "https://surfshark.com/terms-of-service",
+  "text": "all recurring payments are non-refundable.",
+  "ruleKinds": [
+   "auto_renew",
+   "no_refund"
+  ]
+ },
+ {
+  "key": "Surfshark#5",
+  "service": "Surfshark",
+  "url": "https://surfshark.com/terms-of-service",
+  "text": "You have a right to delete your account at any time, however, deleted accounts will not be refunded for the unused part of the ongoing service period.",
+  "ruleKinds": [
+   "no_refund"
+  ]
+ },
+ {
+  "key": "Tinder#1",
+  "service": "Tinder",
+  "url": "https://policies.tinder.com/terms/us/en",
+  "text": "PURCHASES AND AUTOMATICALLY RENEWING SUBSCRIPTIONS",
+  "ruleKinds": [
+   "auto_renew"
+  ]
+ },
+ {
+  "key": "Tinder#2",
+  "service": "Tinder",
+  "url": "https://policies.tinder.com/terms/us/en",
+  "text": "If you purchase a subscription, it will automatically renew - and you will be charged - until you cancel.",
+  "ruleKinds": [
+   "auto_renew"
+  ]
+ },
+ {
+  "key": "Tinder#3",
+  "service": "Tinder",
+  "url": "https://policies.tinder.com/terms/us/en",
+  "text": "If you purchase a subscription, it will automatically renew until you cancel, in accordance with the terms disclosed to you at the time of purchase, as further described below.",
+  "ruleKinds": [
+   "auto_renew"
+  ]
+ },
+ {
+  "key": "Tinder#4",
+  "service": "Tinder",
+  "url": "https://policies.tinder.com/terms/us/en",
+  "text": "Subscriptions automatically renew until you cancel.",
+  "ruleKinds": [
+   "auto_renew"
+  ]
+ },
+ {
+  "key": "Tinder#5",
+  "service": "Tinder",
+  "url": "https://policies.tinder.com/terms/us/en",
+  "text": "If your External Service Purchase includes an automatically renewing subscription, your External Service Account will continue to be periodically charged for the subscription until you cancel.",
+  "ruleKinds": [
+   "auto_renew"
+  ]
+ },
+ {
+  "key": "Tinder#6",
+  "service": "Tinder",
+  "url": "https://policies.tinder.com/terms/us/en",
+  "text": "After your initial subscription commitment period, and again after any subsequent subscription period, the subscription will automatically continue for the price and time period you agreed to when subscribing.",
+  "ruleKinds": [
+   "lock_in"
+  ]
+ },
+ {
+  "key": "Tinder#7",
+  "service": "Tinder",
+  "url": "https://policies.tinder.com/terms/us/en",
+  "text": "If your Internal Purchase includes an automatically renewing subscription, your Payment Method will continue to be periodically charged for the subscription until you cancel.",
+  "ruleKinds": [
+   "auto_renew"
+  ]
+ },
+ {
+  "key": "Tinder#8",
+  "service": "Tinder",
+  "url": "https://policies.tinder.com/terms/us/en",
+  "text": "After your initial subscription commitment period, and again after any subsequent subscription period, your subscription will automatically continue for the price and time period you agreed to when subscribing, until you cancel.",
+  "ruleKinds": [
+   "auto_renew",
+   "lock_in"
+  ]
+ },
+ {
+  "key": "Wix#1",
+  "service": "Wix",
+  "url": "https://www.wix.com/about/terms-of-use",
+  "text": "Unless stated otherwise, Light and Core Paid Services are offered to Eligible Israeli Users as an open-ended transaction, in the form of an indefinite period of subscription, with recurring billing periods.",
+  "ruleKinds": [
+   "auto_renew"
+  ]
+ },
+ {
+  "key": "Wix#2",
+  "service": "Wix",
+  "url": "https://www.wix.com/about/terms-of-use",
+  "text": "The cancellation will take immediate effect once you provide us with the Cancellation Notice as detailed below (or within 6 business days if the notice is sent by registered mail).",
+  "ruleKinds": [
+   "cancel_notice"
+  ]
+ },
+ {
+  "key": "Wix#3",
+  "service": "Wix",
+  "url": "https://www.wix.com/about/terms-of-use",
+  "text": "Your Cancellation Notice should include identifying details (such as full name and the email address you used to register for our services - if sent by a written notice by registered mail), and be delivered in one of the following ways:",
+  "ruleKinds": [
+   "cancel_notice"
+  ]
+ },
+ {
+  "key": "Xfinity#1",
+  "service": "Xfinity",
+  "url": "https://www.xfinity.com/corporate/customers/policies/subscriberagreement",
+  "text": "If you receive the Services under a minimum term contract, we will charge you the specified price for the Services subject to the minimum term pricing for the duration of the minimum term contract.",
+  "ruleKinds": [
+   "lock_in"
+  ]
+ },
+ {
+  "key": "Xfinity#2",
+  "service": "Xfinity",
+  "url": "https://www.xfinity.com/corporate/customers/policies/subscriberagreement",
+  "text": "a. How you may terminate If your Services are subject to a minimum term agreement, and you terminate all or any portion of the Services under the minimum term agreement before the end of the minimum term, you may be charged an early termination fee.",
+  "ruleKinds": [
+   "lock_in",
+   "exit_fee"
+  ]
+ },
+ {
+  "key": "Xfinity#3",
+  "service": "Xfinity",
+  "url": "https://www.xfinity.com/corporate/customers/policies/subscriberagreement",
+  "text": "Review your minimum term agreement for additional details.",
+  "ruleKinds": [
+   "lock_in"
+  ]
+ },
+ {
+  "key": "Xfinity#4",
+  "service": "Xfinity",
+  "url": "https://www.xfinity.com/corporate/customers/policies/subscriberagreement",
+  "text": "If your Services are not subject to a minimum term agreement, you may terminate the Services and this Agreement for any reason at any time.",
+  "ruleKinds": [
+   "lock_in"
+  ]
+ },
+ {
+  "key": "Xfinity#5",
+  "service": "Xfinity",
+  "url": "https://www.xfinity.com/corporate/customers/policies/subscriberagreement",
+  "text": "Certain fees and charges are non-refundable and are also excluded.",
+  "ruleKinds": [
+   "no_refund"
+  ]
+ },
+ {
+  "key": "Xfinity#6",
+  "service": "Xfinity",
+  "url": "https://www.xfinity.com/corporate/customers/policies/subscriberagreement",
+  "text": "If your Services are subject to a minimum term agreement, and you terminate all or any portion of the Services under the minimum term agreement before the end of the minimum term, you may be charged an early termination fee.",
+  "ruleKinds": [
+   "lock_in",
+   "exit_fee"
+  ]
+ },
+ {
+  "key": "YouTube_Paid_Services#1",
+  "service": "YouTube Paid Services",
+  "url": "https://www.youtube.com/t/terms_paidservice",
+  "text": "If you purchase any automatically renewing Paid Service subscription, you agree that Google will charge the payment method on file on the first day of each billing period for the subscription, and if the payment method on file becomes invalid due to an expired credit card or other reason, and Google is unable to charge you on the next billing period, you may not be able to access the applicable Paid Service until you update your payment method.",
+  "ruleKinds": [
+   "auto_renew"
+  ]
+ },
+ {
+  "key": "YouTube_Paid_Services#2",
+  "service": "YouTube Paid Services",
+  "url": "https://www.youtube.com/t/terms_paidservice",
+  "text": "At the end of the trial period, you will be automatically charged the price of the subscription and will continue to be charged until you cancel your subscription.",
+  "ruleKinds": [
+   "auto_renew",
+   "trial_converts"
+  ]
+ },
+ {
+  "key": "YouTube_Paid_Services#3",
+  "service": "YouTube Paid Services",
+  "url": "https://www.youtube.com/t/terms_paidservice",
+  "text": "If you purchase a subscription to a Paid Service that automatically renews, you may cancel the subscription any time before the end of the current billing period.",
+  "ruleKinds": [
+   "auto_renew",
+   "cancel_notice"
+  ]
+ },
+ {
+  "key": "YouTube_Paid_Services#4",
+  "service": "YouTube Paid Services",
+  "url": "https://www.youtube.com/t/terms_paidservice",
+  "text": "If we notify you of a price change for a Paid Service with a recurring payment and you do not want to continue that Paid Service at the new price, you can cancel the Paid Service before the start of the next subscription period in which the new price applies, by following the steps in Section 4 (Cancellation of Subscriptions).",
+  "ruleKinds": [
+   "auto_renew"
+  ]
+ },
+ {
+  "key": "YouTube_Paid_Services#5",
+  "service": "YouTube Paid Services",
+  "url": "https://www.youtube.com/t/terms_paidservice",
+  "text": "The new Paid Service Terms will be effective after such notice period.",
+  "ruleKinds": [
+   "cancel_notice"
+  ]
+ },
+ {
+  "key": "YouTube_Paid_Services#6",
+  "service": "YouTube Paid Services",
+  "url": "https://www.youtube.com/t/terms_paidservice",
+  "text": "The date on which your subscription for each Primetime Channel auto renews will be based upon the date you first purchased a subscription to the Primetime Channel.",
+  "ruleKinds": [
+   "auto_renew"
+  ]
+ },
+ {
+  "key": "YouTube_Paid_Services#7",
+  "service": "YouTube Paid Services",
+  "url": "https://www.youtube.com/t/terms_paidservice",
+  "text": "Pre-paid plans are purchased upfront for a select duration and do not automatically renew.",
+  "ruleKinds": [
+   "auto_renew"
+  ]
+ },
+ {
+  "key": "YouTube_Paid_Services#8",
+  "service": "YouTube Paid Services",
+  "url": "https://www.youtube.com/t/terms_paidservice",
+  "text": "No partial refunds are available.",
+  "ruleKinds": [
+   "no_refund"
+  ]
+ },
+ {
+  "key": "Zoom#1",
+  "service": "Zoom",
+  "url": "https://explore.zoom.us/en/terms/",
+  "text": "2.2 Minimum Commitment.",
+  "ruleKinds": [
+   "lock_in"
+  ]
+ },
+ {
+  "key": "Zoom#2",
+  "service": "Zoom",
+  "url": "https://explore.zoom.us/en/terms/",
+  "text": "12.2 Non-Cancelable and Non-Refundable Charges.",
+  "ruleKinds": [
+   "no_refund"
+  ]
+ },
+ {
+  "key": "Zoom#3",
+  "service": "Zoom",
+  "url": "https://explore.zoom.us/en/terms/",
+  "text": "You agree that all payments are non-cancelable for the Initial Subscription Term or the then-current Renewal Term, as applicable, and are final and non-refundable, unless otherwise agreed to by Zoom, required by Law, or set forth in your Order Form.",
+  "ruleKinds": [
+   "no_refund"
+  ]
+ },
+ {
+  "key": "Zoom#4",
+  "service": "Zoom",
+  "url": "https://explore.zoom.us/en/terms/",
+  "text": "Unless your Order Form expressly states otherwise or applicable Law prohibits automatic renewal, each Renewal Term for the Services will begin automatically at the end of the then-current Initial Subscription Term or Renewal Term, as the case may be, unless either party provides written notice of termination or modification of the Services provided under such Order Form (i) at least thirty (30) calendar days prior to the commencement of the next Renewal Term, or (ii) within the notice period required by applicable Law (collectively, (i) and (ii), the “Renewal Notice Period”).",
+  "ruleKinds": [
+   "cancel_notice"
+  ]
+ },
+ {
+  "key": "Zoom#5",
+  "service": "Zoom",
+  "url": "https://explore.zoom.us/en/terms/",
+  "text": "In order to terminate or modify the affected Services, you must provide notice to Zoom, via the billing portal (if available for your account) or in an email to renewals@zoom.us, in accordance with the Renewal Notice Period.",
+  "ruleKinds": [
+   "cancel_notice"
+  ]
+ }
+]

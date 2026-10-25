@@ -111,11 +111,14 @@ export async function analyzeTerms(text: string, classifier?: Classifier, limit?
   return done(labelsToFindings(candidates, labels, "model"), classifier.name);
 }
 
-/** One card line per kind, strongest first, at most `max` lines. */
+const richness = (f: Finding) => f.facts.money.length * 2 + f.facts.durations.length + f.facts.channels.length;
+
+/** One card line per kind, strongest kind first, and within a kind the sentence with the most numbers. */
 export function topFindings(findings: Finding[], max = 3): Finding[] {
+  const ordered = [...findings].sort((a, b) => PRIORITY[b.kind] - PRIORITY[a.kind] || richness(b) - richness(a) || a.start - b.start);
   const seen = new Set<TrapKind>();
   const out: Finding[] = [];
-  for (const f of findings) {
+  for (const f of ordered) {
     if (seen.has(f.kind)) continue;
     seen.add(f.kind);
     out.push(f);

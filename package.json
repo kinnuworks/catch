@@ -8,7 +8,7 @@
   "scripts": {
     "test": "vitest run",
     "typecheck": "tsc --noEmit",
-    "build:ext": "vite build --config vite.ext.config.ts",
+    "build:ext": "node scripts/build-ext.mjs",
     "build:demo": "vite build --config vite.demo.config.ts",
     "dev:demo": "vite --config vite.demo.config.ts",
     "build": "pnpm build:ext && pnpm build:demo"
@@ -16,6 +16,9 @@
   "devDependencies": {
     "@types/chrome": "^0.3.6",
     "@types/node": "^26.6.5",
+    "esbuild": "0.28.2",
+    "linkedom": "~0.18.14",
+    "tsx": "^4.23.15",
     "typescript": "^5.9.3",
     "vite": "^7.3.7",
     "vitest": "^3.2.7"

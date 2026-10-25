@@ -37,8 +37,13 @@ export interface CandidateOptions {
 export function findCandidates(sentences: Sentence[], options: CandidateOptions = {}): Candidate[] {
   const limit = options.limit ?? 24;
   const scored: Candidate[] = [];
+  const seen = new Set<string>();
   for (const sentence of sentences) {
     if (!CANCEL_CONTEXT.test(sentence.text)) continue;
+    // Terms repeat themselves (summary box, then full text); the model only needs each sentence once.
+    const norm = sentence.text.toLowerCase().replace(/\W+/g, " ").trim();
+    if (seen.has(norm)) continue;
+    seen.add(norm);
     const kinds = new Set<TrapKind>();
     let score = 0;
     for (const rule of RULES) {

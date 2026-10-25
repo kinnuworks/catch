@@ -1,0 +1,923 @@
+{
+ "reader": "gemma3:1b",
+ "msPerDoc": 1542.0159105555551,
+ "predictions": {
+  "1Password#1": {
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    "It automatically renews unless canceled or AgileBits Inc. cancels."
+   ]
+  },
+  "1Password#2": {
+   "kinds": [
+    "no_refund",
+    "auto_renew"
+   ],
+   "plain": [
+    "Payments are not refundable.",
+    "Payments are not refundable."
+   ]
+  },
+  "1Password#3": {
+   "kinds": [
+    "trial_converts",
+    "auto_renew"
+   ],
+   "plain": [
+    "You’ll be charged the subscription fees until you cancel.",
+    "You’ll be charged the subscription fees until you cancel."
+   ]
+  },
+  "1Password#4": {
+   "kinds": [],
+   "plain": []
+  },
+  "1Password#5": {
+   "kinds": [],
+   "plain": []
+  },
+  "1Password#6": {
+   "kinds": [],
+   "plain": []
+  },
+  "1Password#7": {
+   "kinds": [],
+   "plain": []
+  },
+  "1Password#8": {
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    "This automatically renews unless the parties specify otherwise."
+   ]
+  },
+  "Apple_Media_Services#1": {
+   "kinds": [],
+   "plain": []
+  },
+  "Apple_Media_Services#2": {
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    "Automatic renewals continue until you cancel."
+   ]
+  },
+  "Babbel#1": {
+   "kinds": [],
+   "plain": []
+  },
+  "Babbel#2": {
+   "kinds": [],
+   "plain": []
+  },
+  "Babbel#3": {
+   "kinds": [],
+   "plain": []
+  },
+  "Babbel#4": {
+   "kinds": [
+    "no_refund",
+    "auto_renew",
+    "lock_in"
+   ],
+   "plain": [
+    "Credits are not refundable, transferable, or interest-free.",
+    "Credits are not refundable, transferable, or interest-free.",
+    "Credits are not refundable, transferable, or interest-free."
+   ]
+  },
+  "Babbel#5": {
+   "kinds": [],
+   "plain": []
+  },
+  "Babbel#6": {
+   "kinds": [
+    "auto_renew",
+    "cancel_notice"
+   ],
+   "plain": [
+    "Babbel can terminate an order, or you can cancel with a one-month notice.",
+    "Babbel can terminate an order, or you can cancel with a one-month notice."
+   ]
+  },
+  "Babbel#7": {
+   "kinds": [],
+   "plain": []
+  },
+  "Babbel#8": {
+   "kinds": [],
+   "plain": []
+  },
+  "Bumble#1": {
+   "kinds": [],
+   "plain": []
+  },
+  "Bumble#2": {
+   "kinds": [],
+   "plain": []
+  },
+  "Bumble#3": {
+   "kinds": [
+    "trial_converts",
+    "auto_renew"
+   ],
+   "plain": [
+    "A free trial turns into a paid subscription if you don’t cancel.",
+    "A free trial turns into a paid subscription if you don’t cancel."
+   ]
+  },
+  "Bumble#4": {
+   "kinds": [
+    "lock_in",
+    "auto_renew"
+   ],
+   "plain": [
+    "Your paid subscription continues automatically until you cancel.",
+    "Your paid subscription continues automatically until you cancel."
+   ]
+  },
+  "Bumble#5": {
+   "kinds": [
+    "trial_converts",
+    "auto_renew"
+   ],
+   "plain": [
+    "If you’ve used Bumble through the Apple Store or Google Play Store, you won’t get another free trial and will be automatically signed up for a subscription.",
+    "If you’ve used Bumble through the Apple Store or Google Play Store, you won’t get another free trial and will be automatically signed up for a subscription."
+   ]
+  },
+  "Bumble#6": {
+   "kinds": [
+    "no_refund",
+    "auto_renew"
+   ],
+   "plain": [
+    "Non-refundable charges are standard, and refunds or credits are not offered for partial usage.",
+    "Non-refundable charges are standard, and refunds or credits are not offered for partial usage."
+   ]
+  },
+  "Bumble#7": {
+   "kinds": [
+    "cancel_notice",
+    "lock_in",
+    "auto_renew"
+   ],
+   "plain": [
+    "Deleting your account immediately cancels your subscription and prevents refunds.",
+    "Deleting your account immediately cancels your subscription and prevents refunds.",
+    "Deleting your account immediately cancels your subscription and prevents refunds."
+   ]
+  },
+  "Bumble#8": {
+   "kinds": [
+    "no_refund",
+    "lock_in"
+   ],
+   "plain": [
+    "You won’t get your money back.",
+    "You won’t get your money back."
+   ]
+  },
+  "Calm#1": {
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    "The subscription continues until canceled."
+   ]
+  },
+  "Calm#2": {
+   "kinds": [],
+   "plain": []
+  },
+  "Coursera#1": {
+   "kinds": [],
+   "plain": []
+  },
+  "Coursera#2": {
+   "kinds": [],
+   "plain": []
+  },
+  "Dropbox#1": {
+   "kinds": [],
+   "plain": []
+  },
+  "ExpressVPN#1": {
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    "Plans automatically renew until canceled."
+   ]
+  },
+  "ExpressVPN#2": {
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    "Automatic renewal is enabled for payment methods that support it, and disabled for others."
+   ]
+  },
+  "ExpressVPN#3": {
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    "Auto-renewal is off, and services are suspended until a payment is made."
+   ]
+  },
+  "GitHub#1": {
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    "Billing Schedule; No Refunds"
+   ]
+  },
+  "GitHub#2": {
+   "kinds": [
+    "auto_renew",
+    "no_refund"
+   ],
+   "plain": [
+    "Monthly payments are charged in advance, and cancellation is not possible.",
+    "Monthly payments are charged in advance, and cancellation is not possible."
+   ]
+  },
+  "GitHub#3": {
+   "kinds": [
+    "no_refund",
+    "auto_renew"
+   ],
+   "plain": [
+    "No refunds or credits are offered for partial months, downgrade refunds, or unused months.",
+    "No refunds or credits are offered for partial months, downgrade refunds, or unused months."
+   ]
+  },
+  "GitHub#4": {
+   "kinds": [
+    "no_refund"
+   ],
+   "plain": [
+    "It’s stated that amounts payable are not refundable, with exceptions."
+   ]
+  },
+  "Headspace#1": {
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    "It automatically renews subscriptions."
+   ]
+  },
+  "Headspace#2": {
+   "kinds": [],
+   "plain": []
+  },
+  "Headspace#3": {
+   "kinds": [
+    "no_refund"
+   ],
+   "plain": [
+    "You won’t get your money back."
+   ]
+  },
+  "Headspace#4": {
+   "kinds": [],
+   "plain": []
+  },
+  "Headspace#5": {
+   "kinds": [],
+   "plain": []
+  },
+  "Headspace#6": {
+   "kinds": [],
+   "plain": []
+  },
+  "Microsoft#1": {
+   "kinds": [],
+   "plain": []
+  },
+  "Microsoft#2": {
+   "kinds": [],
+   "plain": []
+  },
+  "Microsoft#3": {
+   "kinds": [
+    "no_refund",
+    "lock_in"
+   ],
+   "plain": [
+    "All purchases are final and non-refundable, regardless of the law or the offer.",
+    "All purchases are final and non-refundable, regardless of the law or the offer."
+   ]
+  },
+  "Microsoft#4": {
+   "kinds": [
+    "no_refund",
+    "lock_in"
+   ],
+   "plain": [
+    "Refunds are not given for charges older than 90 days.",
+    "Refunds are not given for charges older than 90 days."
+   ]
+  },
+  "Microsoft#5": {
+   "kinds": [],
+   "plain": []
+  },
+  "Microsoft#6": {
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    "It forces the customer to keep the trial active."
+   ]
+  },
+  "Microsoft#7": {
+   "kinds": [],
+   "plain": []
+  },
+  "Microsoft#8": {
+   "kinds": [
+    "cancel_notice"
+   ],
+   "plain": [
+    "Microsoft informs you about potential changes to your billing."
+   ]
+  },
+  "MyFitnessPal#1": {
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    "It automatically renews unless you cancel before the end of the subscription."
+   ]
+  },
+  "MyFitnessPal#2": {
+   "kinds": [
+    "no_refund",
+    "lock_in"
+   ],
+   "plain": [
+    "Final and non-refundable, except for our decision.",
+    "Final and non-refundable, except for our decision."
+   ]
+  },
+  "MyFitnessPal#3": {
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    "The subscription automatically renews unless canceled before the current period ends."
+   ]
+  },
+  "MyFitnessPal#4": {
+   "kinds": [],
+   "plain": []
+  },
+  "MyFitnessPal#5": {
+   "kinds": [],
+   "plain": []
+  },
+  "Netflix#1": {
+   "kinds": [
+    "no_refund",
+    "auto_renew"
+   ],
+   "plain": [
+    "Payments are non-refundable and no refunds or credits are offered.",
+    "Payments are non-refundable and no refunds or credits are offered."
+   ]
+  },
+  "Netflix#2": {
+   "kinds": [],
+   "plain": []
+  },
+  "New_York_Times#1": {
+   "kinds": [],
+   "plain": []
+  },
+  "Noom#1": {
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    ""
+   ]
+  },
+  "Noom#2": {
+   "kinds": [
+    "auto_renew",
+    "lock_in"
+   ],
+   "plain": [
+    "Automatic renewals trigger automatic cancellation if you don’t cancel.",
+    "Automatic renewals trigger automatic cancellation if you don’t cancel."
+   ]
+  },
+  "Noom#3": {
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    "It automatically renews subscriptions."
+   ]
+  },
+  "Noom#4": {
+   "kinds": [
+    "trial_converts",
+    "auto_renew"
+   ],
+   "plain": [
+    "A free trial starts charging immediately, unless canceled.",
+    "A free trial starts charging immediately, unless canceled."
+   ]
+  },
+  "Noom#5": {
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    "It automatically renews your subscription."
+   ]
+  },
+  "Noom#6": {
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    "It automatically renews unless canceled."
+   ]
+  },
+  "Noom#7": {
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    "It keeps charging you until you cancel."
+   ]
+  },
+  "Noom#8": {
+   "kinds": [],
+   "plain": []
+  },
+  "Patreon#1": {
+   "kinds": [],
+   "plain": []
+  },
+  "Patreon#2": {
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    "It’s a one-time or automatically renewing subscription."
+   ]
+  },
+  "Patreon#3": {
+   "kinds": [],
+   "plain": []
+  },
+  "Patreon#4": {
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    "It automatically renews monthly or annually until you cancel."
+   ]
+  },
+  "Patreon#5": {
+   "kinds": [
+    "trial_converts",
+    "auto_renew"
+   ],
+   "plain": [
+    "A free trial or initial gift unlocks a paid subscription after the specified period.",
+    "A free trial or initial gift unlocks a paid subscription after the specified period."
+   ]
+  },
+  "Patreon#6": {
+   "kinds": [],
+   "plain": []
+  },
+  "Patreon#7": {
+   "kinds": [
+    "no_refund",
+    "lock_in"
+   ],
+   "plain": [
+    "Refunds and exchanges are not allowed, including for gifts.",
+    "Refunds and exchanges are not allowed, including for gifts."
+   ]
+  },
+  "Patreon#8": {
+   "kinds": [],
+   "plain": []
+  },
+  "Peloton#1": {
+   "kinds": [],
+   "plain": []
+  },
+  "Peloton#2": {
+   "kinds": [],
+   "plain": []
+  },
+  "Peloton#3": {
+   "kinds": [],
+   "plain": []
+  },
+  "Shopify#1": {
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    "It automatically renews unless you choose not to."
+   ]
+  },
+  "Shopify#2": {
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    "Shopify automatically renews your domain until your account is inactive."
+   ]
+  },
+  "Shopify#3": {
+   "kinds": [],
+   "plain": []
+  },
+  "Shopify#4": {
+   "kinds": [],
+   "plain": []
+  },
+  "Shopify#5": {
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    "You’ll be charged each billing date for all outstanding fees that haven’t been charged before."
+   ]
+  },
+  "Shopify#6": {
+   "kinds": [
+    "lock_in",
+    "auto_renew",
+    "exit_fee"
+   ],
+   "plain": [
+    "Shopify can terminate your account if fees aren’t paid within 60 days.",
+    "Shopify can terminate your account if fees aren’t paid within 60 days.",
+    "Shopify can terminate your account if fees aren’t paid within 60 days."
+   ]
+  },
+  "Shopify#7": {
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    "Shopify domains are automatically renewed after termination."
+   ]
+  },
+  "Shopify#8": {
+   "kinds": [],
+   "plain": []
+  },
+  "Spotify#1": {
+   "kinds": [],
+   "plain": []
+  },
+  "Spotify#2": {
+   "kinds": [],
+   "plain": []
+  },
+  "Spotify#3": {
+   "kinds": [
+    "lock_in",
+    "auto_renew"
+   ],
+   "plain": [
+    "Spotify’s liability is limited to what’s explicitly stated in these terms.",
+    "Spotify’s liability is limited to what’s explicitly stated in these terms."
+   ]
+  },
+  "Spotify#4": {
+   "kinds": [],
+   "plain": []
+  },
+  "Squarespace#1": {
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    "Automatic billing occurs for paid services like domain registrations and subscriptions unless canceled."
+   ]
+  },
+  "Squarespace#2": {
+   "kinds": [],
+   "plain": []
+  },
+  "Squarespace#3": {
+   "kinds": [],
+   "plain": []
+  },
+  "Squarespace#4": {
+   "kinds": [],
+   "plain": []
+  },
+  "Squarespace#5": {
+   "kinds": [],
+   "plain": []
+  },
+  "Strava#1": {
+   "kinds": [
+    "no_refund"
+   ],
+   "plain": [
+    "Strava doesn’t offer refunds or credits unless explicitly stated."
+   ]
+  },
+  "Strava#2": {
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    "It keeps charging until the customer cancels."
+   ]
+  },
+  "Strava#3": {
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    "It automatically renews each billing period until canceled."
+   ]
+  },
+  "Strava#4": {
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    "It automatically renews unless canceled within 24 hours."
+   ]
+  },
+  "Strava#5": {
+   "kinds": [
+    "trial_converts",
+    "auto_renew"
+   ],
+   "plain": [
+    "You’ll be charged for your subscription fee until the trial ends, or you cancel before the trial ends.",
+    "You’ll be charged for your subscription fee until the trial ends, or you cancel before the trial ends."
+   ]
+  },
+  "Surfshark#1": {
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    "It automatically renews to keep you protected."
+   ]
+  },
+  "Surfshark#2": {
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    "Automatically renewed until you cancel your payments."
+   ]
+  },
+  "Surfshark#3": {
+   "kinds": [],
+   "plain": []
+  },
+  "Surfshark#4": {
+   "kinds": [
+    "no_refund",
+    "auto_renew"
+   ],
+   "plain": [
+    "Recurring payments are not refundable.",
+    "Recurring payments are not refundable."
+   ]
+  },
+  "Surfshark#5": {
+   "kinds": [
+    "cancel_notice"
+   ],
+   "plain": [
+    "You can delete your account, but you won’t get a refund for the unused portion."
+   ]
+  },
+  "Tinder#1": {
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    "Automatically renewing subscriptions is a key part of this term."
+   ]
+  },
+  "Tinder#2": {
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    "You’ll be charged again until you cancel."
+   ]
+  },
+  "Tinder#3": {
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    "It automatically renews until you cancel."
+   ]
+  },
+  "Tinder#4": {
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    "It keeps charging you every month until you cancel."
+   ]
+  },
+  "Tinder#5": {
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    "It continues to be charged for the subscription until you cancel."
+   ]
+  },
+  "Tinder#6": {
+   "kinds": [],
+   "plain": []
+  },
+  "Tinder#7": {
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    "Your payment method will be charged periodically until you cancel."
+   ]
+  },
+  "Tinder#8": {
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    "It automatically continues for the agreed-upon price and time until cancellation."
+   ]
+  },
+  "Wix#1": {
+   "kinds": [],
+   "plain": []
+  },
+  "Wix#2": {
+   "kinds": [
+    "cancel_notice",
+    "auto_renew"
+   ],
+   "plain": [
+    "The cancellation is immediate after receiving the notice.",
+    "The cancellation is immediate after receiving the notice."
+   ]
+  },
+  "Wix#3": {
+   "kinds": [],
+   "plain": []
+  },
+  "Xfinity#1": {
+   "kinds": [],
+   "plain": []
+  },
+  "Xfinity#2": {
+   "kinds": [],
+   "plain": []
+  },
+  "Xfinity#3": {
+   "kinds": [],
+   "plain": []
+  },
+  "Xfinity#4": {
+   "kinds": [],
+   "plain": []
+  },
+  "Xfinity#5": {
+   "kinds": [
+    "no_refund",
+    "lock_in"
+   ],
+   "plain": [
+    "Non-refundable fees and exclusions are present.",
+    "Non-refundable fees and exclusions are present."
+   ]
+  },
+  "Xfinity#6": {
+   "kinds": [
+    "lock_in",
+    "exit_fee"
+   ],
+   "plain": [
+    "Terminating services before the minimum term results in a fee.",
+    "Terminating services before the minimum term results in a fee."
+   ]
+  },
+  "YouTube_Paid_Services#1": {
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    "Google will charge the payment method on file on the first day of each billing period."
+   ]
+  },
+  "YouTube_Paid_Services#2": {
+   "kinds": [
+    "trial_converts",
+    "auto_renew"
+   ],
+   "plain": [
+    "You’ll be charged the full subscription price after the trial ends, and continue paying until you cancel.",
+    "You’ll be charged the full subscription price after the trial ends, and continue paying until you cancel."
+   ]
+  },
+  "YouTube_Paid_Services#3": {
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    "You can cancel the subscription before the billing period ends."
+   ]
+  },
+  "YouTube_Paid_Services#4": {
+   "kinds": [],
+   "plain": []
+  },
+  "YouTube_Paid_Services#5": {
+   "kinds": [
+    "cancel_notice"
+   ],
+   "plain": [
+    "The new terms take effect after a defined period."
+   ]
+  },
+  "YouTube_Paid_Services#6": {
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    "It automatically renews based on the first purchase date."
+   ]
+  },
+  "YouTube_Paid_Services#7": {
+   "kinds": [
+    "trial_converts"
+   ],
+   "plain": [
+    "Pre-paid plans are purchased upfront and don’t renew automatically."
+   ]
+  },
+  "YouTube_Paid_Services#8": {
+   "kinds": [
+    "no_refund",
+    "lock_in"
+   ],
+   "plain": [
+    "Partial refunds are not possible.",
+    "Partial refunds are not possible."
+   ]
+  },
+  "Zoom#1": {
+   "kinds": [],
+   "plain": []
+  },
+  "Zoom#2": {
+   "kinds": [],
+   "plain": []
+  },
+  "Zoom#3": {
+   "kinds": [
+    "no_refund",
+    "auto_renew",
+    "lock_in"
+   ],
+   "plain": [
+    "You agree to final, non-refundable payments, regardless of Zoom’s updates or legal requirements.",
+    "You agree to final, non-refundable payments, regardless of Zoom’s updates or legal requirements.",
+    "You agree to final, non-refundable payments, regardless of Zoom’s updates or legal requirements."
+   ]
+  },
+  "Zoom#4": {
+   "kinds": [],
+   "plain": []
+  },
+  "Zoom#5": {
+   "kinds": [],
+   "plain": []
+  }
+ },
+ "raws": {}
+}

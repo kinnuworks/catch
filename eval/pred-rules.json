@@ -1,0 +1,1095 @@
+{
+ "reader": "rules",
+ "msPerDoc": 0.0019212592592607633,
+ "predictions": {
+  "1Password#1": {
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    ""
+   ]
+  },
+  "1Password#2": {
+   "kinds": [
+    "no_refund"
+   ],
+   "plain": [
+    ""
+   ]
+  },
+  "1Password#3": {
+   "kinds": [
+    "trial_converts"
+   ],
+   "plain": [
+    ""
+   ]
+  },
+  "1Password#4": {
+   "kinds": [
+    "no_refund"
+   ],
+   "plain": [
+    ""
+   ]
+  },
+  "1Password#5": {
+   "kinds": [
+    "cancel_notice"
+   ],
+   "plain": [
+    ""
+   ]
+  },
+  "1Password#6": {
+   "kinds": [
+    "no_refund"
+   ],
+   "plain": [
+    ""
+   ]
+  },
+  "1Password#7": {
+   "kinds": [
+    "cancel_notice"
+   ],
+   "plain": [
+    ""
+   ]
+  },
+  "1Password#8": {
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    ""
+   ]
+  },
+  "Apple_Media_Services#1": {
+   "kinds": [
+    "no_refund"
+   ],
+   "plain": [
+    ""
+   ]
+  },
+  "Apple_Media_Services#2": {
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    ""
+   ]
+  },
+  "Babbel#1": {
+   "kinds": [
+    "cancel_notice"
+   ],
+   "plain": [
+    ""
+   ]
+  },
+  "Babbel#2": {
+   "kinds": [
+    "exit_fee"
+   ],
+   "plain": [
+    ""
+   ]
+  },
+  "Babbel#3": {
+   "kinds": [
+    "exit_fee"
+   ],
+   "plain": [
+    ""
+   ]
+  },
+  "Babbel#4": {
+   "kinds": [
+    "no_refund"
+   ],
+   "plain": [
+    ""
+   ]
+  },
+  "Babbel#5": {
+   "kinds": [
+    "lock_in"
+   ],
+   "plain": [
+    ""
+   ]
+  },
+  "Babbel#6": {
+   "kinds": [
+    "cancel_notice"
+   ],
+   "plain": [
+    ""
+   ]
+  },
+  "Babbel#7": {
+   "kinds": [
+    "no_refund"
+   ],
+   "plain": [
+    ""
+   ]
+  },
+  "Babbel#8": {
+   "kinds": [
+    "lock_in"
+   ],
+   "plain": [
+    ""
+   ]
+  },
+  "Bumble#1": {
+   "kinds": [
+    "lock_in"
+   ],
+   "plain": [
+    ""
+   ]
+  },
+  "Bumble#2": {
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    ""
+   ]
+  },
+  "Bumble#3": {
+   "kinds": [
+    "trial_converts"
+   ],
+   "plain": [
+    ""
+   ]
+  },
+  "Bumble#4": {
+   "kinds": [
+    "trial_converts"
+   ],
+   "plain": [
+    ""
+   ]
+  },
+  "Bumble#5": {
+   "kinds": [
+    "trial_converts"
+   ],
+   "plain": [
+    ""
+   ]
+  },
+  "Bumble#6": {
+   "kinds": [
+    "no_refund"
+   ],
+   "plain": [
+    ""
+   ]
+  },
+  "Bumble#7": {
+   "kinds": [
+    "no_refund"
+   ],
+   "plain": [
+    ""
+   ]
+  },
+  "Bumble#8": {
+   "kinds": [
+    "no_refund"
+   ],
+   "plain": [
+    ""
+   ]
+  },
+  "Calm#1": {
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    ""
+   ]
+  },
+  "Calm#2": {
+   "kinds": [
+    "no_refund"
+   ],
+   "plain": [
+    ""
+   ]
+  },
+  "Coursera#1": {
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    ""
+   ]
+  },
+  "Coursera#2": {
+   "kinds": [
+    "no_refund"
+   ],
+   "plain": [
+    ""
+   ]
+  },
+  "Dropbox#1": {
+   "kinds": [
+    "lock_in"
+   ],
+   "plain": [
+    ""
+   ]
+  },
+  "ExpressVPN#1": {
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    ""
+   ]
+  },
+  "ExpressVPN#2": {
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    ""
+   ]
+  },
+  "ExpressVPN#3": {
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    ""
+   ]
+  },
+  "GitHub#1": {
+   "kinds": [
+    "no_refund"
+   ],
+   "plain": [
+    ""
+   ]
+  },
+  "GitHub#2": {
+   "kinds": [
+    "no_refund"
+   ],
+   "plain": [
+    ""
+   ]
+  },
+  "GitHub#3": {
+   "kinds": [
+    "no_refund"
+   ],
+   "plain": [
+    ""
+   ]
+  },
+  "GitHub#4": {
+   "kinds": [
+    "no_refund"
+   ],
+   "plain": [
+    ""
+   ]
+  },
+  "Headspace#1": {
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    ""
+   ]
+  },
+  "Headspace#2": {
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    ""
+   ]
+  },
+  "Headspace#3": {
+   "kinds": [
+    "no_refund"
+   ],
+   "plain": [
+    ""
+   ]
+  },
+  "Headspace#4": {
+   "kinds": [
+    "no_refund"
+   ],
+   "plain": [
+    ""
+   ]
+  },
+  "Headspace#5": {
+   "kinds": [
+    "cancel_notice"
+   ],
+   "plain": [
+    ""
+   ]
+  },
+  "Headspace#6": {
+   "kinds": [
+    "no_refund"
+   ],
+   "plain": [
+    ""
+   ]
+  },
+  "Microsoft#1": {
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    ""
+   ]
+  },
+  "Microsoft#2": {
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    ""
+   ]
+  },
+  "Microsoft#3": {
+   "kinds": [
+    "no_refund"
+   ],
+   "plain": [
+    ""
+   ]
+  },
+  "Microsoft#4": {
+   "kinds": [
+    "no_refund"
+   ],
+   "plain": [
+    ""
+   ]
+  },
+  "Microsoft#5": {
+   "kinds": [
+    "trial_converts"
+   ],
+   "plain": [
+    ""
+   ]
+  },
+  "Microsoft#6": {
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    ""
+   ]
+  },
+  "Microsoft#7": {
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    ""
+   ]
+  },
+  "Microsoft#8": {
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    ""
+   ]
+  },
+  "MyFitnessPal#1": {
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    ""
+   ]
+  },
+  "MyFitnessPal#2": {
+   "kinds": [
+    "no_refund"
+   ],
+   "plain": [
+    ""
+   ]
+  },
+  "MyFitnessPal#3": {
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    ""
+   ]
+  },
+  "MyFitnessPal#4": {
+   "kinds": [
+    "trial_converts"
+   ],
+   "plain": [
+    ""
+   ]
+  },
+  "MyFitnessPal#5": {
+   "kinds": [
+    "cancel_notice"
+   ],
+   "plain": [
+    ""
+   ]
+  },
+  "Netflix#1": {
+   "kinds": [
+    "no_refund"
+   ],
+   "plain": [
+    ""
+   ]
+  },
+  "Netflix#2": {
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    ""
+   ]
+  },
+  "New_York_Times#1": {
+   "kinds": [
+    "cancel_notice"
+   ],
+   "plain": [
+    ""
+   ]
+  },
+  "Noom#1": {
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    ""
+   ]
+  },
+  "Noom#2": {
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    ""
+   ]
+  },
+  "Noom#3": {
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    ""
+   ]
+  },
+  "Noom#4": {
+   "kinds": [
+    "trial_converts"
+   ],
+   "plain": [
+    ""
+   ]
+  },
+  "Noom#5": {
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    ""
+   ]
+  },
+  "Noom#6": {
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    ""
+   ]
+  },
+  "Noom#7": {
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    ""
+   ]
+  },
+  "Noom#8": {
+   "kinds": [
+    "lock_in"
+   ],
+   "plain": [
+    ""
+   ]
+  },
+  "Patreon#1": {
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    ""
+   ]
+  },
+  "Patreon#2": {
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    ""
+   ]
+  },
+  "Patreon#3": {
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    ""
+   ]
+  },
+  "Patreon#4": {
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    ""
+   ]
+  },
+  "Patreon#5": {
+   "kinds": [
+    "trial_converts"
+   ],
+   "plain": [
+    ""
+   ]
+  },
+  "Patreon#6": {
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    ""
+   ]
+  },
+  "Patreon#7": {
+   "kinds": [
+    "no_refund"
+   ],
+   "plain": [
+    ""
+   ]
+  },
+  "Patreon#8": {
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    ""
+   ]
+  },
+  "Peloton#1": {
+   "kinds": [
+    "cancel_notice"
+   ],
+   "plain": [
+    ""
+   ]
+  },
+  "Peloton#2": {
+   "kinds": [
+    "cancel_notice"
+   ],
+   "plain": [
+    ""
+   ]
+  },
+  "Peloton#3": {
+   "kinds": [
+    "cancel_notice"
+   ],
+   "plain": [
+    ""
+   ]
+  },
+  "Shopify#1": {
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    ""
+   ]
+  },
+  "Shopify#2": {
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    ""
+   ]
+  },
+  "Shopify#3": {
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    ""
+   ]
+  },
+  "Shopify#4": {
+   "kinds": [
+    "exit_fee"
+   ],
+   "plain": [
+    ""
+   ]
+  },
+  "Shopify#5": {
+   "kinds": [
+    "exit_fee"
+   ],
+   "plain": [
+    ""
+   ]
+  },
+  "Shopify#6": {
+   "kinds": [
+    "exit_fee"
+   ],
+   "plain": [
+    ""
+   ]
+  },
+  "Shopify#7": {
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    ""
+   ]
+  },
+  "Shopify#8": {
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    ""
+   ]
+  },
+  "Spotify#1": {
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    ""
+   ]
+  },
+  "Spotify#2": {
+   "kinds": [
+    "cancel_notice"
+   ],
+   "plain": [
+    ""
+   ]
+  },
+  "Spotify#3": {
+   "kinds": [
+    "no_refund"
+   ],
+   "plain": [
+    ""
+   ]
+  },
+  "Spotify#4": {
+   "kinds": [
+    "cancel_notice"
+   ],
+   "plain": [
+    ""
+   ]
+  },
+  "Squarespace#1": {
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    ""
+   ]
+  },
+  "Squarespace#2": {
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    ""
+   ]
+  },
+  "Squarespace#3": {
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    ""
+   ]
+  },
+  "Squarespace#4": {
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    ""
+   ]
+  },
+  "Squarespace#5": {
+   "kinds": [
+    "no_refund"
+   ],
+   "plain": [
+    ""
+   ]
+  },
+  "Strava#1": {
+   "kinds": [
+    "no_refund"
+   ],
+   "plain": [
+    ""
+   ]
+  },
+  "Strava#2": {
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    ""
+   ]
+  },
+  "Strava#3": {
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    ""
+   ]
+  },
+  "Strava#4": {
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    ""
+   ]
+  },
+  "Strava#5": {
+   "kinds": [
+    "trial_converts"
+   ],
+   "plain": [
+    ""
+   ]
+  },
+  "Surfshark#1": {
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    ""
+   ]
+  },
+  "Surfshark#2": {
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    ""
+   ]
+  },
+  "Surfshark#3": {
+   "kinds": [
+    "no_refund"
+   ],
+   "plain": [
+    ""
+   ]
+  },
+  "Surfshark#4": {
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    ""
+   ]
+  },
+  "Surfshark#5": {
+   "kinds": [
+    "no_refund"
+   ],
+   "plain": [
+    ""
+   ]
+  },
+  "Tinder#1": {
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    ""
+   ]
+  },
+  "Tinder#2": {
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    ""
+   ]
+  },
+  "Tinder#3": {
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    ""
+   ]
+  },
+  "Tinder#4": {
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    ""
+   ]
+  },
+  "Tinder#5": {
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    ""
+   ]
+  },
+  "Tinder#6": {
+   "kinds": [
+    "lock_in"
+   ],
+   "plain": [
+    ""
+   ]
+  },
+  "Tinder#7": {
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    ""
+   ]
+  },
+  "Tinder#8": {
+   "kinds": [
+    "lock_in"
+   ],
+   "plain": [
+    ""
+   ]
+  },
+  "Wix#1": {
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    ""
+   ]
+  },
+  "Wix#2": {
+   "kinds": [
+    "cancel_notice"
+   ],
+   "plain": [
+    ""
+   ]
+  },
+  "Wix#3": {
+   "kinds": [
+    "cancel_notice"
+   ],
+   "plain": [
+    ""
+   ]
+  },
+  "Xfinity#1": {
+   "kinds": [
+    "lock_in"
+   ],
+   "plain": [
+    ""
+   ]
+  },
+  "Xfinity#2": {
+   "kinds": [
+    "exit_fee"
+   ],
+   "plain": [
+    ""
+   ]
+  },
+  "Xfinity#3": {
+   "kinds": [
+    "lock_in"
+   ],
+   "plain": [
+    ""
+   ]
+  },
+  "Xfinity#4": {
+   "kinds": [
+    "lock_in"
+   ],
+   "plain": [
+    ""
+   ]
+  },
+  "Xfinity#5": {
+   "kinds": [
+    "no_refund"
+   ],
+   "plain": [
+    ""
+   ]
+  },
+  "Xfinity#6": {
+   "kinds": [
+    "exit_fee"
+   ],
+   "plain": [
+    ""
+   ]
+  },
+  "YouTube_Paid_Services#1": {
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    ""
+   ]
+  },
+  "YouTube_Paid_Services#2": {
+   "kinds": [
+    "trial_converts"
+   ],
+   "plain": [
+    ""
+   ]
+  },
+  "YouTube_Paid_Services#3": {
+   "kinds": [
+    "cancel_notice"
+   ],
+   "plain": [
+    ""
+   ]
+  },
+  "YouTube_Paid_Services#4": {
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    ""
+   ]
+  },
+  "YouTube_Paid_Services#5": {
+   "kinds": [
+    "cancel_notice"
+   ],
+   "plain": [
+    ""
+   ]
+  },
+  "YouTube_Paid_Services#6": {
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    ""
+   ]
+  },
+  "YouTube_Paid_Services#7": {
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    ""
+   ]
+  },
+  "YouTube_Paid_Services#8": {
+   "kinds": [
+    "no_refund"
+   ],
+   "plain": [
+    ""
+   ]
+  },
+  "Zoom#1": {
+   "kinds": [
+    "lock_in"
+   ],
+   "plain": [
+    ""
+   ]
+  },
+  "Zoom#2": {
+   "kinds": [
+    "no_refund"
+   ],
+   "plain": [
+    ""
+   ]
+  },
+  "Zoom#3": {
+   "kinds": [
+    "no_refund"
+   ],
+   "plain": [
+    ""
+   ]
+  },
+  "Zoom#4": {
+   "kinds": [
+    "cancel_notice"
+   ],
+   "plain": [
+    ""
+   ]
+  },
+  "Zoom#5": {
+   "kinds": [
+    "cancel_notice"
+   ],
+   "plain": [
+    ""
+   ]
+  }
+ },
+ "raws": {}
+}

@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Catch demo: Pomelo Focus sign-up</title>
+  <meta property="og:site_name" content="Pomelo Focus" />
+  <meta name="description" content="Try Catch on a sign-up page with a hidden lock-in. A local Gemma reads the terms in your browser and writes your exit plan." />
+  <link rel="stylesheet" href="./demo.css" />
+</head>
+<body>
+  <div class="banner" role="note">
+    <strong>Catch demo.</strong> Pomelo Focus is a made-up app. Its sign-up page copies a real trap: billed monthly, locked in for three months, $300 to leave early.
+    <span class="model">
+      <label for="model">Reader:</label>
+      <select id="model">
+        <option value="rules">Rules only (instant)</option>
+        <option value="gemma-3-1b" selected>Gemma 3 1B in your browser (0.8 GB, once)</option>
+        <option value="gemma-4-e2b">Gemma 4 E2B in your browser (3.1 GB, once)</option>
+      </select>
+      <button id="rerun" type="button">Read again</button>
+    </span>
+    <span id="status" aria-live="polite"></span>
+  </div>
+
+  <main class="signup">
+    <section class="pitch">
+      <p class="logo">🍊 Pomelo Focus</p>
+      <h1>Get your afternoons back.</h1>
+      <p>Timers, blocklists and a weekly focus report. Try Pro free for 7 days.</p>
+      <ul class="perks">
+        <li>Unlimited focus sessions</li>
+        <li>Website and app blocking</li>
+        <li>Weekly reports</li>
+      </ul>
+    </section>
+
+    <section class="plan" aria-label="Plan">
+      <div class="price"><span class="amount">$29.99</span><span>/month</span></div>
+      <p class="cancel">Cancel anytime in settings.</p>
+      <form id="signup-form" onsubmit="return false">
+        <label>Email <input type="email" placeholder="you@example.com" /></label>
+        <button id="cta" class="cta" type="submit">Start free trial</button>
+      </form>
+      <p class="fine"><small>By starting your trial you agree to the <a href="./terms.html">Subscription Terms</a>. After your free trial, Pro Monthly is billed monthly until you cancel.</small></p>
+    </section>
+  </main>
+
+  <section class="paste">
+    <h2>Try it on any terms</h2>
+    <p>Paste the subscription terms from any sign-up page. They are read in this tab; nothing is uploaded.</p>
+    <textarea id="paste" rows="8" placeholder="Paste terms of service here"></textarea>
+    <button id="read-paste" type="button">Find the catch</button>
+    <div id="paste-out"></div>
+  </section>
+
+  <footer class="demo-foot">
+    Catch is open source. The model runs on your GPU through WebGPU; the weights download once from Hugging Face and are cached by the browser.
+  </footer>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

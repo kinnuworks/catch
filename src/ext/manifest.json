@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Catch",
+  "version": "0.1.0",
+  "description": "A local Gemma reads the terms at the sign-up button and writes your exit plan. Nothing leaves your laptop.",
+  "minimum_chrome_version": "124",
+  "permissions": ["storage"],
+  "host_permissions": ["<all_urls>"],
+  "background": { "service_worker": "background.js", "type": "module" },
+  "content_scripts": [{ "matches": ["http://*/*", "https://*/*"], "js": ["content.js"], "run_at": "document_idle" }],
+  "action": { "default_popup": "popup.html", "default_title": "Catch" },
+  "icons": { "128": "icon128.png" },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self' 'wasm-unsafe-eval'; object-src 'self'"
+  }
+}
