@@ -26,7 +26,7 @@ interface Tokenizer {
 }
 
 /** P(yes) from the logits at the last position, over the yes/no spellings Gemma uses. */
-function yesFromLogits(logits: LogitsTensor, yesIds: number[], noIds: number[]): number {
+export function yesFromLogits(logits: LogitsTensor, yesIds: number[], noIds: number[]): number {
   const [, length, vocab] = logits.dims as [number, number, number];
   const offset = (length - 1) * vocab;
   const pick = (ids: number[]) => ids.map((id) => Number(logits.data[offset + id]));

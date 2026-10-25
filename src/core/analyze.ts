@@ -2,7 +2,7 @@ import { extractDurations, extractMoney, formatDuration, formatMoney } from "./f
 import { findCandidates } from "./lexicon";
 import { splitSentences } from "./sentences";
 import { collectTermFacts, type TermFacts } from "./termFacts";
-import type { Candidate, Classifier, Finding, ModelLabel, TrapKind } from "./types";
+import type { Candidate, Classifier, Finding, ModelLabel, Money, TrapKind } from "./types";
 
 /** Higher first: the card shows at most three findings, money before inconvenience. */
 const PRIORITY: Record<TrapKind, number> = {
@@ -37,15 +37,26 @@ export function plainIsGrounded(plain: string, source: string): boolean {
 }
 
 /** Our own wording, used when the model's line fails the grounding check or no model is loaded. */
+/** The amount written closest to a fee word, so "$29.99 a month ... a $300 fee" yields $300. */
+function feeAmount(c: Candidate): Money | undefined {
+  const text = c.sentence.text;
+  const anchors = [...text.matchAll(/\b(?:fee|charge|penalt|remaining|remainder|balance|early|termination|cancell?ation)\w*/gi)].map((m) => m.index!);
+  if (anchors.length === 0) return c.facts.money[0];
+  const distance = (m: Money) => Math.min(...anchors.map((a) => Math.abs(text.indexOf(m.raw) - a)));
+  return [...c.facts.money].sort((a, b) => distance(a) - distance(b))[0];
+}
+
 export function fallbackPlain(kind: TrapKind, c: Candidate): string {
-  const fee = c.facts.money[0];
+  const fee = kind === "exit_fee" ? feeAmount(c) : c.facts.money[0];
+  const billedMonthly = /\b(?:billed|paid|payable|charged)\s+(?:monthly|each month|every month|per month)\b|\bmonthly (?:plan|billing|payments?)\b/i.test(c.sentence.text);
   const span = c.facts.durations.find((d) => d.unit !== "day") ?? c.facts.durations[0];
   const days = c.facts.durations.find((d) => d.unit === "day");
   switch (kind) {
     case "exit_fee":
       return fee ? `Leaving early costs ${formatMoney(fee)}.` : "Leaving early costs money.";
     case "lock_in":
-      return span ? `You're committed for ${formatDuration(span)}, even if it's billed monthly.` : "You can't cancel for free right away.";
+      if (!span) return "You can't cancel for free right away.";
+      return billedMonthly ? `You're committed for ${formatDuration(span)}, even though it's billed monthly.` : `You're committed for ${formatDuration(span)}.`;
     case "trial_converts":
       return fee ? `The trial turns into a paid plan at ${formatMoney(fee)}.` : "The free trial turns into a paid plan unless you cancel.";
     case "cancel_notice": {

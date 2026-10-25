@@ -29,6 +29,14 @@ const RULES: Rule[] = [
 
 const CANCEL_CONTEXT = /\b(?:cancel|terminat|renew|subscri|trial|billing|charge|fee|refund|commitment|term)\w*/i;
 
+function isHeading(text: string): boolean {
+  const words = text.split(/\s+/);
+  if (words.length < 3) return true;
+  if (/[.!?;:)"”]$/.test(text)) return false;
+  const capitalised = words.filter((w) => /^[A-Z0-9]/.test(w)).length;
+  return capitalised / words.length > 0.6;
+}
+
 export interface CandidateOptions {
   /** Cap on how many sentences the model reads; small models do better with fewer. */
   limit?: number;
@@ -40,8 +48,9 @@ export function findCandidates(sentences: Sentence[], options: CandidateOptions 
   const seen = new Set<string>();
   for (const sentence of sentences) {
     if (!CANCEL_CONTEXT.test(sentence.text)) continue;
-    // Headings like "Fees and Purchase Terms; Automatically Renewing Subscriptions" aren't clauses.
-    if (sentence.text.split(/\s+/).length < 7) continue;
+    // Headings like "Fees and Purchase Terms; Automatically Renewing Subscriptions" aren't clauses,
+    // but "All fees are non-refundable." is. A heading has no closing punctuation and is mostly capitalised.
+    if (isHeading(sentence.text)) continue;
     // Terms repeat themselves (summary box, then full text); the model only needs each sentence once.
     const norm = sentence.text.toLowerCase().replace(/\W+/g, " ").trim();
     if (seen.has(norm)) continue;

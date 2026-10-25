@@ -97,26 +97,30 @@ export async function runSession(opts: SessionOptions = {}): Promise<{ card: Cat
   let result = await analyzeTerms(joined.text);
   show(result, "rules");
 
+  // Listen on the document from the start, using whatever read is ready: the rules now, Gemma's
+  // later. Single-page apps re-render the button, so a listener on the element itself goes stale.
+  let planned = false;
+  const handlePress = (target: Element | null) => {
+    if (planned || !(target instanceof HTMLElement) || !(target === cta || ctaLabel(target) === ctaLabel(cta))) return;
+    const plan = buildExitPlan(result.findings, result.terms);
+    if (!hasDates(plan) && !plan.exitFee) return;
+    planned = true;
+    // Saved before the page can navigate away; the next page shows it again if this one unloads.
+    opts.onPlan?.(plan, service, doc.URL);
+    card.renderPlan(plan, service, doc.URL, close);
+  };
+  doc.addEventListener("click", (e) => handlePress(e.target instanceof Element ? e.target.closest("button, a, input, [role='button']") : null), { capture: true });
+  doc.addEventListener("submit", (e) => handlePress((e as SubmitEvent).submitter ?? cta), { capture: true });
+
   const classifier = await opts.classifier?.().catch(() => undefined);
-  if (classifier) {
+  if (classifier && !planned) {
     try {
       result = await analyzeTerms(joined.text, classifier);
-      show(result, `checked by ${classifier.name}`);
+      if (!planned) show(result, `checked by ${classifier.name}`);
     } catch (err) {
       console.warn("[catch] model failed, keeping the rule-based read", err);
     }
   }
-
-  cta.addEventListener(
-    "click",
-    () => {
-      const plan = buildExitPlan(result.findings, result.terms);
-      if (!hasDates(plan) && !plan.exitFee) return;
-      card.renderPlan(plan, service, doc.URL, close);
-      opts.onPlan?.(plan, service, doc.URL);
-    },
-    { capture: true, once: true },
-  );
 
   return { card, result };
 }

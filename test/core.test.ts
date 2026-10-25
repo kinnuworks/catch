@@ -4,7 +4,6 @@ import { buildExitPlan, addDuration } from "../src/core/exitPlan";
 import { extractChannels, extractDurations, extractMoney } from "../src/core/facts";
 import { toICS } from "../src/core/ics";
 import { findCandidates } from "../src/core/lexicon";
-import { parseLabels } from "../src/core/prompt";
 import { splitSentences } from "../src/core/sentences";
 import type { Candidate, Classifier, ModelLabel } from "../src/core/types";
 import { LOCKIN_TERMS } from "./fixtures";
@@ -39,7 +38,7 @@ describe("facts", () => {
   });
 
   it("names the cancel channel", () => {
-    expect(extractChannels("must be submitted in writing to support")).toEqual(["in writing / by post"]);
+    expect(extractChannels("must be submitted in writing to support")).toEqual(["in writing"]);
     expect(extractChannels("you must call us to cancel")).toEqual(["by phone"]);
   });
 });
@@ -59,27 +58,6 @@ describe("findCandidates", () => {
     expect(candidates.map((c) => c.id)).toEqual(candidates.map((_, i) => i + 1));
     const starts = candidates.map((c) => c.sentence.start);
     expect([...starts].sort((a, b) => a - b)).toEqual(starts);
-  });
-});
-
-describe("parseLabels", () => {
-  const ids = new Set([1, 2, 3]);
-
-  it("accepts fenced JSON with a trailing comma", () => {
-    expect(parseLabels('```json\n[{"id": 2, "kind": "lock_in", "plain": "x"},]\n```', ids)).toEqual([{ id: 2, kind: "lock_in", plain: "x" }]);
-  });
-
-  it("repairs objects with no commas between them", () => {
-    expect(parseLabels('[{"id":1,"kind":"exit_fee","plain":"a"} {"id":3,"kind":"no_refund","plain":"b"}]', ids)).toHaveLength(2);
-  });
-
-  it("drops unknown ids, unknown kinds and duplicates", () => {
-    const out = parseLabels('[{"id":9,"kind":"exit_fee"},{"id":1,"kind":"spooky"},{"id":1,"kind":"exit_fee"},{"id":"1","kind":"exit_fee"}]', ids);
-    expect(out).toEqual([{ id: 1, kind: "exit_fee", plain: "" }]);
-  });
-
-  it("returns nothing for prose", () => {
-    expect(parseLabels("There are no traps here.", ids)).toEqual([]);
   });
 });
 

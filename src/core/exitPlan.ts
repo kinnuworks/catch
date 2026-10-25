@@ -18,10 +18,11 @@ export interface ExitPlan {
   quotes: string[];
 }
 
-const DAY = 24 * 60 * 60 * 1000;
-
+/** Calendar days, not 24-hour blocks, so a DST change can't move a deadline by a day. */
 function addDays(d: Date, days: number): Date {
-  return new Date(d.getTime() + days * DAY);
+  const out = new Date(d.getTime());
+  out.setDate(out.getDate() + days);
+  return out;
 }
 
 /** Calendar months, not 30-day blocks: a 3-month lock-in from Jan 31 ends Apr 30. */

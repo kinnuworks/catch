@@ -1,19 +1,19 @@
 import type { Sentence } from "./types";
 
-// Tokens that end in a period without ending a sentence.
-const ABBREVIATIONS = new Set([
-  "e.g", "i.e", "etc", "inc", "ltd", "llc", "co", "corp", "no", "vs", "mr", "mrs", "ms", "dr",
-  "st", "jan", "feb", "mar", "apr", "jun", "jul", "aug", "sep", "sept", "oct", "nov", "dec",
-  "approx", "incl", "art", "sec", "para", "u.s", "u.k",
-]);
+// Titles keep the sentence going even before a capital: "Dr. Smith", "Mr. Lee".
+const TITLES = new Set(["mr", "mrs", "ms", "dr", "st", "prof"]);
+// Abbreviations that only shorten a word when a number follows: "No. 4", "Art. 12".
+const NUMBERED = new Set(["no", "nos", "art", "vol", "p", "pp"]);
 
 function isAbbreviation(text: string, dotIndex: number): boolean {
   let i = dotIndex - 1;
   while (i >= 0 && /[A-Za-z.]/.test(text[i]!)) i--;
-  const word = text.slice(i + 1, dotIndex).toLowerCase();
   if (i >= 0 && /\d/.test(text[i]!)) return false; // "the 1st." is an ordinal, not "St."
-  if (word.length === 1) return true; // initials, list markers like "a."
-  return ABBREVIATIONS.has(word);
+  const word = text.slice(i + 1, dotIndex).toLowerCase();
+  const next = text.slice(dotIndex + 1).match(/^\s*(\S)/)?.[1] ?? "";
+  if (NUMBERED.has(word)) return /\d/.test(next);
+  if (/[a-z]/.test(next)) return true; // "e.g. on", "U.S. residents": the sentence goes on
+  return TITLES.has(word) || (word.length === 1 && /[A-Z]/.test(text[dotIndex - 1]!)); // initials: "J. Doe"
 }
 
 /**

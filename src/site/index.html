@@ -200,7 +200,7 @@
           <div>
             <span class="eyebrow"><svg aria-hidden="true"><use href="#i-shield"/></svg>Private</span>
             <h3>Nothing you browse leaves your laptop.</h3>
-            <p class="lead">An extension that reads every sign-up page you visit should never phone home. Gemma 4 E2B runs in Chrome on your own GPU through WebGPU. The weights download once from Hugging Face and stay in the browser cache. After that, Catch makes no network requests of its own.</p>
+            <p class="lead">An extension that reads every sign-up page you visit should never phone home. Gemma 4 E2B runs in Chrome on your own GPU through WebGPU. The weights download once from Hugging Face and stay in the browser cache. After that, the only thing Catch fetches is a site's own terms page when the sign-up page links to it, without your cookies.</p>
             <div class="chips"><span class="chip">WebGPU</span><span class="chip">Open weights</span><span class="chip">Works offline after setup</span><span class="chip">No account</span></div>
           </div>
           <div class="stage stage--soft" aria-hidden="true">
@@ -211,11 +211,11 @@
                 <tbody>
                   <tr><td>gemma-4-E2B · decoder_q4f16</td><td class="ok">200</td><td>1.5 GB</td><td>once</td></tr>
                   <tr><td>gemma-4-E2B · embed_tokens_q4f16</td><td class="ok">200</td><td>1.6 GB</td><td>once</td></tr>
-                  <tr class="dim"><td>terms you read</td><td>–</td><td>0 B</td><td>never</td></tr>
-                  <tr class="dim"><td>pages you visit</td><td>–</td><td>0 B</td><td>never</td></tr>
+                  <tr><td>site's own /terms page</td><td class="ok">200</td><td>40 KB</td><td>when linked</td></tr>
+                  <tr class="dim"><td>page text sent anywhere</td><td>–</td><td>0 B</td><td>never</td></tr>
                 </tbody>
               </table>
-              <div class="net__foot">The only downloads are the model weights, fetched once and cached by the browser.</div>
+              <div class="net__foot">Weights are fetched once and cached. Terms pages come from the site you're on. Nothing you read is uploaded.</div>
             </div>
           </div>
         </div>
@@ -318,7 +318,7 @@
               <li>Gemma 4 E2B on your own GPU, or rules only</li>
               <li>Cards with the exact quoted sentence</li>
               <li>Exit plans as calendar events</li>
-              <li>No account, no tracking, no server</li>
+              <li>No account, no analytics, no server</li>
             </ul>
             <a class="btn btn-candy btn-lg" href="https://github.com/kinnuworks/catch"><svg aria-hidden="true"><use href="#i-gh"/></svg>Get it on GitHub</a>
             <p class="t-micro" style="margin-top:12px;text-align:center">Install: download, open chrome://extensions, turn on Developer mode, load the folder.</p>
@@ -332,8 +332,8 @@
       <div class="container">
         <div class="section-head"><span class="eyebrow"><span class="dot"></span>Questions</span><h2>Things people ask.</h2></div>
         <div class="faq">
-          <details><summary>Does Catch send my browsing anywhere?</summary><p>No. The page text is read inside your browser and the model runs on your GPU. The only network traffic Catch causes is the one-time download of the model weights from Hugging Face, plus fetching a site's own terms page when the sign-up page links to it.</p></details>
-          <details><summary>Why is the first run a 3.4 GB download?</summary><p>That's Gemma 4 E2B with 4-bit weights. It downloads once and the browser caches it. I tried the 0.8 GB Gemma 3 1B first; it answered "yes" to nearly every question, so it couldn't tell a trap from a refund policy.</p></details>
+          <details><summary>Does Catch send my browsing anywhere?</summary><p>No. The page text is read inside your browser and the model runs on your GPU. Catch causes two kinds of request: the one-time model download from Hugging Face, and the site's own terms page when the sign-up page links to it (fetched without your cookies). No analytics, no server.</p></details>
+          <details><summary>Why is the first run a 3.4 GB download?</summary><p>That's Gemma 4 E2B with 4-bit weights, downloaded once and cached. I tried the 0.8 GB Gemma 3 1B first. Out of the box, with my yes/no prompt and no fine-tuning, it gave almost every question a "yes" probability above 0.99, so it couldn't separate a trap from a refund policy. Gemma 4 E2B could. A 1B fine-tuned on these labels might do the job; that's next.</p></details>
           <details><summary>What if my computer doesn't have WebGPU?</summary><p>Catch falls back to its rules. You still get the card and the exit plan; the rules flag more false alarms because nothing double-checks them.</p></details>
           <details><summary>Can the model make up a clause?</summary><p>It can't add one. Every line quotes a real sentence from the page or its linked terms, and the numbers on the card come from that sentence. The model only decides whether a sentence the rules flagged really is a catch.</p></details>
           <details><summary>How does it work out the dates?</summary><p>Code finds the trial length, the minimum term and the notice period in the terms, even when they're in different sentences, then does calendar arithmetic from today. It keeps a two-day safety margin before each deadline.</p></details>
@@ -359,7 +359,7 @@
   <footer class="footer">
     <div class="container">
       <a class="nav__brand" href="#top"><img class="app-icon" src="./icon.svg" alt="" width="28" height="28">Catch</a>
-      <span>Built for the Hacktoberfest Open-Source AI Challenge. Code under Apache 2.0; Gemma under the Gemma terms.</span>
+      <span>Built for the Hacktoberfest Open-Source AI Challenge. Code and Gemma 4 weights under Apache 2.0.</span>
       <a href="https://github.com/kinnuworks/catch">GitHub</a>
     </div>
   </footer>

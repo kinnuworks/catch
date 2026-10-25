@@ -28,6 +28,11 @@ export type Response<R extends Request> = R extends { type: "classify" }
       ? { reader: Reader; ready: boolean; progress?: number; webgpu: boolean }
       : { ok: true };
 
+export type OffscreenRequest =
+  | { target: "offscreen"; type: "warm"; model: ModelKey }
+  | { target: "offscreen"; type: "state" }
+  | { target: "offscreen"; type: "classify"; model: ModelKey; candidates: Candidate[] };
+
 export function send<R extends Request>(req: R): Promise<Response<R>> {
   return chrome.runtime.sendMessage(req) as Promise<Response<R>>;
 }

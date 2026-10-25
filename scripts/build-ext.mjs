@@ -10,11 +10,12 @@ rmSync(out, { recursive: true, force: true });
 mkdirSync(join(out, "ort"), { recursive: true });
 
 const common = { bundle: true, target: "chrome124", minify: true, sourcemap: false, logLevel: "info", legalComments: "none" };
-await build({ ...common, entryPoints: { background: "src/ext/background.ts", popup: "src/ext/popup.ts" }, outdir: out, format: "esm" });
+await build({ ...common, entryPoints: { background: "src/ext/background.ts", popup: "src/ext/popup.ts", offscreen: "src/ext/offscreen.ts" }, outdir: out, format: "esm" });
 await build({ ...common, entryPoints: { content: "src/ext/content.ts" }, outdir: out, format: "iife" });
 
 copyFileSync("src/ext/manifest.json", join(out, "manifest.json"));
 copyFileSync("src/ext/popup.html", join(out, "popup.html"));
+writeFileSync(join(out, "offscreen.html"), '<!doctype html><meta charset="utf-8"><title>Catch model</title><script type="module" src="./offscreen.js"></script>\n');
 
 // onnxruntime-web doesn't export its dist folder, so find it in pnpm's store directly.
 const store = "node_modules/.pnpm";

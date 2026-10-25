@@ -9,17 +9,36 @@ function isVisible(e: Element): boolean {
   return s.visibility !== "hidden" && s.display !== "none" && Number(s.opacity) > 0.05;
 }
 
+// Tag checks, not instanceof: elements from iframes or parsed documents come from another realm.
 function labelOf(e: Element): string {
-  if (e instanceof HTMLInputElement) return e.value || e.getAttribute("aria-label") || "";
+  if (e.tagName === "INPUT") return (e as HTMLInputElement).value || e.getAttribute("aria-label") || "";
   return (e.getAttribute("aria-label") || (e as HTMLElement).innerText || e.textContent || "").trim();
+}
+
+// A paid sign-up has a price, a trial or billing words near its button; a newsletter "Subscribe" doesn't.
+const PAID_CONTEXT_RE = /[$€£₹¥]\s?\d|\d\s?(?:USD|EUR|GBP|INR)\b|\b(?:free trial|per month|\/\s?mo(?:nth)?\b|a month|monthly|annually|per year|\/\s?yr|billed|subscription|membership|plan)\b/i;
+
+function hasPaidContext(e: HTMLElement): boolean {
+  let node: HTMLElement | null = e;
+  for (let depth = 0; node && depth < 5; depth++, node = node.parentElement) {
+    if (PAID_CONTEXT_RE.test(node.innerText ?? node.textContent ?? "")) return true;
+  }
+  return false;
+}
+
+/** True for pages Catch can read. The rules and dates are English-only, so other pages are skipped. */
+export function isEnglishPage(doc: Document = document): boolean {
+  const lang = (doc.documentElement.lang || "").toLowerCase();
+  return lang === "" || lang.startsWith("en");
 }
 
 /** The sign-up or checkout button the user is about to press, if this page has one. */
 export function findCallToAction(doc: Document = document): HTMLElement | undefined {
+  if (!isEnglishPage(doc)) return undefined;
   const candidates = [...doc.querySelectorAll<HTMLElement>('button, a[role="button"], a[href], input[type="submit"], input[type="button"], [role="button"]')]
     .filter((e) => {
       const label = labelOf(e);
-      return label.length > 0 && label.length < 60 && CTA_RE.test(label) && isVisible(e);
+      return label.length > 0 && label.length < 60 && CTA_RE.test(label) && isVisible(e) && hasPaidContext(e);
     });
   // The biggest matching button is the one the page wants you to press.
   return candidates.sort((a, b) => {
@@ -75,7 +94,7 @@ export function termsLinks(doc: Document = document, max = 3): string[] {
   return out;
 }
 
-/** Readable text from fetched HTML, without scripts, menus or cookie banners. */
+/** Readable text from fetched HTML, without scripts, menus, headers or hidden elements. */
 export function htmlToText(html: string): string {
   const doc = new DOMParser().parseFromString(html, "text/html");
   doc.querySelectorAll("script, style, noscript, nav, header, svg, iframe, [aria-hidden='true']").forEach((n) => n.remove());
