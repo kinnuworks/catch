@@ -1,0 +1,26 @@
+{
+  "name": "catch",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "A Chrome extension where a local Gemma reads the terms at the sign-up button and writes your exit plan.",
+  "license": "Apache-2.0",
+  "scripts": {
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "build:ext": "vite build --config vite.ext.config.ts",
+    "build:demo": "vite build --config vite.demo.config.ts",
+    "dev:demo": "vite --config vite.demo.config.ts",
+    "build": "pnpm build:ext && pnpm build:demo"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.3.6",
+    "@types/node": "^26.6.5",
+    "typescript": "^5.9.3",
+    "vite": "^7.3.7",
+    "vitest": "^3.2.7"
+  },
+  "dependencies": {
+    "@huggingface/transformers": "4.3.1"
+  }
+}
