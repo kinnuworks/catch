@@ -1,0 +1,369 @@
+<!doctype html>
+<html lang="en" data-accent="amber">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Catch: read the terms before you click</title>
+  <meta name="description" content="A Chrome extension where a local Gemma model reads the terms at the sign-up button, quotes the catch, and writes your exit plan into your calendar. Free and open source." />
+  <link rel="icon" href="./icon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400..800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./site.css" />
+  <script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="i-renew" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="m17 2 4 4-4 4"/><path d="M3 11v-1a4 4 0 0 1 4-4h14"/><path d="m7 22-4-4 4-4"/><path d="M21 13v1a4 4 0 0 1-4 4H3"/></symbol>
+      <symbol id="i-trial" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M5 22h14"/><path d="M5 2h14"/><path d="M17 22v-4.17a2 2 0 0 0-.59-1.42L12 12l-4.41 4.41A2 2 0 0 0 7 17.83V22"/><path d="M7 2v4.17a2 2 0 0 0 .59 1.42L12 12l4.41-4.41A2 2 0 0 0 17 6.17V2"/></symbol>
+      <symbol id="i-lock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></symbol>
+      <symbol id="i-fee" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="2"/><circle cx="12" cy="12" r="2"/><path d="M6 12h.01M18 12h.01"/></symbol>
+      <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></symbol>
+      <symbol id="i-ban" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m4.9 4.9 14.2 14.2"/></symbol>
+      <symbol id="i-cal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/><path d="M8 15h.01M12 15h.01"/></symbol>
+      <symbol id="i-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/></symbol>
+      <symbol id="i-click" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="m9 9 5 12 1.8-5.2L21 14Z"/><path d="M7.2 2.2 8 5.1"/><path d="m5.1 8-2.9-.8"/><path d="M14 4.1 12 6"/><path d="m6 12-1.9 2"/></symbol>
+      <symbol id="i-scan" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7V5a2 2 0 0 1 2-2h2M17 3h2a2 2 0 0 1 2 2v2M21 17v2a2 2 0 0 1-2 2h-2M7 21H5a2 2 0 0 1-2-2v-2"/><path d="M7 8h8M7 12h10M7 16h6"/></symbol>
+      <symbol id="i-hook" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="14.5" cy="3.8" r="1.8"/><path d="M14.5 5.6V14a4.75 4.75 0 0 1-9.5 0v-2.6"/><path d="m5 11.4 2.8 2.6"/></symbol>
+      <symbol id="i-pad" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="10" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></symbol>
+      <symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+      <symbol id="i-gh" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.78 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.42-2.7 5.39-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z"/></symbol>
+    </defs>
+  </svg>
+
+  <header class="nav">
+    <nav class="nav__bar" aria-label="Main">
+      <a class="nav__brand" href="#top"><img class="app-icon" src="./icon.svg" alt="" width="28" height="28">Catch</a>
+      <div class="nav__links">
+        <a href="#how">How it works</a>
+        <a href="#try">Try it</a>
+        <a href="#accuracy">Accuracy</a>
+        <a href="#faq">FAQ</a>
+      </div>
+      <a class="btn btn-ink btn-sm" href="REPO_URL"><svg aria-hidden="true"><use href="#i-gh"/></svg>Get it on GitHub</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container">
+        <span class="badge badge--dot">Open source. Runs on your laptop.</span>
+        <h1>Know the catch <span class="t-muted">before you click.</span></h1>
+        <p class="lead">A Chrome extension that reads the terms at the sign-up button. Gemma, running on your laptop, flags renewals, lock-ins and exit fees with the exact sentence, then puts your way out in your calendar.</p>
+        <div class="cta-row">
+          <a class="btn btn-candy btn-lg" href="#try">Try it on this page <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          <a class="btn btn-outline btn-lg" href="REPO_URL"><svg aria-hidden="true"><use href="#i-gh"/></svg>Get it on GitHub</a>
+        </div>
+        <p class="trust"><span>Free, Apache 2.0</span><span>Chrome 124+ with WebGPU</span><span>Nothing you browse leaves your laptop</span></p>
+
+        <div class="hero__visual bleed">
+          <div class="stage" aria-hidden="true">
+            <div class="hero-shot">
+              <div class="window">
+                <div class="window__bar">
+                  <span class="lights"><i></i><i></i><i></i></span>
+                  <span class="urlbar"><svg><use href="#i-pad"/></svg>pomelofocus.app/start-trial</span>
+                  <span class="ext"><span class="ext-pin"><svg><use href="#i-hook"/></svg></span></span>
+                </div>
+                <div class="pomelo">
+                  <div>
+                    <div class="pomelo__logo">🍊 Pomelo Focus</div>
+                    <div class="pomelo__h">Get your afternoons back.</div>
+                    <p class="pomelo__p">Timers, blocklists and a weekly focus report. Try Pro free for 7 days.</p>
+                    <ul class="pomelo__perks"><li>Unlimited focus sessions</li><li>Website and app blocking</li><li>Weekly reports</li></ul>
+                  </div>
+                  <div class="pomelo__plan">
+                    <div class="pomelo__price">$29.99 <small>/month</small></div>
+                    <div class="pomelo__cancel">Cancel anytime in settings.</div>
+                    <div class="pomelo__field">you@example.com</div>
+                    <div class="pomelo__cta">Start free trial</div>
+                    <p class="pomelo__fine">By starting your trial you agree to the <u>Subscription Terms</u>. After your free trial, Pro Monthly is billed monthly until you cancel.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="catch-card">
+                <div class="catch-card__head"><svg><use href="#i-hook"/></svg>3 catches<span class="who">checked by Gemma 4 E2B</span></div>
+                <ul>
+                  <li><svg><use href="#i-fee"/></svg><div><div class="kind">Exit fee</div><div class="plain">Leaving early costs $300.</div><span class="q">"If you cancel during the minimum commitment period, an early termination fee of $300 will be charged…"</span></div></li>
+                  <li><svg><use href="#i-lock"/></svg><div><div class="kind">Lock-in</div><div class="plain">You're committed for 3 months, even if it's billed monthly.</div></div></li>
+                  <li><svg><use href="#i-trial"/></svg><div><div class="kind">Trial turns paid</div><div class="plain">The trial turns into a paid plan at $29.99.</div></div></li>
+                </ul>
+                <div class="catch-card__foot">Read on this laptop. Nothing was sent anywhere.</div>
+              </div>
+            </div>
+            <div class="float" style="left:28px;bottom:26px">
+              <div class="cal"><div class="cal__day"><b>OCT</b><span>30</span></div><div><div class="cal__title">Cancel Pomelo Focus to pay nothing</div><div class="cal__sub">Exit plan from Catch · reminder 2 days before</div></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Problem / solution -->
+    <section class="section section--alt after-bleed" id="why">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow"><span class="dot"></span>Why I built it</span>
+          <h2>The <span class="hl">$300</span> rule was in the terms.</h2>
+          <p class="lead">Nobody reads terms of service, and nobody is going to start. So the reading has to happen at the one moment it matters.</p>
+        </div>
+        <div class="grid grid-2">
+          <article class="card card--flat story reveal">
+            <span class="eyebrow">Before</span>
+            <h3>Scroll, click, find out in month two.</h3>
+            <p class="t-small">I signed up for an app's free trial. It turned into a plan billed monthly that I couldn't cancel for three months, and leaving early cost $300. The rule was in the terms I scrolled past on the way to the button.</p>
+            <div class="story__visual" aria-hidden="true">
+              <div class="scroll-terms">3. Minimum term. The Pro Monthly plan has a minimum commitment period of three (3) months starting on the first paid billing date. You may not cancel before the end of the minimum commitment period without paying an early termination fee. 4. Early termination. If you cancel during the minimum commitment period, an early termination fee of $300 will be charged to your payment method on file. 5. How to cancel. Cancellation requests must be received at least 14 days before…</div>
+              <div class="receipt"><span>Early termination fee</span><b>$300.00</b></div>
+            </div>
+          </article>
+          <article class="card card--chosen story reveal" style="--i:1">
+            <span class="eyebrow"><span class="dot"></span>With Catch</span>
+            <h3>The rule sits next to the button.</h3>
+            <p class="t-small">Catch reads the same terms while your cursor is on "Start free trial" and quotes the sentence: billed monthly, locked in for three months, $300 to leave early. You decide with the facts in front of you.</p>
+            <div class="story__visual" aria-hidden="true">
+              <div class="catch-card" style="width:100%">
+                <div class="catch-card__head"><svg><use href="#i-hook"/></svg>1 catch</div>
+                <ul><li><svg><use href="#i-fee"/></svg><div><div class="kind">Exit fee</div><div class="plain">Leaving early costs $300.</div><span class="q">"…an early termination fee of $300 will be charged to your payment method on file."</span></div></li></ul>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Feature deep dives -->
+    <section class="section" id="how">
+      <div class="container stack">
+        <div class="split reveal">
+          <div>
+            <span class="eyebrow"><svg aria-hidden="true"><use href="#i-click"/></svg>At the button</span>
+            <h3>It reads where you're about to agree.</h3>
+            <p class="lead">Catch finds the sign-up or checkout button, reads the text around it and the terms page it links to, and pins up to three lines next to the button. Tap a line to jump to the exact sentence.</p>
+            <div class="chips"><span class="chip">Free trials</span><span class="chip">Checkout pages</span><span class="chip">Linked terms pages</span><span class="chip">Jump-to-sentence links</span></div>
+          </div>
+          <div class="stage stage--soft" aria-hidden="true">
+            <div class="catch-card" style="margin-inline:auto">
+              <div class="catch-card__head"><svg><use href="#i-hook"/></svg>2 catches<span class="who">checked by Gemma 4 E2B</span></div>
+              <ul>
+                <li><svg><use href="#i-mail"/></svg><div><div class="kind">Cancel rules</div><div class="plain">Cancelling needs 14 days notice, in writing.</div><span class="q">"Cancellation requests must be received at least 14 days before your next billing date and must be submitted in writing to support@example.com."</span></div></li>
+                <li><svg><use href="#i-ban"/></svg><div><div class="kind">No refunds</div><div class="plain">Money you've paid isn't refunded.</div></div></li>
+              </ul>
+              <div class="catch-card__foot">Tap a line to see the exact sentence.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="split split--flip reveal">
+          <div>
+            <span class="eyebrow"><svg aria-hidden="true"><use href="#i-scan"/></svg>Code quotes, Gemma checks</span>
+            <h3>The model can't invent a clause.</h3>
+            <p class="lead">Rules pick the sentences that might be trouble. Gemma answers one yes-or-no question about each, and Catch reads its confidence instead of trusting one sampled word. The line on the card is written from numbers in the quoted sentence, so $300 can't turn into $30.</p>
+            <div class="chips"><span class="chip">Sentence splitter</span><span class="chip">15 trap patterns</span><span class="chip">P(yes) from logits</span><span class="chip">Number grounding</span></div>
+          </div>
+          <div class="stage stage--soft" aria-hidden="true">
+            <div class="window window--dark">
+              <div class="window__bar"><span class="lights"><i></i><i></i><i></i></span><span class="window__title">catch · one sentence</span></div>
+              <div class="pipe">
+                <div class="pipe__row"><span class="pipe__step">sentence</span><span class="pipe__body">"If you cancel during the minimum commitment period, an early termination fee of <span class="num">$300</span> will be charged."</span></div>
+                <div class="pipe__row"><span class="pipe__step">rules</span><span class="pipe__body">exit_fee · lock_in <span class="q">(suspected)</span></span></div>
+                <div class="pipe__row"><span class="pipe__step">gemma</span><span class="pipe__body"><span class="q">Must the customer pay a fee if they cancel early?</span><span class="pbar" style="--p:97%"><i></i>0.97</span><span class="pbar is-no" style="--p:12%"><i></i>0.12 lock_in</span></span></div>
+                <div class="pipe__row"><span class="pipe__step">card</span><span class="pipe__body">Leaving early costs <span class="num">$300</span>. <span class="tagline tagline--keep">kept</span> <span class="tagline tagline--drop">lock_in dropped</span></span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="split reveal">
+          <div>
+            <span class="eyebrow"><svg aria-hidden="true"><use href="#i-cal"/></svg>Exit plan</span>
+            <h3>Press the button. Get the way out.</h3>
+            <p class="lead">If you sign up anyway, Catch works out the last day to cancel for free and the first day you can leave without the fee, then adds them to your calendar with the steps and the quoted terms.</p>
+            <div class="chips"><span class="chip">.ics for any calendar</span><span class="chip">Google Calendar link</span><span class="chip">Two-day safety margin</span><span class="chip">Calendar-month math</span></div>
+          </div>
+          <div class="stage stage--soft plan-stage" aria-hidden="true">
+            <div class="plan-card">
+              <div class="plan-card__head"><svg><use href="#i-hook"/></svg>Your exit plan · Pomelo Focus</div>
+              <ol>
+                <li>Cancel by <b>Oct 30, 2026</b> to pay nothing.</li>
+                <li>If you stay past the trial, send notice by <b>Jan 16, 2027</b>, in writing.</li>
+                <li>You can leave for free from <b>Feb 1, 2027</b>. Leaving before then costs <b>$300</b>.</li>
+              </ol>
+              <div class="plan-card__btns"><span class="mini-btn">Add to calendar</span><span class="mini-btn alt">Google Calendar</span></div>
+            </div>
+            <div class="float"><div class="cal"><div class="cal__day"><b>JAN</b><span>16</span></div><div><div class="cal__title">Send Pomelo Focus cancellation notice</div><div class="cal__sub">All day · alert 2 days before</div></div></div></div>
+          </div>
+        </div>
+
+        <div class="split split--flip reveal">
+          <div>
+            <span class="eyebrow"><svg aria-hidden="true"><use href="#i-shield"/></svg>Private</span>
+            <h3>Nothing you browse leaves your laptop.</h3>
+            <p class="lead">An extension that reads every sign-up page you visit should never phone home. Gemma 4 E2B runs in Chrome on your own GPU through WebGPU. The weights download once from Hugging Face and stay in the browser cache. After that, Catch makes no network requests of its own.</p>
+            <div class="chips"><span class="chip">WebGPU</span><span class="chip">Open weights</span><span class="chip">Works offline after setup</span><span class="chip">No account</span></div>
+          </div>
+          <div class="stage stage--soft" aria-hidden="true">
+            <div class="window window--dark net">
+              <div class="window__bar"><span class="lights"><i></i><i></i><i></i></span><span class="window__title">Network · requests made by Catch</span></div>
+              <table>
+                <thead><tr><th>Name</th><th>Status</th><th>Size</th><th>When</th></tr></thead>
+                <tbody>
+                  <tr><td>gemma-4-E2B · decoder_q4f16</td><td class="ok">200</td><td>1.5 GB</td><td>once</td></tr>
+                  <tr><td>gemma-4-E2B · embed_tokens_q4f16</td><td class="ok">200</td><td>1.6 GB</td><td>once</td></tr>
+                  <tr class="dim"><td>terms you read</td><td>–</td><td>0 B</td><td>never</td></tr>
+                  <tr class="dim"><td>pages you visit</td><td>–</td><td>0 B</td><td>never</td></tr>
+                </tbody>
+              </table>
+              <div class="net__foot">The only downloads are the model weights, fetched once and cached by the browser.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Everything it looks for -->
+    <section class="section section--alt">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow"><span class="dot"></span>What it looks for</span>
+          <h2>Six ways terms cost you money.</h2>
+        </div>
+        <div class="grid grid-3">
+          <div class="tile reveal"><span class="icon-tile"><svg aria-hidden="true"><use href="#i-renew"/></svg></span><div><p class="t-title">Auto-renews</p><p>It keeps charging until you cancel, monthly or yearly.</p></div></div>
+          <div class="tile reveal" style="--i:1"><span class="icon-tile"><svg aria-hidden="true"><use href="#i-trial"/></svg></span><div><p class="t-title">Trial turns paid</p><p>The free week becomes a paid plan unless you act in time.</p></div></div>
+          <div class="tile reveal" style="--i:2"><span class="icon-tile"><svg aria-hidden="true"><use href="#i-lock"/></svg></span><div><p class="t-title">Lock-in</p><p>Billed monthly, but you can't leave before a minimum term ends.</p></div></div>
+          <div class="tile reveal"><span class="icon-tile"><svg aria-hidden="true"><use href="#i-fee"/></svg></span><div><p class="t-title">Exit fee</p><p>Leaving early costs a fee, or the rest of the term.</p></div></div>
+          <div class="tile reveal" style="--i:1"><span class="icon-tile"><svg aria-hidden="true"><use href="#i-mail"/></svg></span><div><p class="t-title">Cancel rules</p><p>Notice periods, deadlines, or cancelling by post or phone only.</p></div></div>
+          <div class="tile reveal" style="--i:2"><span class="icon-tile"><svg aria-hidden="true"><use href="#i-ban"/></svg></span><div><p class="t-title">No refunds</p><p>Money you've already paid stays paid.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Try it here -->
+    <section class="section" id="try">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow"><span class="dot"></span>Try it here</span>
+          <h2>A sign-up page with the same trap.</h2>
+          <p class="lead">Pomelo Focus is made up. Its terms copy the plan I fell for. Catch runs inside the page below, the same code as the extension. Hover the button, read the card, then press "Start free trial".</p>
+        </div>
+        <div class="try">
+          <div class="card try__controls">
+            <div>
+              <label class="t-title" id="reader-label">Who reads the terms</label>
+              <div class="segmented" role="group" aria-labelledby="reader-label">
+                <button type="button" data-reader="rules" aria-pressed="true">Rules only</button>
+                <button type="button" data-reader="gemma-4-e2b" aria-pressed="false">Gemma 4 E2B</button>
+              </div>
+            </div>
+            <div class="try__status" id="try-status" aria-live="polite">Starting…<div class="meter" hidden><i></i></div></div>
+            <p class="t-micro">The demo starts with the rules, which work instantly on any computer. Pick Gemma 4 E2B to download the model once (about 3.4 GB) and watch it double-check them on your GPU.</p>
+            <div>
+              <label class="t-title" for="paste">Paste terms from any site</label>
+              <textarea id="paste" placeholder="Paste a subscription's terms here. They're read in this tab and never uploaded."></textarea>
+              <div style="margin-top:10px"><button class="btn btn-ink btn-sm" type="button" id="read-paste">Find the catch</button></div>
+            </div>
+            <div class="try__out" id="paste-out" aria-live="polite"></div>
+          </div>
+          <div class="try__frame">
+            <div class="window">
+              <div class="window__bar">
+                <span class="lights"><i></i><i></i><i></i></span>
+                <span class="urlbar"><svg aria-hidden="true"><use href="#i-pad"/></svg>pomelofocus.app/start-trial</span>
+                <span class="ext"><span class="ext-pin"><svg aria-hidden="true"><use href="#i-hook"/></svg></span></span>
+              </div>
+              <iframe id="pomelo" src="./pomelo.html?embed=1" title="Pomelo Focus sign-up page with Catch running" loading="lazy"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Accuracy -->
+    <section class="section section--alt" id="accuracy">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow"><span class="dot"></span>Accuracy</span>
+          <h2>Tested on 27 real terms documents.</h2>
+          <p class="lead">I fetched the terms of 50 subscription services; 27 could be read as plain text. Catch picked up to 8 suspect sentences from each, 136 in all, and I labelled every one by hand without seeing what the rules or the model said.</p>
+        </div>
+        <div class="table-wrap reveal">
+          <table class="results" id="results">
+            <thead><tr><th>Reader</th><th>Precision</th><th>Recall</th><th>F1</th><th>Time per document</th></tr></thead>
+            <tbody>
+              <tr><td>Rules only</td><td class="n"><span class="placeholder">[result]</span></td><td class="n"><span class="placeholder">[result]</span></td><td class="n"><span class="placeholder">[result]</span></td><td class="n">&lt;1 ms</td></tr>
+              <tr><td>Gemma 3 1B</td><td class="n"><span class="placeholder">[result]</span></td><td class="n"><span class="placeholder">[result]</span></td><td class="n"><span class="placeholder">[result]</span></td><td class="n"><span class="placeholder">[result]</span></td></tr>
+              <tr class="is-best"><td>Gemma 4 E2B, calibrated</td><td class="n"><span class="placeholder">[result]</span></td><td class="n"><span class="placeholder">[result]</span></td><td class="n"><span class="placeholder">[result]</span></td><td class="n"><span class="placeholder">[result]</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="note">Precision: of the catches shown, how many were real. Recall: of the real catches among those sentences, how many were shown. The Gemma 4 threshold was picked on half the services and measured on the other half. Labels, predictions and scripts are in the repo.</p>
+      </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="section" id="get">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow"><span class="dot"></span>Price</span>
+          <h2>Free, with no subscription.</h2>
+          <p class="lead">A tool for avoiding subscription traps shouldn't be one.</p>
+        </div>
+        <div class="price-card reveal">
+          <div class="price-card__head"><img class="app-icon" src="./icon.svg" alt="" width="28" height="28"><div><p class="t-title">Catch for Chrome</p><p class="t-micro">Chrome 124+ · WebGPU for Gemma, any computer for rules</p></div></div>
+          <div class="price-card__body">
+            <div class="price"><span class="price__amount t-mono">$0</span><span class="t-small">open source, Apache 2.0</span></div>
+            <ul class="checklist">
+              <li>Gemma 4 E2B on your own GPU, or rules only</li>
+              <li>Cards with the exact quoted sentence</li>
+              <li>Exit plans as calendar events</li>
+              <li>No account, no tracking, no server</li>
+            </ul>
+            <a class="btn btn-candy btn-lg" href="REPO_URL"><svg aria-hidden="true"><use href="#i-gh"/></svg>Get it on GitHub</a>
+            <p class="t-micro" style="margin-top:12px;text-align:center">Install: download, open chrome://extensions, turn on Developer mode, load the folder.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section section--alt" id="faq">
+      <div class="container">
+        <div class="section-head"><span class="eyebrow"><span class="dot"></span>Questions</span><h2>Things people ask.</h2></div>
+        <div class="faq">
+          <details><summary>Does Catch send my browsing anywhere?</summary><p>No. The page text is read inside your browser and the model runs on your GPU. The only network traffic Catch causes is the one-time download of the model weights from Hugging Face, plus fetching a site's own terms page when the sign-up page links to it.</p></details>
+          <details><summary>Why is the first run a 3.4 GB download?</summary><p>That's Gemma 4 E2B with 4-bit weights. It downloads once and the browser caches it. I tried the 0.8 GB Gemma 3 1B first; it answered "yes" to nearly every question, so it couldn't tell a trap from a refund policy.</p></details>
+          <details><summary>What if my computer doesn't have WebGPU?</summary><p>Catch falls back to its rules. You still get the card and the exit plan; the rules flag more false alarms because nothing double-checks them.</p></details>
+          <details><summary>Can the model make up a clause?</summary><p>It can't add one. Every line quotes a real sentence from the page or its linked terms, and the numbers on the card come from that sentence. The model only decides whether a sentence the rules flagged really is a catch.</p></details>
+          <details><summary>How does it work out the dates?</summary><p>Code finds the trial length, the minimum term and the notice period in the terms, even when they're in different sentences, then does calendar arithmetic from today. It keeps a two-day safety margin before each deadline.</p></details>
+          <details><summary>Is this legal advice?</summary><p>No. It points you at the sentences worth reading so you can read two lines instead of twelve thousand words.</p></details>
+          <details><summary>What does it miss?</summary><p>Terms that only appear in images, PDFs or pop-ups that open after a click, and traps written in words the rules don't expect. The accuracy section above has the numbers.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="section final">
+      <div class="container">
+        <img class="app-icon--xl" src="./icon.svg" alt="Catch app icon" width="88" height="88">
+        <h2>Sign up for things. <span class="t-muted">Leave when you want.</span></h2>
+        <div class="cta-row">
+          <a class="btn btn-candy btn-lg" href="#try">Try it on this page <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          <a class="btn btn-outline btn-lg" href="REPO_URL"><svg aria-hidden="true"><use href="#i-gh"/></svg>Source on GitHub</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <a class="nav__brand" href="#top"><img class="app-icon" src="./icon.svg" alt="" width="28" height="28">Catch</a>
+      <span>Built for the Hacktoberfest Open-Source AI Challenge. Code under Apache 2.0; Gemma under the Gemma terms.</span>
+      <a href="REPO_URL">GitHub</a>
+    </div>
+  </footer>
+
+  <script type="module" src="./site.ts"></script>
+</body>
+</html>

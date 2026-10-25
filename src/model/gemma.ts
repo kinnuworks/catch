@@ -3,6 +3,8 @@ import type { Candidate, Classifier, ModelLabel } from "../core/types";
 
 export type ModelKey = "gemma-3-1b" | "gemma-4-e2b";
 
+// Gemma 3 1B stays here for the evaluation write-up: it answered "yes" to almost every
+// question, so the extension and demo don't offer it.
 export const MODELS: Record<ModelKey, { id: string; label: string; size: string }> = {
   "gemma-3-1b": { id: "onnx-community/gemma-3-1b-it-ONNX", label: "Gemma 3 1B", size: "0.8 GB" },
   "gemma-4-e2b": { id: "onnx-community/gemma-4-E2B-it-ONNX", label: "Gemma 4 E2B", size: "3.1 GB" },
@@ -89,7 +91,7 @@ export class BrowserGemma implements Classifier {
   readonly name: string;
   private scorer?: Promise<ScoreYes>;
 
-  constructor(readonly key: ModelKey = "gemma-3-1b", private readonly onProgress?: (p: LoadProgress) => void) {
+  constructor(readonly key: ModelKey = "gemma-4-e2b", private readonly onProgress?: (p: LoadProgress) => void) {
     this.name = MODELS[key].label;
   }
 

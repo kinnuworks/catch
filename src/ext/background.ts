@@ -12,7 +12,7 @@ let ready = false;
 
 async function reader(): Promise<Reader> {
   const { reader } = await chrome.storage.local.get("reader");
-  return (reader as Reader | undefined) ?? "gemma-3-1b";
+  return (reader as Reader | undefined) ?? "gemma-4-e2b";
 }
 
 async function model(): Promise<BrowserGemma | undefined> {

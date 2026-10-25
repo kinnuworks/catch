@@ -11,7 +11,9 @@
     "build:ext": "node scripts/build-ext.mjs",
     "build:demo": "vite build --config vite.demo.config.ts",
     "dev:demo": "vite --config vite.demo.config.ts",
-    "build": "pnpm build:ext && pnpm build:demo"
+    "build": "pnpm build:ext && pnpm build:site",
+    "dev:site": "vite --config vite.site.config.ts",
+    "build:site": "vite build --config vite.site.config.ts"
   },
   "devDependencies": {
     "@types/chrome": "^0.3.6",
@@ -25,5 +27,6 @@
   },
   "dependencies": {
     "@huggingface/transformers": "4.3.1"
-  }
+  },
+  "packageManager": "pnpm@11.25.0"
 }

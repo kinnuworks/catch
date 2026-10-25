@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pomelo Focus: start your free trial</title>
+  <meta property="og:site_name" content="Pomelo Focus" />
+  <link rel="stylesheet" href="./pomelo.css" />
+  <style>
+    body { background: #FFF7ED; color: #1C1917; }
+    .signup { margin: 28px auto; gap: 24px; }
+    @media (min-width: 600px) and (max-width: 760px) { .signup { grid-template-columns: 1fr 1fr; } h1 { font-size: 28px; } }
+    h1 { font-size: 34px; }
+    .made-up { max-width: 980px; margin: 0 auto; padding: 10px 16px 0; font-size: 12px; color: #78716C; }
+  </style>
+</head>
+<body>
+  <p class="made-up">Made-up app for the Catch demo. Nothing here is for sale.</p>
+  <main class="signup">
+    <section class="pitch">
+      <p class="logo">🍊 Pomelo Focus</p>
+      <h1>Get your afternoons back.</h1>
+      <p>Timers, blocklists and a weekly focus report. Try Pro free for 7 days.</p>
+      <ul class="perks">
+        <li>Unlimited focus sessions</li>
+        <li>Website and app blocking</li>
+        <li>Weekly reports</li>
+      </ul>
+    </section>
+    <section class="plan" aria-label="Plan">
+      <div class="price"><span class="amount">$29.99</span><span>/month</span></div>
+      <p class="cancel">Cancel anytime in settings.</p>
+      <form id="signup-form" onsubmit="return false">
+        <label>Email <input type="email" placeholder="you@example.com" /></label>
+        <button id="cta" class="cta" type="submit">Start free trial</button>
+      </form>
+      <p class="fine"><small>By starting your trial you agree to the <a href="./terms.html" target="_blank">Subscription Terms</a>. After your free trial, Pro Monthly is billed monthly until you cancel.</small></p>
+    </section>
+  </main>
+  <script type="module" src="./pomelo.ts"></script>
+</body>
+</html>
