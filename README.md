@@ -8,7 +8,7 @@ I built it after an app's free trial turned into a "monthly" plan I couldn't can
 
 ## Try it
 
-- **Demo page:** a made-up sign-up page with the same trap, running Catch in the page. No install needed. Link: _added on deploy_.
+- **Demo page:** a made-up sign-up page with the same trap, running Catch in the page. No install needed. https://kinnuworks.github.io/catch/
 - **Extension:** build it (below), open `chrome://extensions`, turn on Developer mode, click "Load unpacked" and pick `dist/ext`. Then open any sign-up page.
 
 ## How it works
