@@ -66,7 +66,7 @@ export function labelsToFindings(candidates: Candidate[], labels: ModelLabel[], 
   const findings: Finding[] = [];
   for (const label of labels) {
     const c = byId.get(label.id);
-    if (!c) continue;
+    if (!c || label.keep === false) continue;
     const plain = plainIsGrounded(label.plain, c.sentence.text) ? label.plain : fallbackPlain(label.kind, c);
     findings.push({
       kind: label.kind,

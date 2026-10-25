@@ -68,6 +68,10 @@ export interface ModelLabel {
   id: number;
   kind: TrapKind;
   plain: string;
+  /** P(yes) when the label came from a verifying model. */
+  score?: number;
+  /** False when the model scored the label below the threshold; such labels are kept for evaluation only. */
+  keep?: boolean;
 }
 
 /** Anything that can turn candidates into labels: Gemma in the browser, Ollama, or a test double. */

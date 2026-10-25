@@ -1,4 +1,4 @@
-import { buildSentencePrompt, parseSentenceAnswer, SENTENCE_SYSTEM_PROMPT } from "../core/prompt";
+import { verifyCandidates, yesProbability, type ScoreYes } from "../core/verify";
 import type { Candidate, Classifier, ModelLabel } from "../core/types";
 
 export type ModelKey = "gemma-3-1b" | "gemma-4-e2b";
@@ -14,36 +14,60 @@ export interface LoadProgress {
   file?: string;
 }
 
-type Generate = (system: string, user: string) => Promise<string>;
+interface LogitsTensor {
+  dims: number[];
+  data: ArrayLike<number>;
+}
 
-async function loadGemma3(id: string, onProgress?: (p: LoadProgress) => void): Promise<Generate> {
-  const { pipeline } = await import("@huggingface/transformers");
-  const generator = await pipeline("text-generation", id, {
-    dtype: "q4f16",
-    device: "webgpu",
-    progress_callback: (info: { status: string; loaded?: number; total?: number; file?: string }) => {
-      if (info.status === "progress" && info.total) onProgress?.({ loaded: info.loaded ?? 0, total: info.total, file: info.file });
-    },
-  });
-  return async (system, user) => {
-    const out = (await generator(
-      [{ role: "system", content: system }, { role: "user", content: user }],
-      { max_new_tokens: 48, do_sample: false },
-    )) as { generated_text: { content: string }[] }[];
-    return out[0]?.generated_text.at(-1)?.content ?? "";
+interface Tokenizer {
+  encode(text: string, options?: { add_special_tokens?: boolean }): number[];
+}
+
+/** P(yes) from the logits at the last position, over the yes/no spellings Gemma uses. */
+function yesFromLogits(logits: LogitsTensor, yesIds: number[], noIds: number[]): number {
+  const [, length, vocab] = logits.dims as [number, number, number];
+  const offset = (length - 1) * vocab;
+  const pick = (ids: number[]) => ids.map((id) => Number(logits.data[offset + id]));
+  const yes = pick(yesIds);
+  const no = pick(noIds);
+  const max = Math.max(...yes, ...no);
+  const sum = (xs: number[]) => xs.reduce((a, x) => a + Math.exp(x - max), 0);
+  return sum(yes) / (sum(yes) + sum(no));
+}
+
+function answerIds(tokenizer: Tokenizer): { yes: number[]; no: number[] } {
+  const first = (w: string) => tokenizer.encode(w, { add_special_tokens: false })[0]!;
+  return { yes: [first("yes"), first("Yes")], no: [first("no"), first("No")] };
+}
+
+type Progress = (info: { status: string; loaded?: number; total?: number; file?: string }) => void;
+
+function progressCallback(onProgress?: (p: LoadProgress) => void): Progress {
+  return (info) => {
+    if ((info.status === "progress" || info.status === "progress_total") && info.total) onProgress?.({ loaded: info.loaded ?? 0, total: info.total, file: info.file });
   };
 }
 
-async function loadGemma4(id: string, onProgress?: (p: LoadProgress) => void): Promise<Generate> {
+async function loadGemma3(id: string, onProgress?: (p: LoadProgress) => void): Promise<ScoreYes> {
+  const tf = await import("@huggingface/transformers");
+  const tokenizer = await tf.AutoTokenizer.from_pretrained(id);
+  const model = await tf.AutoModelForCausalLM.from_pretrained(id, { dtype: "q4f16", device: "webgpu", progress_callback: progressCallback(onProgress) });
+  const ids = answerIds(tokenizer as unknown as Tokenizer);
+  return async (system, user) => {
+    const inputs = tokenizer.apply_chat_template(
+      [{ role: "system", content: system }, { role: "user", content: user }],
+      { add_generation_prompt: true, return_dict: true },
+    ) as Record<string, unknown>;
+    const out = (await model(inputs)) as { logits: LogitsTensor };
+    return yesFromLogits(out.logits, ids.yes, ids.no);
+  };
+}
+
+async function loadGemma4(id: string, onProgress?: (p: LoadProgress) => void): Promise<ScoreYes> {
   const tf = await import("@huggingface/transformers");
   const processor = await tf.AutoProcessor.from_pretrained(id);
-  const model = await tf.Gemma4ForConditionalGeneration.from_pretrained(id, {
-    dtype: "q4f16",
-    device: "webgpu",
-    progress_callback: (info: { status: string; loaded?: number; total?: number; file?: string }) => {
-      if (info.status === "progress" && info.total) onProgress?.({ loaded: info.loaded ?? 0, total: info.total, file: info.file });
-    },
-  });
+  const model = await tf.Gemma4ForConditionalGeneration.from_pretrained(id, { dtype: "q4f16", device: "webgpu", progress_callback: progressCallback(onProgress) });
+  const ids = answerIds(processor.tokenizer as unknown as Tokenizer);
   return async (system, user) => {
     const prompt = processor.apply_chat_template(
       [{ role: "system", content: system }, { role: "user", content: [{ type: "text", text: user }] }],
@@ -51,12 +75,8 @@ async function loadGemma4(id: string, onProgress?: (p: LoadProgress) => void): P
       { enable_thinking: false, add_generation_prompt: true } as Record<string, unknown>,
     ) as string;
     const inputs = await processor(prompt, null, null, { add_special_tokens: false });
-    const outputs = (await model.generate({ ...inputs, max_new_tokens: 48, do_sample: false })) as InstanceType<typeof tf.Tensor>;
-    const promptLength = (inputs.input_ids as { dims: number[] }).dims.at(-1)!;
-    // Tensor.slice accepts null for "the whole axis"; its typings only allow numbers.
-    const generated = (outputs as unknown as { slice: (...axes: unknown[]) => unknown }).slice(null, [promptLength, null]);
-    const [text] = processor.batch_decode(generated as InstanceType<typeof tf.Tensor>, { skip_special_tokens: true }) as string[];
-    return text ?? "";
+    const out = (await model(inputs)) as { logits: LogitsTensor };
+    return yesFromLogits(out.logits, ids.yes, ids.no);
   };
 }
 
@@ -67,24 +87,19 @@ export function hasWebGPU(): boolean {
 /** Gemma running on this machine through WebGPU. Nothing leaves the browser after the weights download once. */
 export class BrowserGemma implements Classifier {
   readonly name: string;
-  private generate?: Promise<Generate>;
+  private scorer?: Promise<ScoreYes>;
 
   constructor(readonly key: ModelKey = "gemma-3-1b", private readonly onProgress?: (p: LoadProgress) => void) {
     this.name = MODELS[key].label;
   }
 
-  load(): Promise<Generate> {
-    this.generate ??= (this.key === "gemma-4-e2b" ? loadGemma4 : loadGemma3)(MODELS[this.key].id, this.onProgress);
-    return this.generate;
+  load(): Promise<ScoreYes> {
+    this.scorer ??= (this.key === "gemma-4-e2b" ? loadGemma4 : loadGemma3)(MODELS[this.key].id, this.onProgress);
+    return this.scorer;
   }
 
-  async classify(candidates: Candidate[]): Promise<ModelLabel[]> {
-    const generate = await this.load();
-    const labels: ModelLabel[] = [];
-    for (const c of candidates) {
-      labels.push(...parseSentenceAnswer(await generate(SENTENCE_SYSTEM_PROMPT, buildSentencePrompt(c.sentence.text)), c.id));
-    }
-    return labels;
+  async classify(candidates: Candidate[], threshold?: number): Promise<ModelLabel[]> {
+    return verifyCandidates(candidates, await this.load(), threshold);
   }
 }
 
@@ -96,7 +111,7 @@ export class OllamaGemma implements Classifier {
     this.name = `${model} (Ollama)`;
   }
 
-  async ask(text: string): Promise<string> {
+  readonly scoreYes: ScoreYes = async (system, user) => {
     const res = await fetch(`${this.baseUrl}/api/chat`, {
       method: "POST",
       headers: { "content-type": "application/json" },
@@ -104,18 +119,18 @@ export class OllamaGemma implements Classifier {
         model: this.model,
         stream: false,
         think: false,
-        options: { temperature: 0, num_ctx: 4096, num_predict: 48 },
-        messages: [{ role: "system", content: SENTENCE_SYSTEM_PROMPT }, { role: "user", content: buildSentencePrompt(text) }],
+        logprobs: true,
+        top_logprobs: 10,
+        options: { temperature: 0, num_ctx: 4096, num_predict: 1 },
+        messages: [{ role: "system", content: system }, { role: "user", content: user }],
       }),
     });
     if (!res.ok) throw new Error(`Ollama ${res.status}: ${await res.text()}`);
-    const body = (await res.json()) as { message?: { content?: string } };
-    return body.message?.content ?? "";
-  }
+    const body = (await res.json()) as { logprobs?: { top_logprobs?: { token: string; logprob: number }[] }[] };
+    return yesProbability(body.logprobs?.[0]?.top_logprobs ?? []);
+  };
 
-  async classify(candidates: Candidate[]): Promise<ModelLabel[]> {
-    const labels: ModelLabel[] = [];
-    for (const c of candidates) labels.push(...parseSentenceAnswer(await this.ask(c.sentence.text), c.id));
-    return labels;
+  async classify(candidates: Candidate[], threshold?: number): Promise<ModelLabel[]> {
+    return verifyCandidates(candidates, this.scoreYes, threshold);
   }
 }

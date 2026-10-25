@@ -1,0 +1,531 @@
+[
+ {
+  "service": "1Password",
+  "url": "https://1password.com/legal/terms-of-service",
+  "card": [
+   {
+    "kind": "trial_converts",
+    "plain": "You’ll be charged the subscription fees until you cancel.",
+    "quote": "On the last day of the Free Trial period, unless you cancelled your Subscription, you will be automatically charged the applicable Subscription fees for the type of Subscription you have selected."
+   },
+   {
+    "kind": "auto_renew",
+    "plain": "It automatically renews unless canceled or AgileBits Inc. cancels.",
+    "quote": "At the end of each Billing Cycle, your Subscription will automatically renew under the same conditions unless you cancel it or AgileBits Inc. cancels it."
+   },
+   {
+    "kind": "no_refund",
+    "plain": "Payments are not refundable.",
+    "quote": "All amounts paid are non-refundable."
+   }
+  ],
+  "steps": [],
+  "ms": 3743,
+  "candidates": 11
+ },
+ {
+  "service": "Apple Media Services",
+  "url": "https://www.apple.com/legal/internet-services/itunes/us/terms.html",
+  "card": [
+   {
+    "kind": "auto_renew",
+    "plain": "Automatic renewals continue until you cancel.",
+    "quote": "Subscriptions automatically renew until cancelled in the Manage Subscriptions section of your account settings."
+   }
+  ],
+  "steps": [],
+  "ms": 547,
+  "candidates": 2
+ },
+ {
+  "service": "Babbel",
+  "url": "https://about.babbel.com/en/terms/",
+  "card": [
+   {
+    "kind": "exit_fee",
+    "plain": "Babbel refunds a portion of the remaining fees if the service ends early.",
+    "quote": "In case of a termination before the end of a billing cycle, Babbel will provide you with a pro rata refund of Service Fees for the remainder of the applicable billing."
+   },
+   {
+    "kind": "lock_in",
+    "plain": "Credits are not refundable, transferable, or interest-free.",
+    "quote": "Credits are non-refundable, non-transferable, and no interest will accrue on them."
+   },
+   {
+    "kind": "cancel_notice",
+    "plain": "Babbel can terminate an order, or you can cancel with a one-month notice.",
+    "quote": "During the Renewal Service Term any Order may be terminated by Babbel or by you at any time with a one-month notice period."
+   }
+  ],
+  "steps": [],
+  "ms": 3352,
+  "candidates": 12
+ },
+ {
+  "service": "Bumble",
+  "url": "https://bumble.com/en/terms",
+  "card": [
+   {
+    "kind": "lock_in",
+    "plain": "Your paid subscription continues automatically until you cancel.",
+    "quote": "Once your free trial converts to a paid subscription, your paid subscription will continue to automatically renew at the end of each period, and your Payment Method will be charged, until you cancel."
+   },
+   {
+    "kind": "trial_converts",
+    "plain": "A free trial turns into a paid subscription if you don’t cancel.",
+    "quote": "If you sign up for a free trial and do not cancel, your trial may convert into a paid subscription and your Payment Method will be charged at the then-current price for such subscription."
+   },
+   {
+    "kind": "cancel_notice",
+    "plain": "Deleting your account immediately cancels your subscription and prevents refunds.",
+    "quote": "For example, if you delete your account, any subscription you have purchased will be cancelled immediately, you will permanently lose access to any remaining subscription benefits from that subscription and you will not be eligible for a refund."
+   }
+  ],
+  "steps": [],
+  "ms": 4149,
+  "candidates": 12
+ },
+ {
+  "service": "Calm",
+  "url": "https://www.calm.com/terms",
+  "card": [
+   {
+    "kind": "auto_renew",
+    "plain": "The subscription continues until canceled.",
+    "quote": "If you purchase a recurring subscription to use Calm Premium (“Recurring Subscriptions”), the subscription will be continuous for the subscription period you select and will automatically renew for another subscription period until canceled."
+   }
+  ],
+  "steps": [],
+  "ms": 592,
+  "candidates": 2
+ },
+ {
+  "service": "Coursera",
+  "url": "https://www.coursera.org/about/terms",
+  "card": [],
+  "steps": [],
+  "ms": 510,
+  "candidates": 2
+ },
+ {
+  "service": "Dropbox",
+  "url": "https://www.dropbox.com/terms",
+  "card": [],
+  "steps": [],
+  "ms": 287,
+  "candidates": 1
+ },
+ {
+  "service": "ExpressVPN",
+  "url": "https://www.expressvpn.com/tos",
+  "card": [
+   {
+    "kind": "auto_renew",
+    "plain": "Plans automatically renew until canceled.",
+    "quote": "When supported by your payment method, plans renew automatically by default at the completion of the billing term, until canceled."
+   }
+  ],
+  "steps": [],
+  "ms": 906,
+  "candidates": 3
+ },
+ {
+  "service": "GitHub",
+  "url": "https://docs.github.com/en/site-policy/github-terms/github-terms-of-service",
+  "card": [
+   {
+    "kind": "auto_renew",
+    "plain": "Billing Schedule; No Refunds",
+    "quote": "Billing Schedule; No Refunds"
+   },
+   {
+    "kind": "no_refund",
+    "plain": "Monthly payments are charged in advance, and cancellation is not possible.",
+    "quote": "Payment Based on Plan For monthly or yearly payment plans, the Service is billed in advance on a monthly or yearly basis respectively and is non-refundable."
+   }
+  ],
+  "steps": [],
+  "ms": 1333,
+  "candidates": 4
+ },
+ {
+  "service": "Headspace",
+  "url": "https://www.headspace.com/terms-and-conditions",
+  "card": [
+   {
+    "kind": "auto_renew",
+    "plain": "It automatically renews subscriptions.",
+    "quote": "(b) Automatically Renewing Subscriptions."
+   },
+   {
+    "kind": "no_refund",
+    "plain": "You won’t get your money back.",
+    "quote": "(c) No Refunds on Subscriptions."
+   }
+  ],
+  "steps": [],
+  "ms": 1667,
+  "candidates": 6
+ },
+ {
+  "service": "LinkedIn",
+  "url": "https://www.linkedin.com/legal/user-agreement",
+  "card": [],
+  "steps": [],
+  "ms": 6,
+  "candidates": 0
+ },
+ {
+  "service": "Microsoft",
+  "url": "https://www.microsoft.com/en-us/servicesagreement",
+  "card": [
+   {
+    "kind": "lock_in",
+    "plain": "Refunds are not given for charges older than 90 days.",
+    "quote": "No refunds will be given for any charges more than 90 days old."
+   },
+   {
+    "kind": "cancel_notice",
+    "plain": "Microsoft informs you about potential changes to your billing.",
+    "quote": "Microsoft will provide notice to you before turning off recurring billing."
+   },
+   {
+    "kind": "auto_renew",
+    "plain": "It forces the customer to keep the trial active.",
+    "quote": "For certain trial-period offers, we may require auto-renewal to be turned on."
+   }
+  ],
+  "steps": [],
+  "ms": 2585,
+  "candidates": 8
+ },
+ {
+  "service": "MyFitnessPal",
+  "url": "https://www.myfitnesspal.com/terms-of-service",
+  "card": [
+   {
+    "kind": "lock_in",
+    "plain": "Final and non-refundable, except for our decision.",
+    "quote": "All purchases of Premium Services are final and non-refundable, except at our sole discretion."
+   },
+   {
+    "kind": "auto_renew",
+    "plain": "It automatically renews unless you cancel before the end of the subscription.",
+    "quote": "Your subscription auto-renews unless you choose to cancel prior to the end of the subscription period."
+   },
+   {
+    "kind": "no_refund",
+    "plain": "Final and non-refundable, except for our decision.",
+    "quote": "All purchases of Premium Services are final and non-refundable, except at our sole discretion."
+   }
+  ],
+  "steps": [],
+  "ms": 1326,
+  "candidates": 5
+ },
+ {
+  "service": "Netflix",
+  "url": "https://help.netflix.com/legal/termsofuse",
+  "card": [
+   {
+    "kind": "auto_renew",
+    "plain": "Payments are non-refundable and no refunds or credits are offered.",
+    "quote": "To the extent permitted by the applicable law, payments are non-refundable and we do not provide refunds or credits for any partial subscription periods or unused Netflix content."
+   },
+   {
+    "kind": "no_refund",
+    "plain": "Payments are non-refundable and no refunds or credits are offered.",
+    "quote": "To the extent permitted by the applicable law, payments are non-refundable and we do not provide refunds or credits for any partial subscription periods or unused Netflix content."
+   }
+  ],
+  "steps": [],
+  "ms": 654,
+  "candidates": 2
+ },
+ {
+  "service": "New York Times",
+  "url": "https://help.nytimes.com/hc/en-us/articles/115014893428-Terms-of-Service",
+  "card": [],
+  "steps": [],
+  "ms": 249,
+  "candidates": 1
+ },
+ {
+  "service": "Noom",
+  "url": "https://www.noom.com/terms-and-conditions-of-use/",
+  "card": [
+   {
+    "kind": "lock_in",
+    "plain": "Automatic renewals trigger automatic cancellation if you don’t cancel.",
+    "quote": "Fees and Purchase Terms; Automatically Renewing Subscriptions"
+   },
+   {
+    "kind": "trial_converts",
+    "plain": "A free trial starts charging immediately, unless canceled.",
+    "quote": "If your subscription begins with a free trial, your first payment will be charged to your chosen payment method immediately following the end of the free trial, unless canceled in accordance with the instructions for cancellation below."
+   },
+   {
+    "kind": "cancel_notice",
+    "plain": "You can cancel your contract by mail, receiving a refund.",
+    "quote": "For example, if you are a California resident and purchase a subscription and decide before midnight of the third business day following your purchase that you want to cancel your contract with us and receive a refund, you can mail a notice of cancellation to Noom, Inc., Attn: Legal Department, One Palmer Square, Suite 441, Princeton, NJ 08542."
+   }
+  ],
+  "steps": [],
+  "ms": 3582,
+  "candidates": 12
+ },
+ {
+  "service": "Patreon",
+  "url": "https://www.patreon.com/policy/legal",
+  "card": [
+   {
+    "kind": "lock_in",
+    "plain": "Refunds and exchanges are not allowed, including for gifts.",
+    "quote": "No refunds or exchanges (including for gifts not redeemed within the Redemption Period) are permitted."
+   },
+   {
+    "kind": "trial_converts",
+    "plain": "A free trial or initial gift unlocks a paid subscription after the specified period.",
+    "quote": "If your subscription includes a free trial or initial gifted access, then, unless you cancel via your membership settings before your free trial or initial gifted access ends, you will be charged for the first time after the specified free trial or initial gift period ends and you’ll start an automatically renewing paid subscription on Patreon of the type you selected."
+   },
+   {
+    "kind": "auto_renew",
+    "plain": "It’s a one-time or automatically renewing subscription.",
+    "quote": "You pay on a one-time or automatically-renewing subscription basis as specified;"
+   }
+  ],
+  "steps": [],
+  "ms": 4189,
+  "candidates": 12
+ },
+ {
+  "service": "Peloton",
+  "url": "https://www.onepeloton.com/terms-of-service",
+  "card": [],
+  "steps": [],
+  "ms": 994,
+  "candidates": 3
+ },
+ {
+  "service": "Shopify",
+  "url": "https://www.shopify.com/legal/terms",
+  "card": [
+   {
+    "kind": "exit_fee",
+    "plain": "Shopify can terminate your account if fees aren’t paid within 60 days.",
+    "quote": "If the outstanding Fees remain unpaid for 60 days following the date of suspension, Shopify reserves the right to terminate your Account in accordance with Section 14."
+   },
+   {
+    "kind": "lock_in",
+    "plain": "Shopify can terminate your account if fees aren’t paid within 60 days.",
+    "quote": "If the outstanding Fees remain unpaid for 60 days following the date of suspension, Shopify reserves the right to terminate your Account in accordance with Section 14."
+   },
+   {
+    "kind": "cancel_notice",
+    "plain": "Your account will be reactivated after paying any outstanding fees and the next billing cycle’s fees.",
+    "quote": "Your Account will be reactivated upon your payment of any outstanding Fees, plus the Fees applicable to your next billing cycle."
+   }
+  ],
+  "steps": [],
+  "ms": 4394,
+  "candidates": 12
+ },
+ {
+  "service": "Spotify",
+  "url": "https://www.spotify.com/us/legal/end-user-agreement/",
+  "card": [
+   {
+    "kind": "lock_in",
+    "plain": "Spotify’s liability is limited to what’s explicitly stated in these terms.",
+    "quote": "If you or Spotify terminate these Terms, or if Spotify suspends your access to the Spotify Service, you agree that Spotify shall have no liability or responsibility to you, and (except as expressly provided in these Terms) Spotify will not refund any amounts that you have already paid."
+   },
+   {
+    "kind": "auto_renew",
+    "plain": "Spotify’s liability is limited to what’s explicitly stated in these terms.",
+    "quote": "If you or Spotify terminate these Terms, or if Spotify suspends your access to the Spotify Service, you agree that Spotify shall have no liability or responsibility to you, and (except as expressly provided in these Terms) Spotify will not refund any amounts that you have already paid."
+   }
+  ],
+  "steps": [],
+  "ms": 1526,
+  "candidates": 4
+ },
+ {
+  "service": "Squarespace",
+  "url": "https://www.squarespace.com/terms-of-service",
+  "card": [
+   {
+    "kind": "auto_renew",
+    "plain": "Automatic billing occurs for paid services like domain registrations and subscriptions unless canceled.",
+    "quote": "For certain paid services, such as domain name registrations and site subscriptions, we’ll automatically bill you in regular intervals (such as monthly or annually) unless you disable auto-renewal or cancel your subscription."
+   }
+  ],
+  "steps": [],
+  "ms": 1609,
+  "candidates": 5
+ },
+ {
+  "service": "Strava",
+  "url": "https://www.strava.com/legal/terms",
+  "card": [
+   {
+    "kind": "trial_converts",
+    "plain": "You’ll be charged for your subscription fee until the trial ends, or you cancel before the trial ends.",
+    "quote": "If you begin your subscription with a free trial, you will be billed for your subscription fee at the end of the free trial, unless you cancel your subscription at least 24 hours before the free trial ends."
+   },
+   {
+    "kind": "auto_renew",
+    "plain": "It keeps charging until the customer cancels.",
+    "quote": "Auto-Renewal"
+   },
+   {
+    "kind": "no_refund",
+    "plain": "Strava doesn’t offer refunds or credits unless explicitly stated.",
+    "quote": "No refunds or credits will be provided by Strava, unless set out in these Terms."
+   }
+  ],
+  "steps": [],
+  "ms": 1675,
+  "candidates": 5
+ },
+ {
+  "service": "Surfshark",
+  "url": "https://surfshark.com/terms-of-service",
+  "card": [
+   {
+    "kind": "cancel_notice",
+    "plain": "You can delete your account, but you won’t get a refund for the unused portion.",
+    "quote": "You have a right to delete your account at any time, however, deleted accounts will not be refunded for the unused part of the ongoing service period."
+   },
+   {
+    "kind": "auto_renew",
+    "plain": "It automatically renews to keep you protected.",
+    "quote": "To keep you secured, Surfshark Services renew automatically."
+   },
+   {
+    "kind": "no_refund",
+    "plain": "Recurring payments are not refundable.",
+    "quote": "all recurring payments are non-refundable."
+   }
+  ],
+  "steps": [],
+  "ms": 1667,
+  "candidates": 5
+ },
+ {
+  "service": "Tinder",
+  "url": "https://policies.tinder.com/terms/us/en",
+  "card": [
+   {
+    "kind": "lock_in",
+    "plain": "Purchases and redemptions are final and cannot be reversed.",
+    "quote": "ALL PURCHASES AND REDEMPTIONS OF VIRTUAL ITEMS MADE THROUGH OUR SERVICES ARE FINAL AND NON-REFUNDABLE."
+   },
+   {
+    "kind": "cancel_notice",
+    "plain": "You must log in, manage, or cancel your subscription through your External Service Account.",
+    "quote": "To cancel a subscription: If you do not want your subscription to renew automatically, or if you want to change or terminate your subscription, you must log in to your External Service Account and follow instructions to manage or cancel your subscription, even if you have otherwise deleted your account with us or if you have deleted the App from your device."
+   },
+   {
+    "kind": "auto_renew",
+    "plain": "Automatically renewing subscriptions is a key part of this term.",
+    "quote": "PURCHASES AND AUTOMATICALLY RENEWING SUBSCRIPTIONS"
+   }
+  ],
+  "steps": [],
+  "ms": 4025,
+  "candidates": 12
+ },
+ {
+  "service": "Wix",
+  "url": "https://www.wix.com/about/terms-of-use",
+  "card": [
+   {
+    "kind": "cancel_notice",
+    "plain": "The cancellation is immediate after receiving the notice.",
+    "quote": "The cancellation will take immediate effect once you provide us with the Cancellation Notice as detailed below (or within 6 business days if the notice is sent by registered mail)."
+   },
+   {
+    "kind": "auto_renew",
+    "plain": "The cancellation is immediate after receiving the notice.",
+    "quote": "The cancellation will take immediate effect once you provide us with the Cancellation Notice as detailed below (or within 6 business days if the notice is sent by registered mail)."
+   }
+  ],
+  "steps": [
+   "Cancelling has to be done in writing / by post."
+  ],
+  "ms": 960,
+  "candidates": 3
+ },
+ {
+  "service": "Xfinity",
+  "url": "https://www.xfinity.com/corporate/customers/policies/subscriberagreement",
+  "card": [
+   {
+    "kind": "exit_fee",
+    "plain": "Terminating services before the minimum term results in a fee.",
+    "quote": "If your Services are subject to a minimum term agreement, and you terminate all or any portion of the Services under the minimum term agreement before the end of the minimum term, you may be charged an early termination fee."
+   },
+   {
+    "kind": "lock_in",
+    "plain": "Non-refundable fees and exclusions are present.",
+    "quote": "Certain fees and charges are non-refundable and are also excluded."
+   },
+   {
+    "kind": "no_refund",
+    "plain": "Non-refundable fees and exclusions are present.",
+    "quote": "Certain fees and charges are non-refundable and are also excluded."
+   }
+  ],
+  "steps": [],
+  "ms": 1780,
+  "candidates": 6
+ },
+ {
+  "service": "YouTube Paid Services",
+  "url": "https://www.youtube.com/t/terms_paidservice",
+  "card": [
+   {
+    "kind": "lock_in",
+    "plain": "Continuing to use the paid service after the notice period signifies acceptance of the new terms.",
+    "quote": "Your continued use of a Paid Service following such notice period will indicate your acceptance of the new Paid Service Terms."
+   },
+   {
+    "kind": "trial_converts",
+    "plain": "You’ll be charged the full subscription price after the trial ends, and continue paying until you cancel.",
+    "quote": "At the end of the trial period, you will be automatically charged the price of the subscription and will continue to be charged until you cancel your subscription."
+   },
+   {
+    "kind": "cancel_notice",
+    "plain": "The new terms take effect after a defined period.",
+    "quote": "The new Paid Service Terms will be effective after such notice period."
+   }
+  ],
+  "steps": [],
+  "ms": 3986,
+  "candidates": 10
+ },
+ {
+  "service": "Zoom",
+  "url": "https://explore.zoom.us/en/terms/",
+  "card": [
+   {
+    "kind": "lock_in",
+    "plain": "You agree to final, non-refundable payments, regardless of Zoom’s updates or legal requirements.",
+    "quote": "You agree that all payments are non-cancelable for the Initial Subscription Term or the then-current Renewal Term, as applicable, and are final and non-refundable, unless otherwise agreed to by Zoom, required by Law, or set forth in your Order Form."
+   },
+   {
+    "kind": "auto_renew",
+    "plain": "You agree to final, non-refundable payments, regardless of Zoom’s updates or legal requirements.",
+    "quote": "You agree that all payments are non-cancelable for the Initial Subscription Term or the then-current Renewal Term, as applicable, and are final and non-refundable, unless otherwise agreed to by Zoom, required by Law, or set forth in your Order Form."
+   },
+   {
+    "kind": "no_refund",
+    "plain": "You agree to final, non-refundable payments, regardless of Zoom’s updates or legal requirements.",
+    "quote": "You agree that all payments are non-cancelable for the Initial Subscription Term or the then-current Renewal Term, as applicable, and are final and non-refundable, unless otherwise agreed to by Zoom, required by Law, or set forth in your Order Form."
+   }
+  ],
+  "steps": [],
+  "ms": 1785,
+  "candidates": 5
+ }
+]

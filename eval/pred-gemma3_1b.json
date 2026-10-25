@@ -1,406 +1,668 @@
 {
  "reader": "gemma3:1b",
- "msPerDoc": 1542.0159105555551,
+ "msPerDoc": 595.5380155555556,
  "predictions": {
   "1Password#1": {
    "kinds": [
     "auto_renew"
    ],
    "plain": [
-    "It automatically renews unless canceled or AgileBits Inc. cancels."
-   ]
+    ""
+   ],
+   "scores": {
+    "auto_renew": 0.9999802935059537
+   }
   },
   "1Password#2": {
    "kinds": [
-    "no_refund",
-    "auto_renew"
+    "no_refund"
    ],
    "plain": [
-    "Payments are not refundable.",
-    "Payments are not refundable."
-   ]
+    ""
+   ],
+   "scores": {
+    "no_refund": 0.9999895617424129
+   }
   },
   "1Password#3": {
    "kinds": [
-    "trial_converts",
-    "auto_renew"
+    "trial_converts"
    ],
    "plain": [
-    "You’ll be charged the subscription fees until you cancel.",
-    "You’ll be charged the subscription fees until you cancel."
-   ]
+    ""
+   ],
+   "scores": {
+    "trial_converts": 0.9918924060166713
+   }
   },
   "1Password#4": {
-   "kinds": [],
-   "plain": []
+   "kinds": [
+    "no_refund"
+   ],
+   "plain": [
+    ""
+   ],
+   "scores": {
+    "no_refund": 0.9925300492992757
+   }
   },
   "1Password#5": {
-   "kinds": [],
-   "plain": []
+   "kinds": [
+    "cancel_notice"
+   ],
+   "plain": [
+    ""
+   ],
+   "scores": {
+    "cancel_notice": 0.9999865253286155
+   }
   },
   "1Password#6": {
-   "kinds": [],
-   "plain": []
+   "kinds": [
+    "no_refund"
+   ],
+   "plain": [
+    ""
+   ],
+   "scores": {
+    "no_refund": 0.9973681344675579
+   }
   },
   "1Password#7": {
-   "kinds": [],
-   "plain": []
+   "kinds": [
+    "cancel_notice"
+   ],
+   "plain": [
+    ""
+   ],
+   "scores": {
+    "cancel_notice": 0.9999444150476724
+   }
   },
   "1Password#8": {
    "kinds": [
     "auto_renew"
    ],
    "plain": [
-    "This automatically renews unless the parties specify otherwise."
-   ]
+    ""
+   ],
+   "scores": {
+    "auto_renew": 0.9999870677970004
+   }
   },
   "Apple_Media_Services#1": {
-   "kinds": [],
-   "plain": []
+   "kinds": [
+    "no_refund"
+   ],
+   "plain": [
+    ""
+   ],
+   "scores": {
+    "no_refund": 0.9999848255393549
+   }
   },
   "Apple_Media_Services#2": {
    "kinds": [
     "auto_renew"
    ],
    "plain": [
-    "Automatic renewals continue until you cancel."
-   ]
+    ""
+   ],
+   "scores": {
+    "auto_renew": 0.9999921167000715
+   }
   },
   "Babbel#1": {
-   "kinds": [],
-   "plain": []
-  },
-  "Babbel#2": {
-   "kinds": [],
-   "plain": []
-  },
-  "Babbel#3": {
-   "kinds": [],
-   "plain": []
-  },
-  "Babbel#4": {
    "kinds": [
-    "no_refund",
-    "auto_renew",
-    "lock_in"
-   ],
-   "plain": [
-    "Credits are not refundable, transferable, or interest-free.",
-    "Credits are not refundable, transferable, or interest-free.",
-    "Credits are not refundable, transferable, or interest-free."
-   ]
-  },
-  "Babbel#5": {
-   "kinds": [],
-   "plain": []
-  },
-  "Babbel#6": {
-   "kinds": [
-    "auto_renew",
     "cancel_notice"
    ],
    "plain": [
-    "Babbel can terminate an order, or you can cancel with a one-month notice.",
-    "Babbel can terminate an order, or you can cancel with a one-month notice."
-   ]
+    ""
+   ],
+   "scores": {
+    "cancel_notice": 0.9671046102659646
+   }
   },
-  "Babbel#7": {
-   "kinds": [],
-   "plain": []
-  },
-  "Babbel#8": {
-   "kinds": [],
-   "plain": []
-  },
-  "Bumble#1": {
-   "kinds": [],
-   "plain": []
-  },
-  "Bumble#2": {
-   "kinds": [],
-   "plain": []
-  },
-  "Bumble#3": {
+  "Babbel#2": {
    "kinds": [
-    "trial_converts",
-    "auto_renew"
+    "exit_fee"
    ],
    "plain": [
-    "A free trial turns into a paid subscription if you don’t cancel.",
-    "A free trial turns into a paid subscription if you don’t cancel."
-   ]
+    ""
+   ],
+   "scores": {
+    "exit_fee": 0.9999886789463768
+   }
   },
-  "Bumble#4": {
+  "Babbel#3": {
    "kinds": [
-    "lock_in",
-    "auto_renew"
+    "exit_fee"
    ],
    "plain": [
-    "Your paid subscription continues automatically until you cancel.",
-    "Your paid subscription continues automatically until you cancel."
-   ]
+    ""
+   ],
+   "scores": {
+    "exit_fee": 0.9999377175068384
+   }
   },
-  "Bumble#5": {
+  "Babbel#4": {
    "kinds": [
-    "trial_converts",
-    "auto_renew"
+    "no_refund"
    ],
    "plain": [
-    "If you’ve used Bumble through the Apple Store or Google Play Store, you won’t get another free trial and will be automatically signed up for a subscription.",
-    "If you’ve used Bumble through the Apple Store or Google Play Store, you won’t get another free trial and will be automatically signed up for a subscription."
-   ]
-  },
-  "Bumble#6": {
-   "kinds": [
-    "no_refund",
-    "auto_renew"
+    ""
    ],
-   "plain": [
-    "Non-refundable charges are standard, and refunds or credits are not offered for partial usage.",
-    "Non-refundable charges are standard, and refunds or credits are not offered for partial usage."
-   ]
+   "scores": {
+    "no_refund": 0.9999300680765334
+   }
   },
-  "Bumble#7": {
+  "Babbel#5": {
    "kinds": [
-    "cancel_notice",
-    "lock_in",
-    "auto_renew"
-   ],
-   "plain": [
-    "Deleting your account immediately cancels your subscription and prevents refunds.",
-    "Deleting your account immediately cancels your subscription and prevents refunds.",
-    "Deleting your account immediately cancels your subscription and prevents refunds."
-   ]
-  },
-  "Bumble#8": {
-   "kinds": [
-    "no_refund",
     "lock_in"
    ],
    "plain": [
-    "You won’t get your money back.",
-    "You won’t get your money back."
-   ]
+    ""
+   ],
+   "scores": {
+    "lock_in": 0.9991447273394659
+   }
+  },
+  "Babbel#6": {
+   "kinds": [
+    "cancel_notice"
+   ],
+   "plain": [
+    ""
+   ],
+   "scores": {
+    "cancel_notice": 0.9999675930905737
+   }
+  },
+  "Babbel#7": {
+   "kinds": [],
+   "plain": [],
+   "scores": {
+    "no_refund": 0.0019735605838271685
+   }
+  },
+  "Babbel#8": {
+   "kinds": [
+    "lock_in"
+   ],
+   "plain": [
+    ""
+   ],
+   "scores": {
+    "lock_in": 0.9983810615353237
+   }
+  },
+  "Bumble#1": {
+   "kinds": [
+    "auto_renew",
+    "lock_in"
+   ],
+   "plain": [
+    "",
+    ""
+   ],
+   "scores": {
+    "auto_renew": 0.9999444117012384,
+    "lock_in": 0.9973336005374607
+   }
+  },
+  "Bumble#2": {
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    ""
+   ],
+   "scores": {
+    "auto_renew": 0.9999954194772019
+   }
+  },
+  "Bumble#3": {
+   "kinds": [
+    "trial_converts"
+   ],
+   "plain": [
+    ""
+   ],
+   "scores": {
+    "trial_converts": 0.9999784757064428
+   }
+  },
+  "Bumble#4": {
+   "kinds": [
+    "auto_renew",
+    "trial_converts"
+   ],
+   "plain": [
+    "",
+    ""
+   ],
+   "scores": {
+    "auto_renew": 0.9999860575504479,
+    "trial_converts": 0.9983702345632125
+   }
+  },
+  "Bumble#5": {
+   "kinds": [
+    "trial_converts"
+   ],
+   "plain": [
+    ""
+   ],
+   "scores": {
+    "trial_converts": 0.9998895846460586
+   }
+  },
+  "Bumble#6": {
+   "kinds": [
+    "no_refund"
+   ],
+   "plain": [
+    ""
+   ],
+   "scores": {
+    "no_refund": 0.9998743965464091
+   }
+  },
+  "Bumble#7": {
+   "kinds": [
+    "no_refund"
+   ],
+   "plain": [
+    ""
+   ],
+   "scores": {
+    "no_refund": 0.9995382554826722
+   }
+  },
+  "Bumble#8": {
+   "kinds": [
+    "no_refund"
+   ],
+   "plain": [
+    ""
+   ],
+   "scores": {
+    "no_refund": 0.999757859194365
+   }
   },
   "Calm#1": {
    "kinds": [
     "auto_renew"
    ],
    "plain": [
-    "The subscription continues until canceled."
-   ]
+    ""
+   ],
+   "scores": {
+    "auto_renew": 0.9999864241781969
+   }
   },
   "Calm#2": {
-   "kinds": [],
-   "plain": []
+   "kinds": [
+    "no_refund"
+   ],
+   "plain": [
+    ""
+   ],
+   "scores": {
+    "no_refund": 0.9981578274272225
+   }
   },
   "Coursera#1": {
-   "kinds": [],
-   "plain": []
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    ""
+   ],
+   "scores": {
+    "auto_renew": 0.9999810594362507
+   }
   },
   "Coursera#2": {
-   "kinds": [],
-   "plain": []
+   "kinds": [
+    "no_refund"
+   ],
+   "plain": [
+    ""
+   ],
+   "scores": {
+    "no_refund": 0.9991211349944854
+   }
   },
   "Dropbox#1": {
-   "kinds": [],
-   "plain": []
+   "kinds": [
+    "lock_in"
+   ],
+   "plain": [
+    ""
+   ],
+   "scores": {
+    "lock_in": 0.9986399363909533
+   }
   },
   "ExpressVPN#1": {
    "kinds": [
     "auto_renew"
    ],
    "plain": [
-    "Plans automatically renew until canceled."
-   ]
+    ""
+   ],
+   "scores": {
+    "auto_renew": 0.9999912553884758
+   }
   },
   "ExpressVPN#2": {
    "kinds": [
     "auto_renew"
    ],
    "plain": [
-    "Automatic renewal is enabled for payment methods that support it, and disabled for others."
-   ]
+    ""
+   ],
+   "scores": {
+    "auto_renew": 0.9999473330455337
+   }
   },
   "ExpressVPN#3": {
    "kinds": [
     "auto_renew"
    ],
    "plain": [
-    "Auto-renewal is off, and services are suspended until a payment is made."
-   ]
+    ""
+   ],
+   "scores": {
+    "auto_renew": 0.9999839429551524
+   }
   },
   "GitHub#1": {
    "kinds": [
-    "auto_renew"
-   ],
-   "plain": [
-    "Billing Schedule; No Refunds"
-   ]
-  },
-  "GitHub#2": {
-   "kinds": [
-    "auto_renew",
     "no_refund"
    ],
    "plain": [
-    "Monthly payments are charged in advance, and cancellation is not possible.",
-    "Monthly payments are charged in advance, and cancellation is not possible."
-   ]
+    ""
+   ],
+   "scores": {
+    "no_refund": 0.9999515105378184
+   }
+  },
+  "GitHub#2": {
+   "kinds": [
+    "no_refund"
+   ],
+   "plain": [
+    ""
+   ],
+   "scores": {
+    "no_refund": 0.9998115206302078
+   }
   },
   "GitHub#3": {
    "kinds": [
-    "no_refund",
-    "auto_renew"
+    "no_refund"
    ],
    "plain": [
-    "No refunds or credits are offered for partial months, downgrade refunds, or unused months.",
-    "No refunds or credits are offered for partial months, downgrade refunds, or unused months."
-   ]
+    ""
+   ],
+   "scores": {
+    "no_refund": 0.9999880810780392
+   }
   },
   "GitHub#4": {
    "kinds": [
     "no_refund"
    ],
    "plain": [
-    "It’s stated that amounts payable are not refundable, with exceptions."
-   ]
+    ""
+   ],
+   "scores": {
+    "no_refund": 0.9999174632996104
+   }
   },
   "Headspace#1": {
    "kinds": [
     "auto_renew"
    ],
    "plain": [
-    "It automatically renews subscriptions."
-   ]
+    ""
+   ],
+   "scores": {
+    "auto_renew": 0.9999949226663681
+   }
   },
   "Headspace#2": {
-   "kinds": [],
-   "plain": []
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    ""
+   ],
+   "scores": {
+    "auto_renew": 0.9999885068486496
+   }
   },
   "Headspace#3": {
    "kinds": [
     "no_refund"
    ],
    "plain": [
-    "You won’t get your money back."
-   ]
+    ""
+   ],
+   "scores": {
+    "no_refund": 0.9999965519723661
+   }
   },
   "Headspace#4": {
-   "kinds": [],
-   "plain": []
+   "kinds": [
+    "no_refund"
+   ],
+   "plain": [
+    ""
+   ],
+   "scores": {
+    "no_refund": 0.9999281219668933
+   }
   },
   "Headspace#5": {
-   "kinds": [],
-   "plain": []
+   "kinds": [
+    "cancel_notice"
+   ],
+   "plain": [
+    ""
+   ],
+   "scores": {
+    "cancel_notice": 0.9996185417617632
+   }
   },
   "Headspace#6": {
-   "kinds": [],
-   "plain": []
+   "kinds": [
+    "no_refund"
+   ],
+   "plain": [
+    ""
+   ],
+   "scores": {
+    "no_refund": 0.9991025986597728
+   }
   },
   "Microsoft#1": {
-   "kinds": [],
-   "plain": []
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    ""
+   ],
+   "scores": {
+    "auto_renew": 0.999929259120805
+   }
   },
   "Microsoft#2": {
-   "kinds": [],
-   "plain": []
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    ""
+   ],
+   "scores": {
+    "auto_renew": 0.9998339335139529
+   }
   },
   "Microsoft#3": {
    "kinds": [
-    "no_refund",
-    "lock_in"
+    "no_refund"
    ],
    "plain": [
-    "All purchases are final and non-refundable, regardless of the law or the offer.",
-    "All purchases are final and non-refundable, regardless of the law or the offer."
-   ]
+    ""
+   ],
+   "scores": {
+    "no_refund": 0.9999795908483752
+   }
   },
   "Microsoft#4": {
    "kinds": [
-    "no_refund",
-    "lock_in"
+    "no_refund"
    ],
    "plain": [
-    "Refunds are not given for charges older than 90 days.",
-    "Refunds are not given for charges older than 90 days."
-   ]
+    ""
+   ],
+   "scores": {
+    "no_refund": 0.9999726186276883
+   }
   },
   "Microsoft#5": {
-   "kinds": [],
-   "plain": []
+   "kinds": [
+    "trial_converts"
+   ],
+   "plain": [
+    ""
+   ],
+   "scores": {
+    "trial_converts": 0.9814393256864089
+   }
   },
   "Microsoft#6": {
    "kinds": [
     "auto_renew"
    ],
    "plain": [
-    "It forces the customer to keep the trial active."
-   ]
+    ""
+   ],
+   "scores": {
+    "auto_renew": 0.9999932324779361
+   }
   },
   "Microsoft#7": {
-   "kinds": [],
-   "plain": []
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    ""
+   ],
+   "scores": {
+    "auto_renew": 0.9999617912207976
+   }
   },
   "Microsoft#8": {
    "kinds": [
-    "cancel_notice"
+    "auto_renew"
    ],
    "plain": [
-    "Microsoft informs you about potential changes to your billing."
-   ]
+    ""
+   ],
+   "scores": {
+    "auto_renew": 0.999983333860498
+   }
   },
   "MyFitnessPal#1": {
    "kinds": [
     "auto_renew"
    ],
    "plain": [
-    "It automatically renews unless you cancel before the end of the subscription."
-   ]
+    ""
+   ],
+   "scores": {
+    "auto_renew": 0.9999939125030893
+   }
   },
   "MyFitnessPal#2": {
    "kinds": [
-    "no_refund",
-    "lock_in"
+    "no_refund"
    ],
    "plain": [
-    "Final and non-refundable, except for our decision.",
-    "Final and non-refundable, except for our decision."
-   ]
+    ""
+   ],
+   "scores": {
+    "no_refund": 0.9999839779390297
+   }
   },
   "MyFitnessPal#3": {
    "kinds": [
     "auto_renew"
    ],
    "plain": [
-    "The subscription automatically renews unless canceled before the current period ends."
-   ]
+    ""
+   ],
+   "scores": {
+    "auto_renew": 0.9999766381409894
+   }
   },
   "MyFitnessPal#4": {
-   "kinds": [],
-   "plain": []
+   "kinds": [
+    "trial_converts"
+   ],
+   "plain": [
+    ""
+   ],
+   "scores": {
+    "trial_converts": 0.9961966561388103
+   }
   },
   "MyFitnessPal#5": {
-   "kinds": [],
-   "plain": []
+   "kinds": [
+    "cancel_notice"
+   ],
+   "plain": [
+    ""
+   ],
+   "scores": {
+    "cancel_notice": 0.9998184498037828
+   }
   },
   "Netflix#1": {
    "kinds": [
-    "no_refund",
+    "no_refund"
+   ],
+   "plain": [
+    ""
+   ],
+   "scores": {
+    "no_refund": 0.999941612530701
+   }
+  },
+  "Netflix#2": {
+   "kinds": [
     "auto_renew"
    ],
    "plain": [
-    "Payments are non-refundable and no refunds or credits are offered.",
-    "Payments are non-refundable and no refunds or credits are offered."
-   ]
-  },
-  "Netflix#2": {
-   "kinds": [],
-   "plain": []
+    ""
+   ],
+   "scores": {
+    "auto_renew": 0.9998778101352909
+   }
   },
   "New_York_Times#1": {
-   "kinds": [],
-   "plain": []
+   "kinds": [
+    "cancel_notice"
+   ],
+   "plain": [
+    ""
+   ],
+   "scores": {
+    "cancel_notice": 0.9999483395551921
+   }
   },
   "Noom#1": {
    "kinds": [
@@ -408,413 +670,689 @@
    ],
    "plain": [
     ""
-   ]
+   ],
+   "scores": {
+    "auto_renew": 0.9999776402925875
+   }
   },
   "Noom#2": {
    "kinds": [
-    "auto_renew",
-    "lock_in"
+    "auto_renew"
    ],
    "plain": [
-    "Automatic renewals trigger automatic cancellation if you don’t cancel.",
-    "Automatic renewals trigger automatic cancellation if you don’t cancel."
-   ]
+    ""
+   ],
+   "scores": {
+    "auto_renew": 0.9999808700414159
+   }
   },
   "Noom#3": {
    "kinds": [
     "auto_renew"
    ],
    "plain": [
-    "It automatically renews subscriptions."
-   ]
+    ""
+   ],
+   "scores": {
+    "auto_renew": 0.9999864154873894
+   }
   },
   "Noom#4": {
    "kinds": [
-    "trial_converts",
-    "auto_renew"
+    "trial_converts"
    ],
    "plain": [
-    "A free trial starts charging immediately, unless canceled.",
-    "A free trial starts charging immediately, unless canceled."
-   ]
+    ""
+   ],
+   "scores": {
+    "trial_converts": 0.9996011437733767
+   }
   },
   "Noom#5": {
    "kinds": [
     "auto_renew"
    ],
    "plain": [
-    "It automatically renews your subscription."
-   ]
+    ""
+   ],
+   "scores": {
+    "auto_renew": 0.9999896027139821
+   }
   },
   "Noom#6": {
    "kinds": [
     "auto_renew"
    ],
    "plain": [
-    "It automatically renews unless canceled."
-   ]
+    ""
+   ],
+   "scores": {
+    "auto_renew": 0.9999803874182028
+   }
   },
   "Noom#7": {
    "kinds": [
     "auto_renew"
    ],
    "plain": [
-    "It keeps charging you until you cancel."
-   ]
+    ""
+   ],
+   "scores": {
+    "auto_renew": 0.9999471882998977
+   }
   },
   "Noom#8": {
-   "kinds": [],
-   "plain": []
+   "kinds": [
+    "lock_in"
+   ],
+   "plain": [
+    ""
+   ],
+   "scores": {
+    "lock_in": 0.999738883044461
+   }
   },
   "Patreon#1": {
-   "kinds": [],
-   "plain": []
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    ""
+   ],
+   "scores": {
+    "auto_renew": 0.9999874939272528
+   }
   },
   "Patreon#2": {
    "kinds": [
     "auto_renew"
    ],
    "plain": [
-    "It’s a one-time or automatically renewing subscription."
-   ]
+    ""
+   ],
+   "scores": {
+    "auto_renew": 0.9999868641412604
+   }
   },
   "Patreon#3": {
-   "kinds": [],
-   "plain": []
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    ""
+   ],
+   "scores": {
+    "auto_renew": 0.9999832769255621
+   }
   },
   "Patreon#4": {
    "kinds": [
     "auto_renew"
    ],
    "plain": [
-    "It automatically renews monthly or annually until you cancel."
-   ]
+    ""
+   ],
+   "scores": {
+    "auto_renew": 0.9999816590952088
+   }
   },
   "Patreon#5": {
    "kinds": [
-    "trial_converts",
+    "auto_renew",
+    "trial_converts"
+   ],
+   "plain": [
+    "",
+    ""
+   ],
+   "scores": {
+    "auto_renew": 0.9999230047068152,
+    "trial_converts": 0.9996503624882034
+   }
+  },
+  "Patreon#6": {
+   "kinds": [
     "auto_renew"
    ],
    "plain": [
-    "A free trial or initial gift unlocks a paid subscription after the specified period.",
-    "A free trial or initial gift unlocks a paid subscription after the specified period."
-   ]
-  },
-  "Patreon#6": {
-   "kinds": [],
-   "plain": []
+    ""
+   ],
+   "scores": {
+    "auto_renew": 0.9999800407234757
+   }
   },
   "Patreon#7": {
    "kinds": [
-    "no_refund",
-    "lock_in"
+    "no_refund"
    ],
    "plain": [
-    "Refunds and exchanges are not allowed, including for gifts.",
-    "Refunds and exchanges are not allowed, including for gifts."
-   ]
+    ""
+   ],
+   "scores": {
+    "no_refund": 0.9996493381277382
+   }
   },
   "Patreon#8": {
-   "kinds": [],
-   "plain": []
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    ""
+   ],
+   "scores": {
+    "auto_renew": 0.9999152288933861
+   }
   },
   "Peloton#1": {
-   "kinds": [],
-   "plain": []
+   "kinds": [
+    "cancel_notice"
+   ],
+   "plain": [
+    ""
+   ],
+   "scores": {
+    "cancel_notice": 0.9994729952918436
+   }
   },
   "Peloton#2": {
-   "kinds": [],
-   "plain": []
+   "kinds": [
+    "cancel_notice"
+   ],
+   "plain": [
+    ""
+   ],
+   "scores": {
+    "cancel_notice": 0.9999177890700306
+   }
   },
   "Peloton#3": {
-   "kinds": [],
-   "plain": []
+   "kinds": [
+    "cancel_notice"
+   ],
+   "plain": [
+    ""
+   ],
+   "scores": {
+    "cancel_notice": 0.9999323624461749
+   }
   },
   "Shopify#1": {
    "kinds": [
     "auto_renew"
    ],
    "plain": [
-    "It automatically renews unless you choose not to."
-   ]
+    ""
+   ],
+   "scores": {
+    "auto_renew": 0.9999962132632956
+   }
   },
   "Shopify#2": {
    "kinds": [
     "auto_renew"
    ],
    "plain": [
-    "Shopify automatically renews your domain until your account is inactive."
-   ]
+    ""
+   ],
+   "scores": {
+    "auto_renew": 0.9999784716618892
+   }
   },
   "Shopify#3": {
-   "kinds": [],
-   "plain": []
-  },
-  "Shopify#4": {
-   "kinds": [],
-   "plain": []
-  },
-  "Shopify#5": {
    "kinds": [
     "auto_renew"
    ],
    "plain": [
-    "You’ll be charged each billing date for all outstanding fees that haven’t been charged before."
-   ]
+    ""
+   ],
+   "scores": {
+    "auto_renew": 0.9999634706629236
+   }
   },
-  "Shopify#6": {
+  "Shopify#4": {
    "kinds": [
-    "lock_in",
-    "auto_renew",
     "exit_fee"
    ],
    "plain": [
-    "Shopify can terminate your account if fees aren’t paid within 60 days.",
-    "Shopify can terminate your account if fees aren’t paid within 60 days.",
-    "Shopify can terminate your account if fees aren’t paid within 60 days."
-   ]
+    ""
+   ],
+   "scores": {
+    "exit_fee": 0.999861165227026
+   }
+  },
+  "Shopify#5": {
+   "kinds": [
+    "exit_fee"
+   ],
+   "plain": [
+    ""
+   ],
+   "scores": {
+    "exit_fee": 0.9998298373374269
+   }
+  },
+  "Shopify#6": {
+   "kinds": [
+    "exit_fee"
+   ],
+   "plain": [
+    ""
+   ],
+   "scores": {
+    "exit_fee": 0.9999365129636649
+   }
   },
   "Shopify#7": {
    "kinds": [
     "auto_renew"
    ],
    "plain": [
-    "Shopify domains are automatically renewed after termination."
-   ]
+    ""
+   ],
+   "scores": {
+    "auto_renew": 0.999984868674126
+   }
   },
   "Shopify#8": {
-   "kinds": [],
-   "plain": []
-  },
-  "Spotify#1": {
-   "kinds": [],
-   "plain": []
-  },
-  "Spotify#2": {
-   "kinds": [],
-   "plain": []
-  },
-  "Spotify#3": {
    "kinds": [
-    "lock_in",
     "auto_renew"
    ],
    "plain": [
-    "Spotify’s liability is limited to what’s explicitly stated in these terms.",
-    "Spotify’s liability is limited to what’s explicitly stated in these terms."
-   ]
+    ""
+   ],
+   "scores": {
+    "auto_renew": 0.9999826756429588
+   }
+  },
+  "Spotify#1": {
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    ""
+   ],
+   "scores": {
+    "auto_renew": 0.9999660681311568
+   }
+  },
+  "Spotify#2": {
+   "kinds": [
+    "cancel_notice"
+   ],
+   "plain": [
+    ""
+   ],
+   "scores": {
+    "cancel_notice": 0.9999795039681735
+   }
+  },
+  "Spotify#3": {
+   "kinds": [
+    "no_refund"
+   ],
+   "plain": [
+    ""
+   ],
+   "scores": {
+    "no_refund": 0.9999972396045423
+   }
   },
   "Spotify#4": {
-   "kinds": [],
-   "plain": []
+   "kinds": [
+    "cancel_notice"
+   ],
+   "plain": [
+    ""
+   ],
+   "scores": {
+    "cancel_notice": 0.9996747176807921
+   }
   },
   "Squarespace#1": {
    "kinds": [
     "auto_renew"
    ],
    "plain": [
-    "Automatic billing occurs for paid services like domain registrations and subscriptions unless canceled."
-   ]
+    ""
+   ],
+   "scores": {
+    "auto_renew": 0.9999841670787295
+   }
   },
   "Squarespace#2": {
-   "kinds": [],
-   "plain": []
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    ""
+   ],
+   "scores": {
+    "auto_renew": 0.9999675180638204
+   }
   },
   "Squarespace#3": {
-   "kinds": [],
-   "plain": []
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    ""
+   ],
+   "scores": {
+    "auto_renew": 0.9999819034683767
+   }
   },
   "Squarespace#4": {
-   "kinds": [],
-   "plain": []
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    ""
+   ],
+   "scores": {
+    "auto_renew": 0.9999887070568203
+   }
   },
   "Squarespace#5": {
-   "kinds": [],
-   "plain": []
+   "kinds": [
+    "no_refund"
+   ],
+   "plain": [
+    ""
+   ],
+   "scores": {
+    "no_refund": 0.9991986902512205
+   }
   },
   "Strava#1": {
    "kinds": [
     "no_refund"
    ],
    "plain": [
-    "Strava doesn’t offer refunds or credits unless explicitly stated."
-   ]
+    ""
+   ],
+   "scores": {
+    "no_refund": 0.9999646761026812
+   }
   },
   "Strava#2": {
    "kinds": [
     "auto_renew"
    ],
    "plain": [
-    "It keeps charging until the customer cancels."
-   ]
+    ""
+   ],
+   "scores": {
+    "auto_renew": 0.9999473342534526
+   }
   },
   "Strava#3": {
    "kinds": [
     "auto_renew"
    ],
    "plain": [
-    "It automatically renews each billing period until canceled."
-   ]
+    ""
+   ],
+   "scores": {
+    "auto_renew": 0.9999839018178961
+   }
   },
   "Strava#4": {
    "kinds": [
     "auto_renew"
    ],
    "plain": [
-    "It automatically renews unless canceled within 24 hours."
-   ]
+    ""
+   ],
+   "scores": {
+    "auto_renew": 0.9999874673489489
+   }
   },
   "Strava#5": {
    "kinds": [
-    "trial_converts",
-    "auto_renew"
+    "trial_converts"
    ],
    "plain": [
-    "You’ll be charged for your subscription fee until the trial ends, or you cancel before the trial ends.",
-    "You’ll be charged for your subscription fee until the trial ends, or you cancel before the trial ends."
-   ]
+    ""
+   ],
+   "scores": {
+    "trial_converts": 0.9993763792191487
+   }
   },
   "Surfshark#1": {
    "kinds": [
     "auto_renew"
    ],
    "plain": [
-    "It automatically renews to keep you protected."
-   ]
+    ""
+   ],
+   "scores": {
+    "auto_renew": 0.9999805818845239
+   }
   },
   "Surfshark#2": {
    "kinds": [
     "auto_renew"
    ],
    "plain": [
-    "Automatically renewed until you cancel your payments."
-   ]
+    ""
+   ],
+   "scores": {
+    "auto_renew": 0.9999850450754175
+   }
   },
   "Surfshark#3": {
-   "kinds": [],
-   "plain": []
+   "kinds": [
+    "no_refund"
+   ],
+   "plain": [
+    ""
+   ],
+   "scores": {
+    "no_refund": 0.9989647172070832
+   }
   },
   "Surfshark#4": {
    "kinds": [
-    "no_refund",
-    "auto_renew"
+    "auto_renew",
+    "no_refund"
    ],
    "plain": [
-    "Recurring payments are not refundable.",
-    "Recurring payments are not refundable."
-   ]
+    "",
+    ""
+   ],
+   "scores": {
+    "auto_renew": 0.9936995863745097,
+    "no_refund": 0.9999226543950169
+   }
   },
   "Surfshark#5": {
    "kinds": [
-    "cancel_notice"
+    "no_refund"
    ],
    "plain": [
-    "You can delete your account, but you won’t get a refund for the unused portion."
-   ]
+    ""
+   ],
+   "scores": {
+    "no_refund": 0.9997069118443265
+   }
   },
   "Tinder#1": {
    "kinds": [
     "auto_renew"
    ],
    "plain": [
-    "Automatically renewing subscriptions is a key part of this term."
-   ]
+    ""
+   ],
+   "scores": {
+    "auto_renew": 0.9999927647037066
+   }
   },
   "Tinder#2": {
    "kinds": [
     "auto_renew"
    ],
    "plain": [
-    "You’ll be charged again until you cancel."
-   ]
+    ""
+   ],
+   "scores": {
+    "auto_renew": 0.9999890997988845
+   }
   },
   "Tinder#3": {
    "kinds": [
     "auto_renew"
    ],
    "plain": [
-    "It automatically renews until you cancel."
-   ]
+    ""
+   ],
+   "scores": {
+    "auto_renew": 0.9999873928715143
+   }
   },
   "Tinder#4": {
    "kinds": [
     "auto_renew"
    ],
    "plain": [
-    "It keeps charging you every month until you cancel."
-   ]
+    ""
+   ],
+   "scores": {
+    "auto_renew": 0.9999856598157726
+   }
   },
   "Tinder#5": {
    "kinds": [
     "auto_renew"
    ],
    "plain": [
-    "It continues to be charged for the subscription until you cancel."
-   ]
+    ""
+   ],
+   "scores": {
+    "auto_renew": 0.9999654071019767
+   }
   },
   "Tinder#6": {
-   "kinds": [],
-   "plain": []
+   "kinds": [
+    "lock_in"
+   ],
+   "plain": [
+    ""
+   ],
+   "scores": {
+    "lock_in": 0.9994140131153549
+   }
   },
   "Tinder#7": {
    "kinds": [
     "auto_renew"
    ],
    "plain": [
-    "Your payment method will be charged periodically until you cancel."
-   ]
+    ""
+   ],
+   "scores": {
+    "auto_renew": 0.9999698405119666
+   }
   },
   "Tinder#8": {
    "kinds": [
-    "auto_renew"
-   ],
-   "plain": [
-    "It automatically continues for the agreed-upon price and time until cancellation."
-   ]
-  },
-  "Wix#1": {
-   "kinds": [],
-   "plain": []
-  },
-  "Wix#2": {
-   "kinds": [
-    "cancel_notice",
-    "auto_renew"
-   ],
-   "plain": [
-    "The cancellation is immediate after receiving the notice.",
-    "The cancellation is immediate after receiving the notice."
-   ]
-  },
-  "Wix#3": {
-   "kinds": [],
-   "plain": []
-  },
-  "Xfinity#1": {
-   "kinds": [],
-   "plain": []
-  },
-  "Xfinity#2": {
-   "kinds": [],
-   "plain": []
-  },
-  "Xfinity#3": {
-   "kinds": [],
-   "plain": []
-  },
-  "Xfinity#4": {
-   "kinds": [],
-   "plain": []
-  },
-  "Xfinity#5": {
-   "kinds": [
-    "no_refund",
+    "auto_renew",
     "lock_in"
    ],
    "plain": [
-    "Non-refundable fees and exclusions are present.",
-    "Non-refundable fees and exclusions are present."
-   ]
+    "",
+    ""
+   ],
+   "scores": {
+    "auto_renew": 0.9999877527630753,
+    "lock_in": 0.9996198318682484
+   }
+  },
+  "Wix#1": {
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    ""
+   ],
+   "scores": {
+    "auto_renew": 0.9999470281341242
+   }
+  },
+  "Wix#2": {
+   "kinds": [
+    "cancel_notice"
+   ],
+   "plain": [
+    ""
+   ],
+   "scores": {
+    "cancel_notice": 0.999986949775096
+   }
+  },
+  "Wix#3": {
+   "kinds": [
+    "cancel_notice"
+   ],
+   "plain": [
+    ""
+   ],
+   "scores": {
+    "cancel_notice": 0.9999255228499099
+   }
+  },
+  "Xfinity#1": {
+   "kinds": [
+    "lock_in"
+   ],
+   "plain": [
+    ""
+   ],
+   "scores": {
+    "lock_in": 0.9980913641626533
+   }
+  },
+  "Xfinity#2": {
+   "kinds": [
+    "lock_in",
+    "exit_fee"
+   ],
+   "plain": [
+    "",
+    ""
+   ],
+   "scores": {
+    "lock_in": 0.9978294508043601,
+    "exit_fee": 0.999981518121256
+   }
+  },
+  "Xfinity#3": {
+   "kinds": [],
+   "plain": [],
+   "scores": {
+    "lock_in": 0.10715277663468734
+   }
+  },
+  "Xfinity#4": {
+   "kinds": [
+    "lock_in"
+   ],
+   "plain": [
+    ""
+   ],
+   "scores": {
+    "lock_in": 0.9984077129766702
+   }
+  },
+  "Xfinity#5": {
+   "kinds": [
+    "no_refund"
+   ],
+   "plain": [
+    ""
+   ],
+   "scores": {
+    "no_refund": 0.9997351697887606
+   }
   },
   "Xfinity#6": {
    "kinds": [
@@ -822,101 +1360,162 @@
     "exit_fee"
    ],
    "plain": [
-    "Terminating services before the minimum term results in a fee.",
-    "Terminating services before the minimum term results in a fee."
-   ]
+    "",
+    ""
+   ],
+   "scores": {
+    "lock_in": 0.9979155420949187,
+    "exit_fee": 0.999983412700326
+   }
   },
   "YouTube_Paid_Services#1": {
    "kinds": [
     "auto_renew"
    ],
    "plain": [
-    "Google will charge the payment method on file on the first day of each billing period."
-   ]
+    ""
+   ],
+   "scores": {
+    "auto_renew": 0.9999825026091737
+   }
   },
   "YouTube_Paid_Services#2": {
    "kinds": [
-    "trial_converts",
-    "auto_renew"
+    "auto_renew",
+    "trial_converts"
    ],
    "plain": [
-    "You’ll be charged the full subscription price after the trial ends, and continue paying until you cancel.",
-    "You’ll be charged the full subscription price after the trial ends, and continue paying until you cancel."
-   ]
+    "",
+    ""
+   ],
+   "scores": {
+    "auto_renew": 0.9999619785317944,
+    "trial_converts": 0.9951715463164069
+   }
   },
   "YouTube_Paid_Services#3": {
+   "kinds": [
+    "auto_renew",
+    "cancel_notice"
+   ],
+   "plain": [
+    "",
+    ""
+   ],
+   "scores": {
+    "auto_renew": 0.9999719019039697,
+    "cancel_notice": 0.9999491718972465
+   }
+  },
+  "YouTube_Paid_Services#4": {
    "kinds": [
     "auto_renew"
    ],
    "plain": [
-    "You can cancel the subscription before the billing period ends."
-   ]
-  },
-  "YouTube_Paid_Services#4": {
-   "kinds": [],
-   "plain": []
+    ""
+   ],
+   "scores": {
+    "auto_renew": 0.9998141744182564
+   }
   },
   "YouTube_Paid_Services#5": {
    "kinds": [
     "cancel_notice"
    ],
    "plain": [
-    "The new terms take effect after a defined period."
-   ]
+    ""
+   ],
+   "scores": {
+    "cancel_notice": 0.9999811090437603
+   }
   },
   "YouTube_Paid_Services#6": {
    "kinds": [
     "auto_renew"
    ],
    "plain": [
-    "It automatically renews based on the first purchase date."
-   ]
+    ""
+   ],
+   "scores": {
+    "auto_renew": 0.9999446871142524
+   }
   },
   "YouTube_Paid_Services#7": {
    "kinds": [
-    "trial_converts"
+    "auto_renew"
    ],
    "plain": [
-    "Pre-paid plans are purchased upfront and don’t renew automatically."
-   ]
+    ""
+   ],
+   "scores": {
+    "auto_renew": 0.9999586230031854
+   }
   },
   "YouTube_Paid_Services#8": {
    "kinds": [
-    "no_refund",
+    "no_refund"
+   ],
+   "plain": [
+    ""
+   ],
+   "scores": {
+    "no_refund": 0.9954002758728062
+   }
+  },
+  "Zoom#1": {
+   "kinds": [
     "lock_in"
    ],
    "plain": [
-    "Partial refunds are not possible.",
-    "Partial refunds are not possible."
-   ]
-  },
-  "Zoom#1": {
-   "kinds": [],
-   "plain": []
+    ""
+   ],
+   "scores": {
+    "lock_in": 0.9954315045804222
+   }
   },
   "Zoom#2": {
-   "kinds": [],
-   "plain": []
+   "kinds": [
+    "no_refund"
+   ],
+   "plain": [
+    ""
+   ],
+   "scores": {
+    "no_refund": 0.9970460657486276
+   }
   },
   "Zoom#3": {
    "kinds": [
-    "no_refund",
-    "auto_renew",
-    "lock_in"
+    "no_refund"
    ],
    "plain": [
-    "You agree to final, non-refundable payments, regardless of Zoom’s updates or legal requirements.",
-    "You agree to final, non-refundable payments, regardless of Zoom’s updates or legal requirements.",
-    "You agree to final, non-refundable payments, regardless of Zoom’s updates or legal requirements."
-   ]
+    ""
+   ],
+   "scores": {
+    "no_refund": 0.9979814032513731
+   }
   },
   "Zoom#4": {
-   "kinds": [],
-   "plain": []
+   "kinds": [
+    "cancel_notice"
+   ],
+   "plain": [
+    ""
+   ],
+   "scores": {
+    "cancel_notice": 0.9999821296093132
+   }
   },
   "Zoom#5": {
-   "kinds": [],
-   "plain": []
+   "kinds": [
+    "cancel_notice"
+   ],
+   "plain": [
+    ""
+   ],
+   "scores": {
+    "cancel_notice": 0.9999846645049014
+   }
   }
  },
  "raws": {}

@@ -40,6 +40,8 @@ export function findCandidates(sentences: Sentence[], options: CandidateOptions 
   const seen = new Set<string>();
   for (const sentence of sentences) {
     if (!CANCEL_CONTEXT.test(sentence.text)) continue;
+    // Headings like "Fees and Purchase Terms; Automatically Renewing Subscriptions" aren't clauses.
+    if (sentence.text.split(/\s+/).length < 7) continue;
     // Terms repeat themselves (summary box, then full text); the model only needs each sentence once.
     const norm = sentence.text.toLowerCase().replace(/\W+/g, " ").trim();
     if (seen.has(norm)) continue;

@@ -1,6 +1,6 @@
 {
  "reader": "rules",
- "msPerDoc": 0.0019212592592607633,
+ "msPerDoc": 0.0012283333333334772,
  "predictions": {
   "1Password#1": {
    "kinds": [
@@ -148,9 +148,11 @@
   },
   "Bumble#1": {
    "kinds": [
+    "auto_renew",
     "lock_in"
    ],
    "plain": [
+    "",
     ""
    ]
   },
@@ -172,9 +174,11 @@
   },
   "Bumble#4": {
    "kinds": [
+    "auto_renew",
     "trial_converts"
    ],
    "plain": [
+    "",
     ""
    ]
   },
@@ -580,9 +584,11 @@
   },
   "Patreon#5": {
    "kinds": [
+    "auto_renew",
     "trial_converts"
    ],
    "plain": [
+    "",
     ""
    ]
   },
@@ -836,9 +842,11 @@
   },
   "Surfshark#4": {
    "kinds": [
-    "auto_renew"
+    "auto_renew",
+    "no_refund"
    ],
    "plain": [
+    "",
     ""
    ]
   },
@@ -908,9 +916,11 @@
   },
   "Tinder#8": {
    "kinds": [
+    "auto_renew",
     "lock_in"
    ],
    "plain": [
+    "",
     ""
    ]
   },
@@ -948,9 +958,11 @@
   },
   "Xfinity#2": {
    "kinds": [
+    "lock_in",
     "exit_fee"
    ],
    "plain": [
+    "",
     ""
    ]
   },
@@ -980,9 +992,11 @@
   },
   "Xfinity#6": {
    "kinds": [
+    "lock_in",
     "exit_fee"
    ],
    "plain": [
+    "",
     ""
    ]
   },
@@ -996,17 +1010,21 @@
   },
   "YouTube_Paid_Services#2": {
    "kinds": [
+    "auto_renew",
     "trial_converts"
    ],
    "plain": [
+    "",
     ""
    ]
   },
   "YouTube_Paid_Services#3": {
    "kinds": [
+    "auto_renew",
     "cancel_notice"
    ],
    "plain": [
+    "",
     ""
    ]
   },
