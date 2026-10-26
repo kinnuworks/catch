@@ -63,4 +63,7 @@ window.addEventListener("message", async (e: MessageEvent<ToPomelo>) => {
   }
 });
 
-void run();
+// ?press=1 presses the button once the card is up, for screenshots of the exit plan.
+void run().then(() => {
+  if (new URLSearchParams(location.search).has("press")) setTimeout(() => document.getElementById("cta")?.click(), 400);
+});

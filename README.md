@@ -55,7 +55,7 @@ Nothing else. No analytics, no server, no account.
 |---|---|
 | `sources.json` | the 50 services whose terms were fetched; 27 were readable as plain text |
 | `pool.json` | 136 candidate sentences the rules picked (up to 8 per service) |
-| `labels.json` | my hand labels for those sentences, made without seeing any reader's output |
+| `labels.json` | the labels: suggested by an AI assistant (`prelabels.json`), then reviewed one by one by me in `review.html` |
 | `pred-*.json` | each reader's raw output, including every P(yes) |
 | `results.md` | precision, recall and F1 per reader, and the 2-fold calibrated threshold |
 

@@ -1,0 +1,104 @@
+{
+ "labelled": 136,
+ "gemma3:1b": {
+  "precision": 0.6433566433566433,
+  "recall": 0.9108910891089109,
+  "f1": 0.7540983606557378,
+  "trapAccuracy": 0.6691176470588235,
+  "perKind": {
+   "auto_renew": {
+    "tp": 40,
+    "fp": 24,
+    "fn": 3
+   },
+   "trial_converts": {
+    "tp": 10,
+    "fp": 0,
+    "fn": 0
+   },
+   "lock_in": {
+    "tp": 7,
+    "fp": 5,
+    "fn": 2
+   },
+   "exit_fee": {
+    "tp": 2,
+    "fp": 5,
+    "fn": 0
+   },
+   "cancel_notice": {
+    "tp": 5,
+    "fp": 13,
+    "fn": 4
+   },
+   "no_refund": {
+    "tp": 28,
+    "fp": 4,
+    "fn": 0
+   }
+  },
+  "grounded": 0,
+  "plains": 0,
+  "msPerDoc": 595.5380155555556
+ },
+ "rules": {
+  "precision": 0.6344827586206897,
+  "recall": 0.9108910891089109,
+  "f1": 0.7479674796747967,
+  "trapAccuracy": 0.6544117647058824,
+  "perKind": {
+   "auto_renew": {
+    "tp": 40,
+    "fp": 24,
+    "fn": 3
+   },
+   "trial_converts": {
+    "tp": 10,
+    "fp": 0,
+    "fn": 0
+   },
+   "lock_in": {
+    "tp": 7,
+    "fp": 6,
+    "fn": 2
+   },
+   "exit_fee": {
+    "tp": 2,
+    "fp": 5,
+    "fn": 0
+   },
+   "cancel_notice": {
+    "tp": 5,
+    "fp": 13,
+    "fn": 4
+   },
+   "no_refund": {
+    "tp": 28,
+    "fp": 5,
+    "fn": 0
+   }
+  },
+  "grounded": 0,
+  "plains": 0,
+  "msPerDoc": 0.0012283333333334772
+ },
+ "gemma3:1b (calibrated)": {
+  "folds": [
+   {
+    "threshold": 0.97,
+    "precision": 0.6428571428571429,
+    "recall": 0.9574468085106383,
+    "f1": 0.7692307692307693
+   },
+   {
+    "threshold": 0.5,
+    "precision": 0.6438356164383562,
+    "recall": 0.8703703703703703,
+    "f1": 0.7401574803149606
+   }
+  ],
+  "precision": 0.6433463796477495,
+  "recall": 0.9139085894405043,
+  "f1": 0.7546941247728649
+ }
+}

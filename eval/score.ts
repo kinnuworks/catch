@@ -6,12 +6,17 @@ import { TRAP_KINDS } from "../src/core/types";
 const labelsFile = process.argv[2] ?? `${process.env.HOME}/Downloads/catch-labels.json`;
 if (!existsSync(labelsFile)) throw new Error(`no labels at ${labelsFile}`);
 const gold = JSON.parse(readFileSync(labelsFile, "utf8")) as Record<string, string[]>;
+const meta = (gold as unknown as { _meta?: { method: string; reviewed: number; changed: string[] } })._meta;
 const pool = JSON.parse(readFileSync("eval/pool.json", "utf8")) as { key: string; text: string; service: string }[];
 const keys = pool.map((p) => p.key).filter((k) => (gold[k] ?? []).length > 0);
 const text = new Map(pool.map((p) => [p.key, p.text]));
 
 const pct = (n: number) => `${(100 * n).toFixed(0)}%`;
-const lines: string[] = [`Hand-labelled sentences: ${keys.length} from ${new Set(keys.map((k) => k.split("#")[0])).size} services`, ""];
+const lines: string[] = [
+  `Labelled sentences: ${keys.length} from ${new Set(keys.map((k) => k.split("#")[0])).size} services`,
+  meta ? `Method: ${meta.method}; ${meta.changed.length} of ${meta.reviewed} pre-labels changed on review.` : "Method: labelled by hand.",
+  "",
+];
 const summary: Record<string, unknown> = { labelled: keys.length };
 
 for (const file of readdirSync("eval").filter((f) => f.startsWith("pred-") && f.endsWith(".json")).sort()) {

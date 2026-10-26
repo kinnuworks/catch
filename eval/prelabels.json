@@ -1,0 +1,422 @@
+{
+ "1Password#1": [
+  "auto_renew"
+ ],
+ "1Password#2": [
+  "no_refund"
+ ],
+ "1Password#3": [
+  "trial_converts"
+ ],
+ "1Password#4": [
+  "no_refund"
+ ],
+ "1Password#5": [
+  "none"
+ ],
+ "1Password#6": [
+  "no_refund",
+  "lock_in"
+ ],
+ "1Password#7": [
+  "none"
+ ],
+ "1Password#8": [
+  "auto_renew"
+ ],
+ "Apple_Media_Services#1": [
+  "none"
+ ],
+ "Apple_Media_Services#2": [
+  "auto_renew",
+  "cancel_notice"
+ ],
+ "Babbel#1": [
+  "none"
+ ],
+ "Babbel#2": [
+  "none"
+ ],
+ "Babbel#3": [
+  "none"
+ ],
+ "Babbel#4": [
+  "no_refund"
+ ],
+ "Babbel#5": [
+  "lock_in"
+ ],
+ "Babbel#6": [
+  "cancel_notice"
+ ],
+ "Babbel#7": [
+  "none"
+ ],
+ "Babbel#8": [
+  "lock_in"
+ ],
+ "Bumble#1": [
+  "auto_renew"
+ ],
+ "Bumble#2": [
+  "auto_renew"
+ ],
+ "Bumble#3": [
+  "trial_converts"
+ ],
+ "Bumble#4": [
+  "trial_converts",
+  "auto_renew"
+ ],
+ "Bumble#5": [
+  "trial_converts"
+ ],
+ "Bumble#6": [
+  "no_refund"
+ ],
+ "Bumble#7": [
+  "no_refund"
+ ],
+ "Bumble#8": [
+  "no_refund"
+ ],
+ "Calm#1": [
+  "auto_renew"
+ ],
+ "Calm#2": [
+  "no_refund"
+ ],
+ "Coursera#1": [
+  "auto_renew"
+ ],
+ "Coursera#2": [
+  "no_refund"
+ ],
+ "Dropbox#1": [
+  "none"
+ ],
+ "ExpressVPN#1": [
+  "auto_renew"
+ ],
+ "ExpressVPN#2": [
+  "auto_renew"
+ ],
+ "ExpressVPN#3": [
+  "none"
+ ],
+ "GitHub#1": [
+  "none"
+ ],
+ "GitHub#2": [
+  "no_refund"
+ ],
+ "GitHub#3": [
+  "no_refund"
+ ],
+ "GitHub#4": [
+  "no_refund"
+ ],
+ "Headspace#1": [
+  "none"
+ ],
+ "Headspace#2": [
+  "auto_renew"
+ ],
+ "Headspace#3": [
+  "none"
+ ],
+ "Headspace#4": [
+  "no_refund"
+ ],
+ "Headspace#5": [
+  "none"
+ ],
+ "Headspace#6": [
+  "no_refund"
+ ],
+ "Microsoft#1": [
+  "auto_renew"
+ ],
+ "Microsoft#2": [
+  "none"
+ ],
+ "Microsoft#3": [
+  "no_refund"
+ ],
+ "Microsoft#4": [
+  "no_refund"
+ ],
+ "Microsoft#5": [
+  "trial_converts"
+ ],
+ "Microsoft#6": [
+  "auto_renew"
+ ],
+ "Microsoft#7": [
+  "none"
+ ],
+ "Microsoft#8": [
+  "none"
+ ],
+ "MyFitnessPal#1": [
+  "auto_renew"
+ ],
+ "MyFitnessPal#2": [
+  "no_refund"
+ ],
+ "MyFitnessPal#3": [
+  "auto_renew"
+ ],
+ "MyFitnessPal#4": [
+  "trial_converts"
+ ],
+ "MyFitnessPal#5": [
+  "none"
+ ],
+ "Netflix#1": [
+  "no_refund"
+ ],
+ "Netflix#2": [
+  "cancel_notice"
+ ],
+ "New_York_Times#1": [
+  "none"
+ ],
+ "Noom#1": [
+  "auto_renew"
+ ],
+ "Noom#2": [
+  "none"
+ ],
+ "Noom#3": [
+  "none"
+ ],
+ "Noom#4": [
+  "trial_converts"
+ ],
+ "Noom#5": [
+  "none"
+ ],
+ "Noom#6": [
+  "auto_renew"
+ ],
+ "Noom#7": [
+  "none"
+ ],
+ "Noom#8": [
+  "none"
+ ],
+ "Patreon#1": [
+  "none"
+ ],
+ "Patreon#2": [
+  "auto_renew"
+ ],
+ "Patreon#3": [
+  "auto_renew"
+ ],
+ "Patreon#4": [
+  "auto_renew"
+ ],
+ "Patreon#5": [
+  "trial_converts"
+ ],
+ "Patreon#6": [
+  "none"
+ ],
+ "Patreon#7": [
+  "no_refund"
+ ],
+ "Patreon#8": [
+  "none"
+ ],
+ "Peloton#1": [
+  "none"
+ ],
+ "Peloton#2": [
+  "none"
+ ],
+ "Peloton#3": [
+  "none"
+ ],
+ "Shopify#1": [
+  "auto_renew"
+ ],
+ "Shopify#2": [
+  "auto_renew"
+ ],
+ "Shopify#3": [
+  "auto_renew"
+ ],
+ "Shopify#4": [
+  "auto_renew"
+ ],
+ "Shopify#5": [
+  "none"
+ ],
+ "Shopify#6": [
+  "none"
+ ],
+ "Shopify#7": [
+  "none"
+ ],
+ "Shopify#8": [
+  "none"
+ ],
+ "Spotify#1": [
+  "auto_renew"
+ ],
+ "Spotify#2": [
+  "none"
+ ],
+ "Spotify#3": [
+  "no_refund"
+ ],
+ "Spotify#4": [
+  "none"
+ ],
+ "Squarespace#1": [
+  "auto_renew"
+ ],
+ "Squarespace#2": [
+  "auto_renew"
+ ],
+ "Squarespace#3": [
+  "none"
+ ],
+ "Squarespace#4": [
+  "none"
+ ],
+ "Squarespace#5": [
+  "no_refund"
+ ],
+ "Strava#1": [
+  "no_refund"
+ ],
+ "Strava#2": [
+  "none"
+ ],
+ "Strava#3": [
+  "auto_renew"
+ ],
+ "Strava#4": [
+  "auto_renew",
+  "cancel_notice"
+ ],
+ "Strava#5": [
+  "trial_converts",
+  "cancel_notice"
+ ],
+ "Surfshark#1": [
+  "auto_renew"
+ ],
+ "Surfshark#2": [
+  "auto_renew"
+ ],
+ "Surfshark#3": [
+  "no_refund"
+ ],
+ "Surfshark#4": [
+  "no_refund"
+ ],
+ "Surfshark#5": [
+  "no_refund"
+ ],
+ "Tinder#1": [
+  "none"
+ ],
+ "Tinder#2": [
+  "auto_renew"
+ ],
+ "Tinder#3": [
+  "auto_renew"
+ ],
+ "Tinder#4": [
+  "auto_renew"
+ ],
+ "Tinder#5": [
+  "auto_renew"
+ ],
+ "Tinder#6": [
+  "auto_renew",
+  "lock_in"
+ ],
+ "Tinder#7": [
+  "auto_renew"
+ ],
+ "Tinder#8": [
+  "auto_renew",
+  "lock_in"
+ ],
+ "Wix#1": [
+  "auto_renew"
+ ],
+ "Wix#2": [
+  "cancel_notice"
+ ],
+ "Wix#3": [
+  "cancel_notice"
+ ],
+ "Xfinity#1": [
+  "lock_in"
+ ],
+ "Xfinity#2": [
+  "exit_fee",
+  "lock_in"
+ ],
+ "Xfinity#3": [
+  "none"
+ ],
+ "Xfinity#4": [
+  "none"
+ ],
+ "Xfinity#5": [
+  "no_refund"
+ ],
+ "Xfinity#6": [
+  "exit_fee",
+  "lock_in"
+ ],
+ "YouTube_Paid_Services#1": [
+  "auto_renew"
+ ],
+ "YouTube_Paid_Services#2": [
+  "trial_converts",
+  "auto_renew"
+ ],
+ "YouTube_Paid_Services#3": [
+  "none"
+ ],
+ "YouTube_Paid_Services#4": [
+  "none"
+ ],
+ "YouTube_Paid_Services#5": [
+  "none"
+ ],
+ "YouTube_Paid_Services#6": [
+  "auto_renew"
+ ],
+ "YouTube_Paid_Services#7": [
+  "none"
+ ],
+ "YouTube_Paid_Services#8": [
+  "no_refund"
+ ],
+ "Zoom#1": [
+  "none"
+ ],
+ "Zoom#2": [
+  "none"
+ ],
+ "Zoom#3": [
+  "lock_in",
+  "no_refund"
+ ],
+ "Zoom#4": [
+  "auto_renew",
+  "cancel_notice"
+ ],
+ "Zoom#5": [
+  "cancel_notice"
+ ]
+}
