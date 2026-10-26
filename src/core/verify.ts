@@ -71,10 +71,20 @@ export function verifyPrompt(sentence: string, kind: TrapKind): string {
  * Rules propose, the model confirms. For each candidate the model only judges the kinds the
  * rules suspected. Every score is returned so callers can apply (or calibrate) a threshold.
  */
+/**
+ * Kinds the model isn't asked about. Gemma 4 E2B rejected all nine real lock-in sentences in the
+ * labelled set (eval/results.md), so lock-ins come straight from the rules until a fine-tune fixes it.
+ */
+export const RULES_DECIDE: ReadonlySet<TrapKind> = new Set(["lock_in"]);
+
 export async function verifyCandidates(candidates: Candidate[], score: ScoreYes, threshold = DEFAULT_THRESHOLD): Promise<ModelLabel[]> {
   const labels: ModelLabel[] = [];
   for (const c of candidates) {
     for (const kind of c.kinds) {
+      if (RULES_DECIDE.has(kind)) {
+        labels.push({ id: c.id, kind, plain: "", keep: true });
+        continue;
+      }
       const p = await score(VERIFY_SYSTEM, verifyPrompt(c.sentence.text, kind));
       labels.push({ id: c.id, kind, plain: "", score: p, keep: p >= threshold });
     }

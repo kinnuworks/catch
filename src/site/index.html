@@ -294,12 +294,12 @@
             <tbody>
               <tr><td>Rules only</td><td class="n">63%</td><td class="n">91%</td><td class="n">75%</td><td class="n">&lt;1 ms</td></tr>
               <tr><td>Gemma 3 1B, tuned threshold</td><td class="n">64%</td><td class="n">91%</td><td class="n">75%</td><td class="n">0.6 s</td></tr>
-              <tr><td>Gemma 4 E2B, tuned threshold</td><td class="n">72%</td><td class="n">84%</td><td class="n">77%</td><td class="n">1.7 s</td></tr>
-              <tr class="is-best"><td>Gemma 4 E2B, 0.5 threshold (the card)</td><td class="n">90%</td><td class="n">65%</td><td class="n">76%</td><td class="n">1.7 s</td></tr>
+              <tr><td>Gemma 4 E2B, asked about every kind</td><td class="n">90%</td><td class="n">65%</td><td class="n">76%</td><td class="n">1.7 s</td></tr>
+              <tr class="is-best"><td>Gemma 4 E2B + rules for lock-ins (ships)</td><td class="n">85%</td><td class="n">72%</td><td class="n">78%</td><td class="n">1.4 s</td></tr>
             </tbody>
           </table>
         </div>
-        <p class="note">Precision: of the catches shown, how many were real. Recall: of the real catches among those sentences, how many were shown. Tuned thresholds were picked on half the services and measured on the other half. The card uses the stricter 0.5, so nine in ten catches it shows are real. Gemma 4 is weakest on lock-ins; the details are in the write-up. Labels, predictions and scripts are in the repo.</p>
+        <p class="note">Precision: of the catches shown, how many were real. Recall: of the real catches among those sentences, how many were shown. Tuned thresholds were picked on half the services and measured on the other half. The card uses a 0.5 cut-off. Gemma 4 missed every lock-in in the test, so lock-ins come straight from the rules. Labels, predictions and scripts are in the repo.</p>
       </div>
     </section>
 

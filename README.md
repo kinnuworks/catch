@@ -63,10 +63,10 @@ Nothing else. No analytics, no server, no account.
 |---|---|---|---|
 | Rules only | 63% | 91% | 75% |
 | Gemma 3 1B, tuned threshold | 64% | 91% | 75% |
-| Gemma 4 E2B, tuned threshold (held-out services) | 72% | 84% | 77% |
-| Gemma 4 E2B, 0.5 threshold (the card) | 90% | 65% | 76% |
+| Gemma 4 E2B, asked about every kind (0.5) | 90% | 65% | 76% |
+| Gemma 4 E2B, rules decide lock-ins (0.5, ships) | 85% | 72% | 78% |
 
-Gemma 4 E2B was scored at 4-bit through Ollama (`gemma4:e2b-it-qat`); the extension runs the 4-bit ONNX build in the browser. It is weakest on lock-ins (0 of 9).
+Gemma 4 E2B was scored at 4-bit through Ollama (`gemma4:e2b-it-qat`); the extension runs the 4-bit ONNX build in the browser. Asked about lock-ins it found 0 of 9, so lock-ins come straight from the rules (`RULES_DECIDE` in `src/core/verify.ts`).
 
 The test can only see sentences the rules picked, so recall here means recall among those sentences. A trap phrased in words the rules don't expect is invisible to both the rules and this test.
 

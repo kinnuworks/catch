@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
 import { findCandidates } from "../src/core/lexicon";
 import { splitSentences } from "../src/core/sentences";
-import { QUESTIONS, verifyCandidates, verifyPrompt, yesProbability } from "../src/core/verify";
+import { QUESTIONS, RULES_DECIDE, verifyCandidates, verifyPrompt, yesProbability } from "../src/core/verify";
 import { yesFromLogits } from "../src/model/gemma";
 
 describe("yesProbability", () => {
@@ -39,9 +39,10 @@ describe("verifyCandidates", () => {
       asked.push(user);
       return user.includes("refunded") ? 0.2 : 0.9;
     }, 0.5);
-    expect(asked.length).toBe(candidates.reduce((n, c) => n + c.kinds.length, 0));
+    expect(asked.length).toBe(candidates.reduce((n, c) => n + c.kinds.filter((k) => !RULES_DECIDE.has(k)).length, 0));
     expect(labels.filter((l) => l.keep).map((l) => l.kind)).not.toContain("no_refund");
-    expect(labels.every((l) => typeof l.score === "number")).toBe(true);
+    expect(labels.filter((l) => !RULES_DECIDE.has(l.kind)).every((l) => typeof l.score === "number")).toBe(true);
+    expect(labels.filter((l) => RULES_DECIDE.has(l.kind)).every((l) => l.keep)).toBe(true);
   });
 
   it("puts the sentence and the kind's question in the prompt", () => {

@@ -1,6 +1,6 @@
 {
- "reader": "gemma4:e2b-it-qat",
- "msPerDoc": 1699.4812684814808,
+ "reader": "gemma4:e2b-it-qat, rules decide lock-ins (shipped)",
+ "msPerDoc": 1349.3526250370371,
  "predictions": {
   "1Password#1": {
    "kinds": [
@@ -129,11 +129,12 @@
    }
   },
   "Babbel#5": {
-   "kinds": [],
-   "plain": [],
-   "scores": {
-    "lock_in": 0.06535180479788262
-   }
+   "kinds": [
+    "lock_in"
+   ],
+   "plain": [
+    ""
+   ]
   },
   "Babbel#6": {
    "kinds": [
@@ -154,22 +155,24 @@
    }
   },
   "Babbel#8": {
-   "kinds": [],
-   "plain": [],
-   "scores": {
-    "lock_in": 0.07464227352097927
-   }
-  },
-  "Bumble#1": {
    "kinds": [
-    "auto_renew"
+    "lock_in"
    ],
    "plain": [
     ""
+   ]
+  },
+  "Bumble#1": {
+   "kinds": [
+    "auto_renew",
+    "lock_in"
+   ],
+   "plain": [
+    "",
+    ""
    ],
    "scores": {
-    "auto_renew": 0.9310653079968934,
-    "lock_in": 0.10672796438996979
+    "auto_renew": 0.9310653079968934
    }
   },
   "Bumble#2": {
@@ -289,11 +292,12 @@
    }
   },
   "Dropbox#1": {
-   "kinds": [],
-   "plain": [],
-   "scores": {
-    "lock_in": 0.07546759191400272
-   }
+   "kinds": [
+    "lock_in"
+   ],
+   "plain": [
+    ""
+   ]
   },
   "ExpressVPN#1": {
    "kinds": [
@@ -632,11 +636,12 @@
    }
   },
   "Noom#8": {
-   "kinds": [],
-   "plain": [],
-   "scores": {
-    "lock_in": 0.060990198816514046
-   }
+   "kinds": [
+    "lock_in"
+   ],
+   "plain": [
+    ""
+   ]
   },
   "Patreon#1": {
    "kinds": [],
@@ -1024,11 +1029,12 @@
    }
   },
   "Tinder#6": {
-   "kinds": [],
-   "plain": [],
-   "scores": {
-    "lock_in": 0.09715686002985582
-   }
+   "kinds": [
+    "lock_in"
+   ],
+   "plain": [
+    ""
+   ]
   },
   "Tinder#7": {
    "kinds": [
@@ -1043,14 +1049,15 @@
   },
   "Tinder#8": {
    "kinds": [
-    "auto_renew"
+    "auto_renew",
+    "lock_in"
    ],
    "plain": [
+    "",
     ""
    ],
    "scores": {
-    "auto_renew": 0.9302824562474027,
-    "lock_in": 0.08497231305812208
+    "auto_renew": 0.9302824562474027
    }
   },
   "Wix#1": {
@@ -1079,37 +1086,41 @@
    }
   },
   "Xfinity#1": {
-   "kinds": [],
-   "plain": [],
-   "scores": {
-    "lock_in": 0.139022552860495
-   }
-  },
-  "Xfinity#2": {
    "kinds": [
-    "exit_fee"
+    "lock_in"
    ],
    "plain": [
     ""
+   ]
+  },
+  "Xfinity#2": {
+   "kinds": [
+    "lock_in",
+    "exit_fee"
+   ],
+   "plain": [
+    "",
+    ""
    ],
    "scores": {
-    "lock_in": 0.19913896342887938,
     "exit_fee": 0.8603669249721579
    }
   },
   "Xfinity#3": {
-   "kinds": [],
-   "plain": [],
-   "scores": {
-    "lock_in": 0.04008677190380967
-   }
+   "kinds": [
+    "lock_in"
+   ],
+   "plain": [
+    ""
+   ]
   },
   "Xfinity#4": {
-   "kinds": [],
-   "plain": [],
-   "scores": {
-    "lock_in": 0.23111567960239496
-   }
+   "kinds": [
+    "lock_in"
+   ],
+   "plain": [
+    ""
+   ]
   },
   "Xfinity#5": {
    "kinds": [],
@@ -1120,13 +1131,14 @@
   },
   "Xfinity#6": {
    "kinds": [
+    "lock_in",
     "exit_fee"
    ],
    "plain": [
+    "",
     ""
    ],
    "scores": {
-    "lock_in": 0.10969138530485774,
     "exit_fee": 0.8341606188570784
    }
   },
@@ -1203,11 +1215,12 @@
    }
   },
   "Zoom#1": {
-   "kinds": [],
-   "plain": [],
-   "scores": {
-    "lock_in": 0.03177671545964514
-   }
+   "kinds": [
+    "lock_in"
+   ],
+   "plain": [
+    ""
+   ]
   },
   "Zoom#2": {
    "kinds": [],

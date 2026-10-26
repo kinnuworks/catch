@@ -41,7 +41,7 @@
   "plains": 0,
   "msPerDoc": 595.5380155555556
  },
- "gemma4:e2b-it-qat": {
+ "gemma4:e2b-it-qat, asked about every kind": {
   "precision": 0.9041095890410958,
   "recall": 0.6534653465346535,
   "f1": 0.7586206896551725,
@@ -81,6 +81,47 @@
   "grounded": 0,
   "plains": 0,
   "msPerDoc": 1699.4812684814808
+ },
+ "gemma4:e2b-it-qat, rules decide lock-ins (shipped)": {
+  "precision": 0.8488372093023255,
+  "recall": 0.7227722772277227,
+  "f1": 0.7807486631016043,
+  "trapAccuracy": 0.7647058823529411,
+  "perKind": {
+   "auto_renew": {
+    "tp": 33,
+    "fp": 3,
+    "fn": 10
+   },
+   "trial_converts": {
+    "tp": 9,
+    "fp": 0,
+    "fn": 1
+   },
+   "lock_in": {
+    "tp": 7,
+    "fp": 6,
+    "fn": 2
+   },
+   "exit_fee": {
+    "tp": 2,
+    "fp": 1,
+    "fn": 0
+   },
+   "cancel_notice": {
+    "tp": 3,
+    "fp": 1,
+    "fn": 6
+   },
+   "no_refund": {
+    "tp": 19,
+    "fp": 2,
+    "fn": 9
+   }
+  },
+  "grounded": 0,
+  "plains": 0,
+  "msPerDoc": 1349.3526250370371
  },
  "rules": {
   "precision": 0.6344827586206897,
@@ -142,7 +183,7 @@
   "recall": 0.9139085894405043,
   "f1": 0.7546941247728649
  },
- "gemma4:e2b-it-qat (calibrated)": {
+ "gemma4:e2b-it-qat, asked about every kind (calibrated)": {
   "folds": [
    {
     "threshold": 0.05,
@@ -160,5 +201,24 @@
   "precision": 0.7159090909090908,
   "recall": 0.8398345153664303,
   "f1": 0.766154616797462
+ },
+ "gemma4:e2b-it-qat, rules decide lock-ins (shipped) (calibrated)": {
+  "folds": [
+   {
+    "threshold": 0.28,
+    "precision": 0.8888888888888888,
+    "recall": 0.851063829787234,
+    "f1": 0.8695652173913044
+   },
+   {
+    "threshold": 0.23,
+    "precision": 0.7647058823529411,
+    "recall": 0.7222222222222222,
+    "f1": 0.7428571428571428
+   }
+  ],
+  "precision": 0.826797385620915,
+  "recall": 0.7866430260047281,
+  "f1": 0.8062111801242235
  }
 }
