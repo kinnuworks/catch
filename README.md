@@ -8,6 +8,8 @@ I built it after an app's free trial turned into a "monthly" plan I couldn't can
 
 **Live demo, no install:** https://kinnuworks.github.io/catch/
 
+**Video (70 s):** https://youtu.be/3MkDbNKn8Ng
+
 ## How it works
 
 ```
@@ -95,6 +97,12 @@ pnpm build         # dist/ext (extension) and dist/site (static site)
 - A trap written in words the rules don't expect is missed by both the rules and the model.
 - Dates assume the plan starts today and the trial starts at sign-up. Each deadline keeps a two-day safety margin.
 - It's not legal advice. It points at the sentences worth reading.
+
+## Changes after the challenge deadline
+
+The Week 3 deadline was October 25, 2026, 11:59 PM PDT. Any commit made after that is listed here.
+
+- None yet.
 
 ## License
 
