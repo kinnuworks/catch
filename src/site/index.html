@@ -292,13 +292,14 @@
           <table class="results" id="results">
             <thead><tr><th>Reader</th><th>Precision</th><th>Recall</th><th>F1</th><th>Time per document</th></tr></thead>
             <tbody>
-              <tr><td>Rules only</td><td class="n"><span class="placeholder">[result]</span></td><td class="n"><span class="placeholder">[result]</span></td><td class="n"><span class="placeholder">[result]</span></td><td class="n">&lt;1 ms</td></tr>
-              <tr><td>Gemma 3 1B</td><td class="n"><span class="placeholder">[result]</span></td><td class="n"><span class="placeholder">[result]</span></td><td class="n"><span class="placeholder">[result]</span></td><td class="n"><span class="placeholder">[result]</span></td></tr>
-              <tr class="is-best"><td>Gemma 4 E2B, calibrated</td><td class="n"><span class="placeholder">[result]</span></td><td class="n"><span class="placeholder">[result]</span></td><td class="n"><span class="placeholder">[result]</span></td><td class="n"><span class="placeholder">[result]</span></td></tr>
+              <tr><td>Rules only</td><td class="n">63%</td><td class="n">91%</td><td class="n">75%</td><td class="n">&lt;1 ms</td></tr>
+              <tr><td>Gemma 3 1B, tuned threshold</td><td class="n">64%</td><td class="n">91%</td><td class="n">75%</td><td class="n">0.6 s</td></tr>
+              <tr><td>Gemma 4 E2B, tuned threshold</td><td class="n">72%</td><td class="n">84%</td><td class="n">77%</td><td class="n">1.7 s</td></tr>
+              <tr class="is-best"><td>Gemma 4 E2B, 0.5 threshold (the card)</td><td class="n">90%</td><td class="n">65%</td><td class="n">76%</td><td class="n">1.7 s</td></tr>
             </tbody>
           </table>
         </div>
-        <p class="note">Precision: of the catches shown, how many were real. Recall: of the real catches among those sentences, how many were shown. The Gemma 4 threshold was picked on half the services and measured on the other half. Labels, predictions and scripts are in the repo.</p>
+        <p class="note">Precision: of the catches shown, how many were real. Recall: of the real catches among those sentences, how many were shown. Tuned thresholds were picked on half the services and measured on the other half. The card uses the stricter 0.5, so nine in ten catches it shows are real. Gemma 4 is weakest on lock-ins; the details are in the write-up. Labels, predictions and scripts are in the repo.</p>
       </div>
     </section>
 

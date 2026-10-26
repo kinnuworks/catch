@@ -1,0 +1,1254 @@
+{
+ "reader": "gemma4:e2b-it-qat",
+ "msPerDoc": 1699.4812684814808,
+ "predictions": {
+  "1Password#1": {
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    ""
+   ],
+   "scores": {
+    "auto_renew": 0.9263166621006185
+   }
+  },
+  "1Password#2": {
+   "kinds": [
+    "no_refund"
+   ],
+   "plain": [
+    ""
+   ],
+   "scores": {
+    "no_refund": 0.9611031928901047
+   }
+  },
+  "1Password#3": {
+   "kinds": [
+    "trial_converts"
+   ],
+   "plain": [
+    ""
+   ],
+   "scores": {
+    "trial_converts": 0.7812470373096573
+   }
+  },
+  "1Password#4": {
+   "kinds": [],
+   "plain": [],
+   "scores": {
+    "no_refund": 0.11816609834656557
+   }
+  },
+  "1Password#5": {
+   "kinds": [],
+   "plain": [],
+   "scores": {
+    "cancel_notice": 0.23758951347761847
+   }
+  },
+  "1Password#6": {
+   "kinds": [
+    "no_refund"
+   ],
+   "plain": [
+    ""
+   ],
+   "scores": {
+    "no_refund": 0.5197612781820221
+   }
+  },
+  "1Password#7": {
+   "kinds": [],
+   "plain": [],
+   "scores": {
+    "cancel_notice": 0.29025865384879396
+   }
+  },
+  "1Password#8": {
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    ""
+   ],
+   "scores": {
+    "auto_renew": 0.9087947327259748
+   }
+  },
+  "Apple_Media_Services#1": {
+   "kinds": [],
+   "plain": [],
+   "scores": {
+    "no_refund": 0.11498024490416041
+   }
+  },
+  "Apple_Media_Services#2": {
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    ""
+   ],
+   "scores": {
+    "auto_renew": 0.9538441490462711
+   }
+  },
+  "Babbel#1": {
+   "kinds": [],
+   "plain": [],
+   "scores": {
+    "cancel_notice": 0.022171282170712462
+   }
+  },
+  "Babbel#2": {
+   "kinds": [
+    "exit_fee"
+   ],
+   "plain": [
+    ""
+   ],
+   "scores": {
+    "exit_fee": 0.9225655440827994
+   }
+  },
+  "Babbel#3": {
+   "kinds": [],
+   "plain": [],
+   "scores": {
+    "exit_fee": 0.1056311480308916
+   }
+  },
+  "Babbel#4": {
+   "kinds": [],
+   "plain": [],
+   "scores": {
+    "no_refund": 0.2978980943915548
+   }
+  },
+  "Babbel#5": {
+   "kinds": [],
+   "plain": [],
+   "scores": {
+    "lock_in": 0.06535180479788262
+   }
+  },
+  "Babbel#6": {
+   "kinds": [
+    "cancel_notice"
+   ],
+   "plain": [
+    ""
+   ],
+   "scores": {
+    "cancel_notice": 0.7129806330163265
+   }
+  },
+  "Babbel#7": {
+   "kinds": [],
+   "plain": [],
+   "scores": {
+    "no_refund": 0.10144596676579186
+   }
+  },
+  "Babbel#8": {
+   "kinds": [],
+   "plain": [],
+   "scores": {
+    "lock_in": 0.07464227352097927
+   }
+  },
+  "Bumble#1": {
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    ""
+   ],
+   "scores": {
+    "auto_renew": 0.9310653079968934,
+    "lock_in": 0.10672796438996979
+   }
+  },
+  "Bumble#2": {
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    ""
+   ],
+   "scores": {
+    "auto_renew": 0.7397340689130947
+   }
+  },
+  "Bumble#3": {
+   "kinds": [
+    "trial_converts"
+   ],
+   "plain": [
+    ""
+   ],
+   "scores": {
+    "trial_converts": 0.9286251316612597
+   }
+  },
+  "Bumble#4": {
+   "kinds": [
+    "auto_renew",
+    "trial_converts"
+   ],
+   "plain": [
+    "",
+    ""
+   ],
+   "scores": {
+    "auto_renew": 0.9702118787788386,
+    "trial_converts": 0.6373792508074216
+   }
+  },
+  "Bumble#5": {
+   "kinds": [
+    "trial_converts"
+   ],
+   "plain": [
+    ""
+   ],
+   "scores": {
+    "trial_converts": 0.9498590223789772
+   }
+  },
+  "Bumble#6": {
+   "kinds": [
+    "no_refund"
+   ],
+   "plain": [
+    ""
+   ],
+   "scores": {
+    "no_refund": 0.8683409227781546
+   }
+  },
+  "Bumble#7": {
+   "kinds": [],
+   "plain": [],
+   "scores": {
+    "no_refund": 0.45096711859044886
+   }
+  },
+  "Bumble#8": {
+   "kinds": [
+    "no_refund"
+   ],
+   "plain": [
+    ""
+   ],
+   "scores": {
+    "no_refund": 0.5186362763770328
+   }
+  },
+  "Calm#1": {
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    ""
+   ],
+   "scores": {
+    "auto_renew": 0.9537819693224646
+   }
+  },
+  "Calm#2": {
+   "kinds": [
+    "no_refund"
+   ],
+   "plain": [
+    ""
+   ],
+   "scores": {
+    "no_refund": 0.6321452275094924
+   }
+  },
+  "Coursera#1": {
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    ""
+   ],
+   "scores": {
+    "auto_renew": 0.9545180414914447
+   }
+  },
+  "Coursera#2": {
+   "kinds": [],
+   "plain": [],
+   "scores": {
+    "no_refund": 0.3660012724666815
+   }
+  },
+  "Dropbox#1": {
+   "kinds": [],
+   "plain": [],
+   "scores": {
+    "lock_in": 0.07546759191400272
+   }
+  },
+  "ExpressVPN#1": {
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    ""
+   ],
+   "scores": {
+    "auto_renew": 0.9564907226867496
+   }
+  },
+  "ExpressVPN#2": {
+   "kinds": [],
+   "plain": [],
+   "scores": {
+    "auto_renew": 0.3390152076795333
+   }
+  },
+  "ExpressVPN#3": {
+   "kinds": [],
+   "plain": [],
+   "scores": {
+    "auto_renew": 0.1804979190355631
+   }
+  },
+  "GitHub#1": {
+   "kinds": [
+    "no_refund"
+   ],
+   "plain": [
+    ""
+   ],
+   "scores": {
+    "no_refund": 0.8119164477613473
+   }
+  },
+  "GitHub#2": {
+   "kinds": [
+    "no_refund"
+   ],
+   "plain": [
+    ""
+   ],
+   "scores": {
+    "no_refund": 0.8757705805133006
+   }
+  },
+  "GitHub#3": {
+   "kinds": [
+    "no_refund"
+   ],
+   "plain": [
+    ""
+   ],
+   "scores": {
+    "no_refund": 0.6336568321498249
+   }
+  },
+  "GitHub#4": {
+   "kinds": [
+    "no_refund"
+   ],
+   "plain": [
+    ""
+   ],
+   "scores": {
+    "no_refund": 0.6222918072548012
+   }
+  },
+  "Headspace#1": {
+   "kinds": [],
+   "plain": [],
+   "scores": {
+    "auto_renew": 0.13178966229664058
+   }
+  },
+  "Headspace#2": {
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    ""
+   ],
+   "scores": {
+    "auto_renew": 0.8800857291178171
+   }
+  },
+  "Headspace#3": {
+   "kinds": [
+    "no_refund"
+   ],
+   "plain": [
+    ""
+   ],
+   "scores": {
+    "no_refund": 0.8995397773122505
+   }
+  },
+  "Headspace#4": {
+   "kinds": [
+    "no_refund"
+   ],
+   "plain": [
+    ""
+   ],
+   "scores": {
+    "no_refund": 0.6679290938457114
+   }
+  },
+  "Headspace#5": {
+   "kinds": [],
+   "plain": [],
+   "scores": {
+    "cancel_notice": 0.01609160885995
+   }
+  },
+  "Headspace#6": {
+   "kinds": [
+    "no_refund"
+   ],
+   "plain": [
+    ""
+   ],
+   "scores": {
+    "no_refund": 0.785246443171843
+   }
+  },
+  "Microsoft#1": {
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    ""
+   ],
+   "scores": {
+    "auto_renew": 0.9160118230131005
+   }
+  },
+  "Microsoft#2": {
+   "kinds": [],
+   "plain": [],
+   "scores": {
+    "auto_renew": 0.17835309384677567
+   }
+  },
+  "Microsoft#3": {
+   "kinds": [
+    "no_refund"
+   ],
+   "plain": [
+    ""
+   ],
+   "scores": {
+    "no_refund": 0.8014663969375032
+   }
+  },
+  "Microsoft#4": {
+   "kinds": [],
+   "plain": [],
+   "scores": {
+    "no_refund": 0.23734709640898335
+   }
+  },
+  "Microsoft#5": {
+   "kinds": [],
+   "plain": [],
+   "scores": {
+    "trial_converts": 0.41503880993279013
+   }
+  },
+  "Microsoft#6": {
+   "kinds": [],
+   "plain": [],
+   "scores": {
+    "auto_renew": 0.40464209814811486
+   }
+  },
+  "Microsoft#7": {
+   "kinds": [],
+   "plain": [],
+   "scores": {
+    "auto_renew": 0.16429211519005138
+   }
+  },
+  "Microsoft#8": {
+   "kinds": [],
+   "plain": [],
+   "scores": {
+    "auto_renew": 0.2512538564233004
+   }
+  },
+  "MyFitnessPal#1": {
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    ""
+   ],
+   "scores": {
+    "auto_renew": 0.8832525413309259
+   }
+  },
+  "MyFitnessPal#2": {
+   "kinds": [
+    "no_refund"
+   ],
+   "plain": [
+    ""
+   ],
+   "scores": {
+    "no_refund": 0.7279356358976188
+   }
+  },
+  "MyFitnessPal#3": {
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    ""
+   ],
+   "scores": {
+    "auto_renew": 0.8855089396320854
+   }
+  },
+  "MyFitnessPal#4": {
+   "kinds": [
+    "trial_converts"
+   ],
+   "plain": [
+    ""
+   ],
+   "scores": {
+    "trial_converts": 0.8643609676060001
+   }
+  },
+  "MyFitnessPal#5": {
+   "kinds": [],
+   "plain": [],
+   "scores": {
+    "cancel_notice": 0.0672318887056731
+   }
+  },
+  "Netflix#1": {
+   "kinds": [
+    "no_refund"
+   ],
+   "plain": [
+    ""
+   ],
+   "scores": {
+    "no_refund": 0.8246821833182695
+   }
+  },
+  "Netflix#2": {
+   "kinds": [],
+   "plain": [],
+   "scores": {
+    "auto_renew": 0.11988049972366825
+   }
+  },
+  "New_York_Times#1": {
+   "kinds": [],
+   "plain": [],
+   "scores": {
+    "cancel_notice": 0.17279523509164424
+   }
+  },
+  "Noom#1": {
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    ""
+   ],
+   "scores": {
+    "auto_renew": 0.9216863756496386
+   }
+  },
+  "Noom#2": {
+   "kinds": [],
+   "plain": [],
+   "scores": {
+    "auto_renew": 0.32938665314255816
+   }
+  },
+  "Noom#3": {
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    ""
+   ],
+   "scores": {
+    "auto_renew": 0.8606632393640525
+   }
+  },
+  "Noom#4": {
+   "kinds": [
+    "trial_converts"
+   ],
+   "plain": [
+    ""
+   ],
+   "scores": {
+    "trial_converts": 0.6744161790949651
+   }
+  },
+  "Noom#5": {
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    ""
+   ],
+   "scores": {
+    "auto_renew": 0.9166879368800465
+   }
+  },
+  "Noom#6": {
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    ""
+   ],
+   "scores": {
+    "auto_renew": 0.9227893346153353
+   }
+  },
+  "Noom#7": {
+   "kinds": [],
+   "plain": [],
+   "scores": {
+    "auto_renew": 0.07326627838433254
+   }
+  },
+  "Noom#8": {
+   "kinds": [],
+   "plain": [],
+   "scores": {
+    "lock_in": 0.060990198816514046
+   }
+  },
+  "Patreon#1": {
+   "kinds": [],
+   "plain": [],
+   "scores": {
+    "auto_renew": 0.4457764518722755
+   }
+  },
+  "Patreon#2": {
+   "kinds": [],
+   "plain": [],
+   "scores": {
+    "auto_renew": 0.40125337871269107
+   }
+  },
+  "Patreon#3": {
+   "kinds": [],
+   "plain": [],
+   "scores": {
+    "auto_renew": 0.4721732009696965
+   }
+  },
+  "Patreon#4": {
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    ""
+   ],
+   "scores": {
+    "auto_renew": 0.9631907005767073
+   }
+  },
+  "Patreon#5": {
+   "kinds": [
+    "auto_renew",
+    "trial_converts"
+   ],
+   "plain": [
+    "",
+    ""
+   ],
+   "scores": {
+    "auto_renew": 0.8193736412849635,
+    "trial_converts": 0.9445207486359264
+   }
+  },
+  "Patreon#6": {
+   "kinds": [],
+   "plain": [],
+   "scores": {
+    "auto_renew": 0.16236808362203176
+   }
+  },
+  "Patreon#7": {
+   "kinds": [
+    "no_refund"
+   ],
+   "plain": [
+    ""
+   ],
+   "scores": {
+    "no_refund": 0.5616170825850303
+   }
+  },
+  "Patreon#8": {
+   "kinds": [],
+   "plain": [],
+   "scores": {
+    "auto_renew": 0.4244101087955944
+   }
+  },
+  "Peloton#1": {
+   "kinds": [],
+   "plain": [],
+   "scores": {
+    "cancel_notice": 0.0316889122365291
+   }
+  },
+  "Peloton#2": {
+   "kinds": [],
+   "plain": [],
+   "scores": {
+    "cancel_notice": 0.22378806312102767
+   }
+  },
+  "Peloton#3": {
+   "kinds": [],
+   "plain": [],
+   "scores": {
+    "cancel_notice": 0.4350537050192467
+   }
+  },
+  "Shopify#1": {
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    ""
+   ],
+   "scores": {
+    "auto_renew": 0.9504942363289814
+   }
+  },
+  "Shopify#2": {
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    ""
+   ],
+   "scores": {
+    "auto_renew": 0.8331034258080924
+   }
+  },
+  "Shopify#3": {
+   "kinds": [],
+   "plain": [],
+   "scores": {
+    "auto_renew": 0.26189820699582705
+   }
+  },
+  "Shopify#4": {
+   "kinds": [],
+   "plain": [],
+   "scores": {
+    "exit_fee": 0.15965744582980557
+   }
+  },
+  "Shopify#5": {
+   "kinds": [],
+   "plain": [],
+   "scores": {
+    "exit_fee": 0.025508885943466973
+   }
+  },
+  "Shopify#6": {
+   "kinds": [],
+   "plain": [],
+   "scores": {
+    "exit_fee": 0.046807029504759755
+   }
+  },
+  "Shopify#7": {
+   "kinds": [],
+   "plain": [],
+   "scores": {
+    "auto_renew": 0.22133870045735385
+   }
+  },
+  "Shopify#8": {
+   "kinds": [],
+   "plain": [],
+   "scores": {
+    "auto_renew": 0.17326094703772105
+   }
+  },
+  "Spotify#1": {
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    ""
+   ],
+   "scores": {
+    "auto_renew": 0.8464366551332637
+   }
+  },
+  "Spotify#2": {
+   "kinds": [
+    "cancel_notice"
+   ],
+   "plain": [
+    ""
+   ],
+   "scores": {
+    "cancel_notice": 0.7006626722684363
+   }
+  },
+  "Spotify#3": {
+   "kinds": [
+    "no_refund"
+   ],
+   "plain": [
+    ""
+   ],
+   "scores": {
+    "no_refund": 0.8144370432990228
+   }
+  },
+  "Spotify#4": {
+   "kinds": [],
+   "plain": [],
+   "scores": {
+    "cancel_notice": 0.022718228982351183
+   }
+  },
+  "Squarespace#1": {
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    ""
+   ],
+   "scores": {
+    "auto_renew": 0.8995121223050603
+   }
+  },
+  "Squarespace#2": {
+   "kinds": [],
+   "plain": [],
+   "scores": {
+    "auto_renew": 0.4251864717729929
+   }
+  },
+  "Squarespace#3": {
+   "kinds": [],
+   "plain": [],
+   "scores": {
+    "auto_renew": 0.20400400764245533
+   }
+  },
+  "Squarespace#4": {
+   "kinds": [],
+   "plain": [],
+   "scores": {
+    "auto_renew": 0.15366544238060656
+   }
+  },
+  "Squarespace#5": {
+   "kinds": [],
+   "plain": [],
+   "scores": {
+    "no_refund": 0.15541397014045227
+   }
+  },
+  "Strava#1": {
+   "kinds": [
+    "no_refund"
+   ],
+   "plain": [
+    ""
+   ],
+   "scores": {
+    "no_refund": 0.5503918423635838
+   }
+  },
+  "Strava#2": {
+   "kinds": [],
+   "plain": [],
+   "scores": {
+    "auto_renew": 0.21340180568734932
+   }
+  },
+  "Strava#3": {
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    ""
+   ],
+   "scores": {
+    "auto_renew": 0.9589971200419161
+   }
+  },
+  "Strava#4": {
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    ""
+   ],
+   "scores": {
+    "auto_renew": 0.872266113089948
+   }
+  },
+  "Strava#5": {
+   "kinds": [
+    "trial_converts"
+   ],
+   "plain": [
+    ""
+   ],
+   "scores": {
+    "trial_converts": 0.7879159957041171
+   }
+  },
+  "Surfshark#1": {
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    ""
+   ],
+   "scores": {
+    "auto_renew": 0.9432489691997878
+   }
+  },
+  "Surfshark#2": {
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    ""
+   ],
+   "scores": {
+    "auto_renew": 0.9381524689130013
+   }
+  },
+  "Surfshark#3": {
+   "kinds": [],
+   "plain": [],
+   "scores": {
+    "no_refund": 0.0848212380531781
+   }
+  },
+  "Surfshark#4": {
+   "kinds": [
+    "no_refund"
+   ],
+   "plain": [
+    ""
+   ],
+   "scores": {
+    "auto_renew": 0.33112390376901624,
+    "no_refund": 0.9104096652648825
+   }
+  },
+  "Surfshark#5": {
+   "kinds": [],
+   "plain": [],
+   "scores": {
+    "no_refund": 0.14801339483640238
+   }
+  },
+  "Tinder#1": {
+   "kinds": [],
+   "plain": [],
+   "scores": {
+    "auto_renew": 0.38526180139067445
+   }
+  },
+  "Tinder#2": {
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    ""
+   ],
+   "scores": {
+    "auto_renew": 0.9710626414643938
+   }
+  },
+  "Tinder#3": {
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    ""
+   ],
+   "scores": {
+    "auto_renew": 0.9501306516590171
+   }
+  },
+  "Tinder#4": {
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    ""
+   ],
+   "scores": {
+    "auto_renew": 0.9514146242502858
+   }
+  },
+  "Tinder#5": {
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    ""
+   ],
+   "scores": {
+    "auto_renew": 0.9555517251934033
+   }
+  },
+  "Tinder#6": {
+   "kinds": [],
+   "plain": [],
+   "scores": {
+    "lock_in": 0.09715686002985582
+   }
+  },
+  "Tinder#7": {
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    ""
+   ],
+   "scores": {
+    "auto_renew": 0.949308106471889
+   }
+  },
+  "Tinder#8": {
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    ""
+   ],
+   "scores": {
+    "auto_renew": 0.9302824562474027,
+    "lock_in": 0.08497231305812208
+   }
+  },
+  "Wix#1": {
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    ""
+   ],
+   "scores": {
+    "auto_renew": 0.9169633679227813
+   }
+  },
+  "Wix#2": {
+   "kinds": [],
+   "plain": [],
+   "scores": {
+    "cancel_notice": 0.4879277463542611
+   }
+  },
+  "Wix#3": {
+   "kinds": [],
+   "plain": [],
+   "scores": {
+    "cancel_notice": 0.17680596906985369
+   }
+  },
+  "Xfinity#1": {
+   "kinds": [],
+   "plain": [],
+   "scores": {
+    "lock_in": 0.139022552860495
+   }
+  },
+  "Xfinity#2": {
+   "kinds": [
+    "exit_fee"
+   ],
+   "plain": [
+    ""
+   ],
+   "scores": {
+    "lock_in": 0.19913896342887938,
+    "exit_fee": 0.8603669249721579
+   }
+  },
+  "Xfinity#3": {
+   "kinds": [],
+   "plain": [],
+   "scores": {
+    "lock_in": 0.04008677190380967
+   }
+  },
+  "Xfinity#4": {
+   "kinds": [],
+   "plain": [],
+   "scores": {
+    "lock_in": 0.23111567960239496
+   }
+  },
+  "Xfinity#5": {
+   "kinds": [],
+   "plain": [],
+   "scores": {
+    "no_refund": 0.28878648056300604
+   }
+  },
+  "Xfinity#6": {
+   "kinds": [
+    "exit_fee"
+   ],
+   "plain": [
+    ""
+   ],
+   "scores": {
+    "lock_in": 0.10969138530485774,
+    "exit_fee": 0.8341606188570784
+   }
+  },
+  "YouTube_Paid_Services#1": {
+   "kinds": [],
+   "plain": [],
+   "scores": {
+    "auto_renew": 0.3728220418313643
+   }
+  },
+  "YouTube_Paid_Services#2": {
+   "kinds": [
+    "auto_renew",
+    "trial_converts"
+   ],
+   "plain": [
+    "",
+    ""
+   ],
+   "scores": {
+    "auto_renew": 0.9468392835215118,
+    "trial_converts": 0.8676475855718639
+   }
+  },
+  "YouTube_Paid_Services#3": {
+   "kinds": [],
+   "plain": [],
+   "scores": {
+    "auto_renew": 0.2298198864301623,
+    "cancel_notice": 0.18614504507952082
+   }
+  },
+  "YouTube_Paid_Services#4": {
+   "kinds": [],
+   "plain": [],
+   "scores": {
+    "auto_renew": 0.11310510083353519
+   }
+  },
+  "YouTube_Paid_Services#5": {
+   "kinds": [],
+   "plain": [],
+   "scores": {
+    "cancel_notice": 0.14128650611564925
+   }
+  },
+  "YouTube_Paid_Services#6": {
+   "kinds": [
+    "auto_renew"
+   ],
+   "plain": [
+    ""
+   ],
+   "scores": {
+    "auto_renew": 0.5632907660785359
+   }
+  },
+  "YouTube_Paid_Services#7": {
+   "kinds": [],
+   "plain": [],
+   "scores": {
+    "auto_renew": 0.006700310839686014
+   }
+  },
+  "YouTube_Paid_Services#8": {
+   "kinds": [
+    "no_refund"
+   ],
+   "plain": [
+    ""
+   ],
+   "scores": {
+    "no_refund": 0.6819182870255704
+   }
+  },
+  "Zoom#1": {
+   "kinds": [],
+   "plain": [],
+   "scores": {
+    "lock_in": 0.03177671545964514
+   }
+  },
+  "Zoom#2": {
+   "kinds": [],
+   "plain": [],
+   "scores": {
+    "no_refund": 0.27778948719460544
+   }
+  },
+  "Zoom#3": {
+   "kinds": [
+    "no_refund"
+   ],
+   "plain": [
+    ""
+   ],
+   "scores": {
+    "no_refund": 0.9092440867709235
+   }
+  },
+  "Zoom#4": {
+   "kinds": [
+    "cancel_notice"
+   ],
+   "plain": [
+    ""
+   ],
+   "scores": {
+    "cancel_notice": 0.8029077905859183
+   }
+  },
+  "Zoom#5": {
+   "kinds": [
+    "cancel_notice"
+   ],
+   "plain": [
+    ""
+   ],
+   "scores": {
+    "cancel_notice": 0.5823313337809685
+   }
+  }
+ },
+ "raws": {}
+}

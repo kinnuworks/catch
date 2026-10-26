@@ -59,6 +59,15 @@ Nothing else. No analytics, no server, no account.
 | `pred-*.json` | each reader's raw output, including every P(yes) |
 | `results.md` | precision, recall and F1 per reader, and the 2-fold calibrated threshold |
 
+| Reader | Precision | Recall | F1 |
+|---|---|---|---|
+| Rules only | 63% | 91% | 75% |
+| Gemma 3 1B, tuned threshold | 64% | 91% | 75% |
+| Gemma 4 E2B, tuned threshold (held-out services) | 72% | 84% | 77% |
+| Gemma 4 E2B, 0.5 threshold (the card) | 90% | 65% | 76% |
+
+Gemma 4 E2B was scored at 4-bit through Ollama (`gemma4:e2b-it-qat`); the extension runs the 4-bit ONNX build in the browser. It is weakest on lock-ins (0 of 9).
+
 The test can only see sentences the rules picked, so recall here means recall among those sentences. A trap phrased in words the rules don't expect is invisible to both the rules and this test.
 
 ```bash

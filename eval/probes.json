@@ -1,0 +1,102 @@
+{
+ "gemma3:1b": [
+  {
+   "text": "All amounts paid are non-refundable.",
+   "kind": "no_refund",
+   "gold": true,
+   "p": 0.9999895617424129
+  },
+  {
+   "text": "You may cancel at any time and receive a prorated refund for the unused period.",
+   "kind": "no_refund",
+   "gold": false,
+   "p": 0.9993183359505183
+  },
+  {
+   "text": "If you or Spotify terminate these Terms, Spotify shall have no liability to you.",
+   "kind": "lock_in",
+   "gold": false,
+   "p": 0.9980589535940902
+  },
+  {
+   "text": "If your Services are subject to a minimum term agreement and you terminate before the end of the term, you will be charged an early termination fee.",
+   "kind": "exit_fee",
+   "gold": true,
+   "p": 0.9999825479402205
+  },
+  {
+   "text": "We will provide at least 30 days' notice prior to any new terms taking effect.",
+   "kind": "cancel_notice",
+   "gold": false,
+   "p": 0.9999713969466353
+  },
+  {
+   "text": "Subscriptions automatically renew until cancelled in the Manage Subscriptions section of your account settings.",
+   "kind": "auto_renew",
+   "gold": true,
+   "p": 0.9999921167000715
+  },
+  {
+   "text": "Credits are non-refundable, non-transferable, and no interest will accrue on them.",
+   "kind": "lock_in",
+   "gold": false,
+   "p": 0.9697603950421464
+  },
+  {
+   "text": "In case of a termination before the end of a billing cycle, Babbel will provide you with a pro rata refund of Service Fees for the remainder.",
+   "kind": "exit_fee",
+   "gold": false,
+   "p": 0.9999424211840252
+  }
+ ],
+ "gemma4:e2b-it-qat": [
+  {
+   "text": "All amounts paid are non-refundable.",
+   "kind": "no_refund",
+   "gold": true,
+   "p": 0.9611031928901047
+  },
+  {
+   "text": "You may cancel at any time and receive a prorated refund for the unused period.",
+   "kind": "no_refund",
+   "gold": false,
+   "p": 0.05951258422622439
+  },
+  {
+   "text": "If you or Spotify terminate these Terms, Spotify shall have no liability to you.",
+   "kind": "lock_in",
+   "gold": false,
+   "p": 0.06942470319675506
+  },
+  {
+   "text": "If your Services are subject to a minimum term agreement and you terminate before the end of the term, you will be charged an early termination fee.",
+   "kind": "exit_fee",
+   "gold": true,
+   "p": 0.932793386014925
+  },
+  {
+   "text": "We will provide at least 30 days' notice prior to any new terms taking effect.",
+   "kind": "cancel_notice",
+   "gold": false,
+   "p": 0.20167313323550448
+  },
+  {
+   "text": "Subscriptions automatically renew until cancelled in the Manage Subscriptions section of your account settings.",
+   "kind": "auto_renew",
+   "gold": true,
+   "p": 0.9538441490462711
+  },
+  {
+   "text": "Credits are non-refundable, non-transferable, and no interest will accrue on them.",
+   "kind": "lock_in",
+   "gold": false,
+   "p": 0.010946028760412566
+  },
+  {
+   "text": "In case of a termination before the end of a billing cycle, Babbel will provide you with a pro rata refund of Service Fees for the remainder.",
+   "kind": "exit_fee",
+   "gold": false,
+   "p": 0.23584171652117644
+  }
+ ]
+}

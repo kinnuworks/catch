@@ -7,7 +7,11 @@ import type { Candidate, ModelLabel, TrapKind } from "./types";
  */
 export type ScoreYes = (system: string, user: string) => Promise<number>;
 
-/** The threshold calibrated on half the hand-labelled set (see eval/score.ts). */
+/**
+ * The card's cut-off. Tuning for F1 on half the labelled services picks 0.05-0.23 (eval/results.md);
+ * the card uses a stricter 0.5, which measured 90% precision at 65% recall, because false alarms
+ * teach people to ignore the card.
+ */
 export const DEFAULT_THRESHOLD = 0.5;
 
 export interface TokenProb {
